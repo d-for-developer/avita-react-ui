@@ -1,18 +1,44 @@
-import React from "react";
+import './App.css';
+
+
+
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
-import Dashboard from "./components/user/Dashboard";
-import ChangePassword from "./components/user/profile/ChangePassword";
-import Profile from "./components/user/profile/Profile.Js";
-import Setting from "./components/user/profile/Setting";
+import Home from './components/Home';
+import Products from './components/products/Products';
+import News from './components/news/News';
+import Shop from './components/shop/Shop';
+import Service from './components/service/Service';
 
 
-export default function App() {
+function App() {
   return (
-   <h1>Home</h1>
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/products">
+           <Products/>
+          </Route>
+          <Route path="/news">
+            <News/>
+          </Route>
+          <Route path="/where-to-buy">
+            <Shop />
+          </Route>
+          <Route path="/service">
+            <Service />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+
   );
 }
+
+export default App;

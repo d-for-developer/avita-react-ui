@@ -1,4 +1,3 @@
-import { Home } from "@mui/icons-material";
 import React from "react";
 
 import {
@@ -6,6 +5,15 @@ import {
     Switch,
     Route,
 } from "react-router-dom";
+import Dashboard from "./Dashboard";
+import Contact from "./pages/Contact";
+import Logout from "./pages/Logout";
+import FAQ from "./pages/FAQ";
+import Settings from "./pages/Settings";
+import ListProduct from "./products/ListProduct";
+import ChangePassword from "./profile/ChangePassword";
+import Profile from "./profile/Profile.js";
+import ListWarranty from "./warranty/ListWarranty";
 
 export default function User() {
   return (
@@ -13,31 +21,31 @@ export default function User() {
       <div>
         <Switch>
           <Route exact path="/user">
-            <Home />
+            <Dashboard/>
           </Route>
-          <Route path="/profile">
-            <Profile />
+          <Route path="/user/profile">
+              <Profile/>
           </Route>
-          <Route path="/change-password">
-            <ChangePassword />
+          <Route path="/user/change-password">
+              <ChangePassword/>
           </Route>
-          <Route path="/products">
-            <Products />
+          <Route path="/user/products">
+              <ListProduct/>
           </Route>
-          <Route path="/warranty-registration">
-            <WarrantyRegistration />
+          <Route path="/user/warranty-registration">
+              <ListWarranty/>
           </Route>
-          <Route path="/contact-us">
+          <Route path="/user/contact-us">
             <Contact/>
           </Route>
-          <Route path="/faq">
-            <Faq />
+          <Route path="/user/faq">
+          <FAQ/>
           </Route>
-          <Route path="/logout">
-            <Logout />
+          <Route path="/user/logout">
+            <Logout/>
           </Route>
-          <Route path="/settings">
-            <Setting />
+          <Route path="/user/settings">
+            <Settings/>
           </Route>
    
         </Switch>
