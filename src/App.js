@@ -12,6 +12,8 @@ import Products from './components/products/Products';
 import News from './components/news/News';
 import Shop from './components/shop/Shop';
 import Service from './components/service/Service';
+import NotFound from './components/pages/NotFound';
+
 
 
 function App() {
@@ -33,6 +35,9 @@ function App() {
           </Route>
           <Route path="/service">
             <Service />
+          </Route>
+          <Route path="*">
+            <NotFound/>
           </Route>
         </Switch>
       </div>
