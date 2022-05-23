@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import User from './components/user/User';
-import Admin from './components/admin/Admin';
+import User from './user/User';
+import Admin from './admin/Admin';
 
 
 

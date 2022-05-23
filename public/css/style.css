@@ -1,0 +1,191 @@
+/*
+    ADDITIONAL DEMO STYLE, NOT IMPORTANT TO MAKE THINGS WORK BUT TO MAKE IT A BIT NICER :)
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    height: auto;
+    width: auto;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 350px;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+
+.about p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.2em;
+    color: #999;
+    text-align: left;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar {
+    /* don't forget to add all the previously mentioned styles here too */
+    background: #fafafa;
+    color: #000;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #fafafa;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #fdfdfd;
+}
+
+#sidebar ul p {
+    color: #000;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #fff;
+    background: #6a2d91;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #6a2d91;
+    /* background: #6a2d91; */
+}
+
+
+#sidebar ul li.active > a:hover{
+    color: #fff;
+    background: #6a2d91;
+}
+
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6a2d91;
+}
+
+/* ul li:last-child {
+    position:absolute;
+    height: 50px;
+    min-width: 250px;
+    max-width: 250px;
+    bottom: 0;
+    list-style-type: none;
+    padding-bottom:5.5em;
+
+  } */
+
+  hr{
+    min-width: 250px;
+    max-width: 500px;
+  }
+
+  h5{
+      color:#6a2d91;
+      font-weight: 700;
+  }
+
+  ul li{
+    list-style-type: none;
+
+}
+
+.footer-top{
+    background-color: #f0f0f0;
+    padding: 0;
+}
+
+.home-card{
+    background-repeat: no-repeat;
+    color:#fff;
+
+}
+
+.btn-register{
+    background-color: #fff;
+    color:#662d91;
+}
+
+.btn-register:hover{
+    color: #fff;
+    background-color:#662d91;
+    border-color: #fff;
+}
+
+
+button.btn-submit{
+    background-color: #662d91;
+    width: 150px;
+    color:#fff;
+}
+
+button.btn-submit:hover{
+    width: 150px;
+    color: #662d91;
+    background-color:#fff;
+    border-color: #662d91;
+}
+
+button.btn-outline-submit{
+    width: 150px;
+    color: #662d91;
+    background-color:#fff;
+    border-color: #662d91;
+}
+
+button.btn-outline-submit:hover{
+    background-color: #662d91;
+    width: 150px;
+    color:#fff;
+}
+
+
+.home-text{
+    font-size: 1.5em !important;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product-card{
+    border: 1px solid rgb(232, 232, 232);
+    padding: 15px;
+}
+
+.form-card{
+    border: 1px solid rgb(232, 232, 232);
+    padding: 15px;
+}

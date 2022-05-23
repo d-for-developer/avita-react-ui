@@ -17,6 +17,8 @@ import ListWarranty from "./warranty/ListWarranty";
 
 export default function User() {
   return (
+    <div className='container-fluid'>
+
     <Router>
       <div>
         <Switch>
@@ -51,5 +53,6 @@ export default function User() {
         </Switch>
       </div>
     </Router>
+    </div>
   );
 }

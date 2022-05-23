@@ -32,6 +32,7 @@ import ShowWarranty from './warranty/ShowWarranty';
 
 export default function Admin() {
   return (
+    <div className='container-fluid'>
 
     <Router>
       <div>
@@ -104,5 +105,6 @@ export default function Admin() {
         </Switch>
       </div>
     </Router>
+    </div>
   );
 }
