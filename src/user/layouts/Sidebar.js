@@ -15,38 +15,38 @@ export default function Sidebar() {
                     <h5 className='mt-4'>Dashboard</h5>
                     <hr />
                     <li className="active navlink mb-2">
-                        <Link to="/">Home </Link>
+                        <Link to="/user/dashboard">Home </Link>
                     </li>
                     <h5 className='mt-4'>My Account</h5>
                     <hr />
                     <li className="active navlink mb-2">
-                        <Link to="/profile">Profile </Link>
+                        <Link to="/user/profile">Profile </Link>
                     </li>
                     <li className='navlink mb-2'>
-                        <Link to="/change-password">Change Password</Link>
+                        <Link to="/user/change-password">Change Password</Link>
                     </li>
                     <h5 className='mt-4'>Support</h5>
                     <hr />
                     <li className='navlink mb-2'>
-                        <Link to="/products">My Product</Link>
+                        <Link to="/user/products">My Product</Link>
                     </li>
                     <li className='navlink mb-2'>
-                        <Link to="/warranty-registration">Warranty Registration</Link>
+                        <Link to="/user/warranty-registration">Warranty Registration</Link>
                     </li>
                     <li className='navlink'>
-                        <Link to="/contact-us">Contact Us</Link>
+                        <Link to="/user/contact-us">Contact Us</Link>
                     </li>
 
                     <h5 className='mt-4'>About</h5>
                     <hr />
                     <li className="active navlink mb-2">
-                        <Link to="/about">AVITA</Link>
+                        <Link to="/user/about">AVITA</Link>
                     </li>
                     <li className='navlink mb-2'>
-                        <Link to="/faq">FAQ's</Link>
+                        <Link to="/user/faq">FAQ's</Link>
                     </li>
                     <li className="active navlink mb-2">
-                        <Link to="/logout">Logout </Link>
+                        <Link to="/user/logout">Logout </Link>
                     </li>
                 </ul>
             </nav>

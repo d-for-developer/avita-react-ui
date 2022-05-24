@@ -11,6 +11,7 @@ import Logout from "./pages/Logout";
 import FAQ from "./pages/FAQ";
 import Settings from "./pages/Settings";
 import ListProduct from "./products/ListProduct";
+import ShowProduct from "./products/ShowProduct";
 import ChangePassword from "./profile/ChangePassword";
 import Profile from "./profile/Profile.js";
 import ListWarranty from "./warranty/ListWarranty";
@@ -20,9 +21,9 @@ export default function User() {
     <div className='container-fluid'>
 
     <Router>
-      <div>
+
         <Switch>
-          <Route exact path="/user">
+          <Route exact path="/user/dashboard">
             <Dashboard/>
           </Route>
           <Route path="/user/profile">
@@ -33,6 +34,9 @@ export default function User() {
           </Route>
           <Route path="/user/products">
               <ListProduct/>
+          </Route>
+          <Route path="/user/product-details">
+              <ShowProduct/>
           </Route>
           <Route path="/user/warranty-registration">
               <ListWarranty/>
@@ -49,10 +53,12 @@ export default function User() {
           <Route path="/user/settings">
             <Settings/>
           </Route>
-   
+      
+          
         </Switch>
-      </div>
+
     </Router>
     </div>
+
   );
 }

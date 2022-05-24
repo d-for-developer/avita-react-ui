@@ -11,9 +11,10 @@ import Admin from './admin/Admin';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+  <App/>
+
     <Admin/>
     <User/>
-    <App/>
   </React.StrictMode>
 );
 

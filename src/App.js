@@ -12,14 +12,14 @@ import Products from './components/products/Products';
 import News from './components/news/News';
 import Shop from './components/shop/Shop';
 import Service from './components/service/Service';
-import NotFound from './components/pages/NotFound';
 
 
 
 function App() {
   return (
+    <div className='container-fluid'>
+
     <Router>
-      <div>
         <Switch>
           <Route exact path="/">
             <Home />
@@ -36,12 +36,10 @@ function App() {
           <Route path="/service">
             <Service />
           </Route>
-          <Route path="*">
-            <NotFound/>
-          </Route>
+         
         </Switch>
-      </div>
     </Router>
+    </div>
 
   );
 }

@@ -35,7 +35,6 @@ export default function Admin() {
     <div className='container-fluid'>
 
     <Router>
-      <div>
         <Switch>
           <Route exact path="/admin">
             <Dashboard />
@@ -101,9 +100,8 @@ export default function Admin() {
             <Settings />
           </Route>
 
-
+          
         </Switch>
-      </div>
     </Router>
     </div>
   );
