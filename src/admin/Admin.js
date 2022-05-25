@@ -12,20 +12,21 @@ import ShowProducts from './products/ShowProducts';
 import AddProductCategory from './product_categories/AddProductCategory';
 import ListProductCategory from './product_categories/ListProductCategory';
 import ShowProductCategory from './product_categories/ShowProductCategory';
-
 import AddNumber from './product_number/AddNumber';
 import ListNumber from './product_number/ListNumber';
 import ShowNumber from './product_number/ShowNumber';
-
 import ListModel from './product_models/ListModel';
 import ListSeries from './product_series/ListSeries';
 import ListTypes from './product_types/ListTypes';
-import Analytics from './settings/Analytics';
+import Analytics from './pages/Analytics';
 import ListCustomers from './customers/ListCustomers';
 import ShowCustomers from './customers/ShowCustomers';
 import Settings from './settings/Settings';
 import ListWarranty from './warranty/ListWarranty';
 import ShowWarranty from './warranty/ShowWarranty';
+import ListCountry from './countries/ListCountry';
+import ShowCountry from './countries/ShowCountry';
+import AddCountry from './countries/AddCountry';
 
 
 
@@ -33,10 +34,9 @@ import ShowWarranty from './warranty/ShowWarranty';
 export default function Admin() {
   return (
     <div className='container-fluid'>
-
-    <Router>
+      <Router>
         <Switch>
-          <Route exact path="/admin">
+          <Route exact path="/admin/dashboard">
             <Dashboard />
           </Route>
 
@@ -83,6 +83,17 @@ export default function Admin() {
           <Route path="/admin/analytics">
             <Analytics />
           </Route>
+
+          <Route path="/admin/all-countries">
+            <ListCountry />
+          </Route>
+          <Route path="/admin/country-details">
+            <ShowCountry />
+          </Route>
+          <Route path="/admin/add-country">
+            <AddCountry />
+          </Route>
+
           <Route path="/admin/customers">
             <ListCustomers />
           </Route>
@@ -90,19 +101,19 @@ export default function Admin() {
             <ShowCustomers />
           </Route>
 
-           <Route path="/admin/warranty-registered">
-              <ListWarranty/>
-           </Route>
+          <Route path="/admin/warranty-registered">
+            <ListWarranty />
+          </Route>
           <Route path="/admin/warranty-details">
-              <ShowWarranty/>
+            <ShowWarranty />
           </Route>
           <Route path="/admin/settings">
             <Settings />
           </Route>
 
-          
+
         </Switch>
-    </Router>
+      </Router>
     </div>
   );
 }

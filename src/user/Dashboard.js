@@ -18,7 +18,7 @@ export default function Dashboard() {
     <div className='col-md-10'>
 
       <div className='row'>
-        <h3 className="text-left my-4 text-center">Admin Home Page</h3>
+        <h3 className="text-left my-4 text-center">User Dashboard</h3>
         <hr />
         <div className='col-md-3 mb-2'>
 
