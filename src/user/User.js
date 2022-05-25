@@ -1,9 +1,9 @@
 import React from "react";
 
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
+  BrowserRouter as Router,
+  Switch,
+  Route,
 } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import Contact from "./pages/Contact";
@@ -15,49 +15,62 @@ import ShowProduct from "./products/ShowProduct";
 import ChangePassword from "./profile/ChangePassword";
 import Profile from "./profile/Profile.js";
 import ListWarranty from "./warranty/ListWarranty";
+import FormWarranty from "./warranty/FormWarranty";
+import ShowWarranty from "./warranty/ShowWarranty";
+import About from "./pages/About";
+
 
 export default function User() {
   return (
     <div className='container-fluid'>
 
-    <Router>
+      <Router>
 
         <Switch>
           <Route exact path="/user/dashboard">
-            <Dashboard/>
+            <Dashboard />
           </Route>
           <Route path="/user/profile">
-              <Profile/>
+            <Profile />
           </Route>
           <Route path="/user/change-password">
-              <ChangePassword/>
+            <ChangePassword />
           </Route>
           <Route path="/user/products">
-              <ListProduct/>
+            <ListProduct />
           </Route>
           <Route path="/user/product-details">
-              <ShowProduct/>
+            <ShowProduct />
+          </Route>
+          <Route path="/user/register-warranty">
+            <FormWarranty />
           </Route>
           <Route path="/user/warranty-registration">
-              <ListWarranty/>
+            <ListWarranty />
           </Route>
+          <Route path="/user/warranty-details">
+          <ShowWarranty />
+        </Route>
           <Route path="/user/contact-us">
-            <Contact/>
+            <Contact />
           </Route>
+          <Route path="/user/about">
+          <About />
+        </Route>
           <Route path="/user/faq">
-          <FAQ/>
+            <FAQ />
           </Route>
           <Route path="/user/logout">
-            <Logout/>
+            <Logout />
           </Route>
           <Route path="/user/settings">
-            <Settings/>
+            <Settings />
           </Route>
-      
-          
+
+
         </Switch>
 
-    </Router>
+      </Router>
     </div>
 
   );

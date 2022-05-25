@@ -1,7 +1,6 @@
 import React from 'react';
 import Sidebar from '../layouts/Sidebar';
 import Product from '../../img/Product.png';
-import { Table } from 'react-bootstrap';
 
 
 export default function ShowProduct() {
@@ -123,9 +122,6 @@ export default function ShowProduct() {
                   </div>
                 </div>
               </div>
-
-
-
             </div>
           </div>
         </div>
