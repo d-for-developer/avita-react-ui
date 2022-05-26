@@ -4,7 +4,6 @@ import WebBanner from '../../img/web_banner_preview.jpg';
 import MobBanner from '../../img/mob_banner_preview.jpg';
 import editIcon from '../../icons/edit.svg';
 
-
 export default function AddBanner() {
   return (
     <div className='row'>
@@ -111,14 +110,17 @@ export default function AddBanner() {
                                                 </div>
                                             </div>
                                             <div className="row mt-3">
-                                                <div className="col-md-12">
-                                                    <label htmlFor="url"
-                                                        className="col-12 col-form-label">URL</label>
-                                                    <div className="col-12">
-                                                        <input id="url" name="url"
-                                                            className="form-control here set-url" type="text" />
-                                                    </div>
+                                                <div className="col-md-6">
+                                                    <label htmlFor="url" className="form-label">URL</label>
+                                                    <input id="url" name="url" className="form-control here set-url" type="text" />
                                                 </div>
+
+                                                <div className="col-md-6">
+                                                    <label htmlFor="pos" className="form-label">Position</label>
+                                                    <input id="pos" name="pos" className="form-control" type="number" />
+                                                </div>
+
+
                                             </div>
                                             <div className="row mt-3">
                                                 <div className="col-md-12">
