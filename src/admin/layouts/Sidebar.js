@@ -23,12 +23,12 @@ export default function Sidebar() {
             <Link to="/admin/all-countries">Countries</Link>
           </li>
           <li className="navlink">
-            <Link to="/admin/all-customers">Customers</Link>
+            <Link to="/admin/customers">Customers</Link>
           </li>
           <h5 className='mt-4'>Banner</h5>
           <hr />
           <li className="navlink">
-            <Link to="/admin/banner">All Banners</Link>
+            <Link to="/admin/banners">All Banners</Link>
           </li>
           <li className="navlink">
             <Link to="/admin/banner-grid">Grid Layout</Link>

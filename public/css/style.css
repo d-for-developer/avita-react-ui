@@ -189,3 +189,89 @@ button.btn-outline-submit:hover{
     border: 1px solid rgb(232, 232, 232);
     padding: 15px;
 }
+
+
+.ec-vendor-uploads .ec-vendor-img-upload .ec-vendor-main-img .avatar-upload {
+    margin-bottom: 10px;
+    position: relative;
+  }
+  @media (max-width: 991.98px) {
+    .ec-vendor-uploads .ec-vendor-img-upload .ec-vendor-main-img .avatar-upload {
+      max-width: 400px;
+      margin: 0 auto 15px auto;
+    }
+  }
+  .ec-vendor-uploads .ec-vendor-img-upload .ec-vendor-main-img .avatar-upload .avatar-edit {
+    position: absolute;
+    right: 25px;
+    z-index: 1;
+    top: 25px;
+  }
+  .ec-vendor-uploads .ec-vendor-img-upload .ec-vendor-main-img .avatar-upload .avatar-edit input {
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+  }
+  .ec-vendor-uploads .ec-vendor-img-upload .ec-vendor-main-img .avatar-upload .avatar-edit input + label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 0;
+    border-radius: 10px;
+    background: #ffffff;
+    border: 1px solid transparent;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+    border: 1px solid #eeeeee;
+    cursor: pointer;
+    font-weight: normal;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .ec-vendor-uploads .ec-vendor-img-upload .ec-vendor-main-img .avatar-upload .avatar-edit input + label .svg_img {
+    width: 25px;
+    opacity: 0.6;
+  }
+  .ec-vendor-uploads .ec-vendor-img-upload .ec-vendor-main-img .avatar-upload .avatar-edit input + label:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .ec-vendor-uploads .ec-vendor-img-upload .ec-vendor-main-img .avatar-upload .avatar-preview {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    position: relative;
+    border: 1px solid #eeeeee;
+    border-radius: 15px;
+  }
+  .ec-vendor-uploads .ec-vendor-img-upload .ec-vendor-main-img .avatar-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .ec-vendor-uploads .ec-vendor-img-upload .ec-vendor-main-img .avatar-upload .avatar-preview .imagePreview img {
+    margin: auto;
+    vertical-align: middle;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  

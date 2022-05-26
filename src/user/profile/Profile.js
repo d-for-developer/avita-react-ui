@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Sidebar from '../layouts/Sidebar';
 import User from '../../img/User.png';
 

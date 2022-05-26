@@ -13,7 +13,9 @@ export default function ListCountry() {
     <div className='card col-md-10 p-4'>
 
       <h1 className='text-center mb-5'>List Countries</h1>
-
+      <div className='d-flex justify-content-end'>
+      <a className='btn btn-secondary btn-sm p-2 m-2' href='/admin/add-country'>Add Country</a>
+      </div>
       <table class="table table-striped" id="table" data-url="json/data1.json" data-filter-control="true" data-show-search-clear-button="true">
 
         <thead>

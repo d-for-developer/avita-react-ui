@@ -27,6 +27,9 @@ import ShowWarranty from './warranty/ShowWarranty';
 import ListCountry from './countries/ListCountry';
 import ShowCountry from './countries/ShowCountry';
 import AddCountry from './countries/AddCountry';
+import AddBanner from './banner/AddBanner';
+import ListBanners from './banner/ListBanners';
+import BannerDetails from './banner/BannerDetails';
 
 
 
@@ -39,7 +42,6 @@ export default function Admin() {
           <Route exact path="/admin/dashboard">
             <Dashboard />
           </Route>
-
           <Route path="/admin/products">
             <ListProducts />
           </Route>
@@ -49,7 +51,15 @@ export default function Admin() {
           <Route path="/admin/show-product-detail">
             <ShowProducts />
           </Route>
-
+          <Route path="/admin/banners">
+            <ListBanners />
+          </Route>
+          <Route path="/admin/add-banner">
+            <AddBanner />
+          </Route>
+          <Route path="/admin/banner-details">
+            <BannerDetails />
+          </Route>
           <Route path="/admin/product-categories">
             <ListProductCategory />
           </Route>

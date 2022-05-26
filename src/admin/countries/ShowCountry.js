@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidebar from '../layouts/Sidebar';
-import SNLocation from '../../img/sn_location.png';
+
 
 export default function ShowCountry() {
     return (
@@ -17,59 +17,37 @@ export default function ShowCountry() {
                         <div className='col-md-6 mt-5'>
                             <div class="mb-3">
                                 <label for="exampleInputType" class="form-label">Country Code</label>
-                                <input type="text" className="form-control" name="code" />
+                                <input type="text" placeholder="HK" className="form-control" name="code" />
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputType" class="form-label">Slug</label>
-                                <input type="text" className="form-control" name="code" />
+                                <input type="text"  placeholder="hk" className="form-control" name="code" />
                             </div>
 
                             <div class="mb-3">
                                 <label for="exampleInputType" class="form-label">Country Name (En)</label>
-                                <input type="text" className="form-control" name="code" />
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="exampleInputType" class="form-label">Country Name (Sc)</label>
-                                <input type="text" className="form-control" name="code" />
+                                <input type="text"  placeholder="Hong Kong SAR China" className="form-control" name="code" />
                             </div>
 
                             <div class="mb-3">
                                 <label for="exampleInputType" class="form-label">Country Name (Tc)</label>
-
-                                <input type="text" className="form-control" name="code" />
+                                <input type="text"  placeholder="中華人民共和國香港特別行政區" className="form-control" name="code" />
                             </div>
 
                             <div class="mb-3">
-                                <label for="exampleInputType" class="form-label">Product Configuration:</label>
-                                <p>AVITA LIBER 14" 1920x1080 Full HD IPS, i5-7Y54, 8GB DDR3 RAM, 256GB SSD, WIFI+BT, Backlit Keyboard, Win 10 Home, Office 365 one-month Trial Bundled, Batik in champagne gold with Backpack </p>
-                            </div>
+                                <label for="exampleInputType" class="form-label">Country Name (Sc)</label>
 
-                        </div>
-                        <div className='col-md-6 mt-5'>
-                            <div class="mb-3">
-                                <label for="exampleInputnewSerialno" class="form-label">Serial No.</label>
-                                <input type="text" class="form-control" id="exampleInputnewSerialno" />
-                                <img src={SNLocation} alt="Serial no." className="m-2" style={{ width: 350 }} />
-
-                            </div>
-
-
-                            <div class="mb-3">
-                                <label for="exampleInputconfirmReseller" class="form-label">Reseller Name</label>
-                                <input type="text" class="form-control" id="exampleInputconfirmReseller" />
+                                <input type="text"  placeholder="中国香港特别行政区" className="form-control" name="code" />
                             </div>
 
                             <div class="mb-3">
-                                <label for="exampleInputconfirmDate" class="form-label">Purchase Date</label>
-                                <input type="date" class="form-control" id="exampleInputconfirmDate" />
+                                <label for="exampleInputType" class="form-label">Description:</label>
+                                <textarea class="form-control" placeholder="Hong Kong SAR China" row="10"></textarea>
                             </div>
-
-
                             <button type="submit" class="btn btn-submit">Save</button>
 
-
                         </div>
+                      
                     </div>
                 </form>
 
