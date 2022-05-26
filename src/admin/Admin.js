@@ -60,6 +60,44 @@ export default function Admin() {
           <Route path="/admin/banner-details">
             <BannerDetails />
           </Route>
+
+
+          <Route path="/admin/blogs">
+
+          </Route>
+          <Route path="/admin/add-blog">
+
+          </Route>
+          <Route path="/admin/blog-detail">
+
+          </Route>
+
+
+          <Route path="/admin/news">
+
+          </Route>
+          <Route path="/admin/add-news">
+
+          </Route>
+          <Route path="/admin/news-detail">
+
+          </Route>
+
+
+
+          <Route path="/admin/articles">
+
+          </Route>
+          <Route path="/admin/add-article">
+
+          </Route>
+          <Route path="/admin/article-detail">
+
+          </Route>
+
+
+
+
           <Route path="/admin/product-categories">
             <ListProductCategory />
           </Route>

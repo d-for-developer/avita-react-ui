@@ -36,10 +36,13 @@ export default function Sidebar() {
           <h5 className='mt-4'>News Events & Blogs</h5>
           <hr />
           <li className="navlink">
-            <Link to="/admin/articles">All Articles</Link>
+            <Link to="/admin/blogs">Blogs</Link>
           </li>
           <li className="navlink">
-            <Link to="/admin/new-article">Add New Article</Link>
+            <Link to="/admin/articles">Articles</Link>
+          </li>
+          <li className="navlink">
+            <Link to="/admin/news">News & Events</Link>
           </li>
           <h5 className='mt-4'>Products</h5>
           <hr />
@@ -74,7 +77,7 @@ export default function Sidebar() {
           <li className='navlink'>
             <Link to="/admin/service-center">Service Center</Link>
           </li>
-        
+
 
 
           <h5 className='mt-4'>Settings</h5>
