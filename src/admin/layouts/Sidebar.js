@@ -31,7 +31,7 @@ export default function Sidebar() {
             <Link to="/admin/banners">All Banners</Link>
           </li>
           <li className="navlink">
-            <Link to="/admin/banner-grid">Grid Layout</Link>
+            <Link to="/admin/grid-layout">Grid Layout</Link>
           </li>
           <h5 className='mt-4'>News Events & Blogs</h5>
           <hr />

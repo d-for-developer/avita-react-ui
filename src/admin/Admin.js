@@ -30,6 +30,9 @@ import AddCountry from './countries/AddCountry';
 import AddBanner from './banner/AddBanner';
 import ListBanners from './banner/ListBanners';
 import BannerDetails from './banner/BannerDetails';
+import ListGrid from './grid/ListGrid';
+import AddGrid from './grid/AddGrid';
+import GridDetails from './grid/GridDetails';
 
 
 
@@ -59,6 +62,16 @@ export default function Admin() {
           </Route>
           <Route path="/admin/banner-details">
             <BannerDetails />
+          </Route>
+
+          <Route path="/admin/grid-layout">
+            <ListGrid/>
+          </Route>
+          <Route path="/admin/add-grid">
+            <AddGrid/>
+          </Route>
+          <Route path="/admin/grid-details">
+          <GridDetails/>
           </Route>
 
 
