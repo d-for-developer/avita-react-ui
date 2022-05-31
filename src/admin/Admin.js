@@ -6,24 +6,17 @@ import {
   Route,
 } from "react-router-dom";
 import Dashboard from './Dashboard';
-import ListProducts from './products/ListProducts';
-import AddProducts from './products/AddProducts';
-import ShowProducts from './products/ShowProducts';
-import AddProductCategory from './product_categories/AddProductCategory';
-import ListProductCategory from './product_categories/ListProductCategory';
-import ShowProductCategory from './product_categories/ShowProductCategory';
-import AddNumber from './product_number/AddNumber';
-import ListNumber from './product_number/ListNumber';
-import ShowNumber from './product_number/ShowNumber';
-import ListModel from './product_models/ListModel';
-import ListSeries from './product_series/ListSeries';
-import ListTypes from './product_types/ListTypes';
+import Products from './products/Products';
+import AddProduct from './products/AddProduct';
+import Categories from './categories/Categories';
+import ProductNumber from './categories/number/ProductNumber';
+import ProductModel from './categories/pmodel/ProductModel';
+import ProductSeries from './categories/series/ProductSeries';
+import ProductType from './categories/type/ProductType';
 import Analytics from './pages/Analytics';
 import ListCustomers from './customers/ListCustomers';
 import ShowCustomers from './customers/ShowCustomers';
 import Settings from './settings/Settings';
-import ListWarranty from './warranty/ListWarranty';
-import ShowWarranty from './warranty/ShowWarranty';
 import ListCountry from './countries/ListCountry';
 import ShowCountry from './countries/ShowCountry';
 import AddCountry from './countries/AddCountry';
@@ -33,7 +26,20 @@ import BannerDetails from './banner/BannerDetails';
 import ListGrid from './grid/ListGrid';
 import AddGrid from './grid/AddGrid';
 import GridDetails from './grid/GridDetails';
-
+import ListBlog from './blog/ListBlog';
+import AddBlog from './blog/AddBlog';
+import BlogDetail from './blog/BlogDetail';
+import AddNews from './news/AddNews';
+import NewsDetail from './news/NewsDetail';
+import ListNews from './news/ListNews';
+import AddArticle from './article/AddArticle';
+import ListArticle from './article/ListArticle';
+import ArticleDetail from './article/ArticleDetail';
+import Invoice from './warranty/Invoice';
+import WarrantyRegistered from './warranty/WarrantyRegistered';
+import ExtendedWarranty from './warranty/ExtendedWarranty';
+import DamageProtection from './warranty/DamageProtection';
+import WarrantyDetails from './warranty/WarrantyDetails';
 
 
 
@@ -45,15 +51,7 @@ export default function Admin() {
           <Route exact path="/admin/dashboard">
             <Dashboard />
           </Route>
-          <Route path="/admin/products">
-            <ListProducts />
-          </Route>
-          <Route path="/admin/add-product">
-            <AddProducts />
-          </Route>
-          <Route path="/admin/show-product-detail">
-            <ShowProducts />
-          </Route>
+
           <Route path="/admin/banners">
             <ListBanners />
           </Route>
@@ -65,81 +63,73 @@ export default function Admin() {
           </Route>
 
           <Route path="/admin/grid-layout">
-            <ListGrid/>
+            <ListGrid />
           </Route>
           <Route path="/admin/add-grid">
-            <AddGrid/>
+            <AddGrid />
           </Route>
           <Route path="/admin/grid-details">
-          <GridDetails/>
+            <GridDetails />
           </Route>
 
 
           <Route path="/admin/blogs">
-
+            <ListBlog />
           </Route>
           <Route path="/admin/add-blog">
-
+            <AddBlog />
           </Route>
           <Route path="/admin/blog-detail">
-
+            <BlogDetail />
           </Route>
 
 
           <Route path="/admin/news">
-
+            <ListNews />
           </Route>
           <Route path="/admin/add-news">
-
+            <AddNews />
           </Route>
           <Route path="/admin/news-detail">
-
+            <NewsDetail />
           </Route>
 
 
 
           <Route path="/admin/articles">
-
+            <ListArticle />
           </Route>
           <Route path="/admin/add-article">
-
+            <AddArticle />
           </Route>
           <Route path="/admin/article-detail">
-
+            <ArticleDetail />
           </Route>
 
 
+          <Route path="/admin/products/">
+            <Products />
+          </Route>
+          <Route path="/admin/add-product/">
+            <AddProduct />
+          </Route>
+          <Route path="/admin/product-categories/">
+            <Categories />
+          </Route>
+          <Route path="/admin/product-number/">
+            <ProductNumber />
+          </Route>
+          <Route path="/admin/product-model/">
+            <ProductModel />
+          </Route>
+          <Route path="/admin/product-series/">
+            <ProductSeries />
+          </Route>
+          <Route path="/admin/product-type/">
+            <ProductType />
+          </Route>
 
 
-          <Route path="/admin/product-categories">
-            <ListProductCategory />
-          </Route>
-          <Route path="/admin/add-product-categories">
-            <AddProductCategory />
-          </Route>
-          <Route path="/admin/show-product-categories">
-            <ShowProductCategory />
-          </Route>
-
-          <Route path="/admin/product-number">
-            <ListNumber />
-          </Route>
-          <Route path="/admin/add-product-number">
-            <AddNumber />
-          </Route>
-          <Route path="/admin/show-product-number">
-            <ShowNumber />
-          </Route>
-
-          <Route path="/admin/product-model">
-            <ListModel />
-          </Route>
-          <Route path="/admin/product-series">
-            <ListSeries />
-          </Route>
-          <Route path="/admin/product-type">
-            <ListTypes />
-          </Route>
 
           <Route path="/admin/analytics">
             <Analytics />
@@ -162,11 +152,20 @@ export default function Admin() {
             <ShowCustomers />
           </Route>
 
+          <Route path="/admin/invoices">
+            <Invoice />
+          </Route>
+          <Route path="/admin/damage-protection">
+          <DamageProtection/>
+        </Route>
           <Route path="/admin/warranty-registered">
-            <ListWarranty />
+            <WarrantyRegistered />
+          </Route>
+         <Route path="/admin/extended-warranty">
+            <ExtendedWarranty />
           </Route>
           <Route path="/admin/warranty-details">
-            <ShowWarranty />
+            <WarrantyDetails />
           </Route>
           <Route path="/admin/settings">
             <Settings />

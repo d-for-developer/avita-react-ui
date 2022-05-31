@@ -4,7 +4,7 @@ import Sidebar from '../layouts/Sidebar';
 import MobBanner from '../../img/mob_banner.jpg';
 import WebBanner from '../../img/web_banner.jpg';
 
-export default function ListNews() {
+export default function ListArticle() {
   return (
     <div className='row'>
 
@@ -13,10 +13,10 @@ export default function ListNews() {
     </div>
     <div className='card col-md-10 p-4'>
 
-        <h1 className='text-center mb-5'>List News</h1>
+        <h1 className='text-center mb-5'>List Articles</h1>
 
         <div className='d-flex justify-content-end'>
-          <a className='btn btn-secondary btn-sm p-2 m-2' href='/admin/add-news'>Add News</a>
+          <a className='btn btn-secondary btn-sm p-2 m-2' href='/admin/add-article'>Add Article</a>
         </div>
         <table class="table table-striped" id="table" data-url="json/data1.json" data-filter-control="true" data-show-search-clear-button="true">
 
@@ -42,7 +42,7 @@ export default function ListNews() {
                     <td>YES</td>
                     <td>26<sup>th</sup> May, 2022</td>
                     <td>Active</td>
-                    <td><Link to="/admin/news-detail"><i class="fa fa-eye" aria-hidden="true"></i></Link></td>
+                    <td><Link to="/admin/article-detail"><i class="fa fa-eye" aria-hidden="true"></i></Link></td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
@@ -52,7 +52,7 @@ export default function ListNews() {
                     <td>YES</td>
                     <td>26<sup>th</sup> May, 2022</td>
                     <td>Active</td>
-                    <td><Link to="/admin/news-detail"><i class="fa fa-eye" aria-hidden="true"></i></Link></td>
+                    <td><Link to="/admin/article-detail"><i class="fa fa-eye" aria-hidden="true"></i></Link></td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
@@ -62,7 +62,7 @@ export default function ListNews() {
                     <td>YES</td>
                     <td>26<sup>th</sup> May, 2022</td>
                     <td>Active</td>
-                    <td><Link to="/admin/news-detail"><i class="fa fa-eye" aria-hidden="true"></i></Link></td>
+                    <td><Link to="/admin/article-detail"><i class="fa fa-eye" aria-hidden="true"></i></Link></td>
                 </tr>
                 <tr>
                     <th scope="row">4</th>
@@ -72,7 +72,7 @@ export default function ListNews() {
                     <td>YES</td>
                     <td>26<sup>th</sup> May, 2022</td>
                     <td>Active</td>
-                    <td><Link to="/admin/news-detail"><i class="fa fa-eye" aria-hidden="true"></i></Link></td>
+                    <td><Link to="/admin/article-detail"><i class="fa fa-eye" aria-hidden="true"></i></Link></td>
                 </tr>
                 <tr>
                     <th scope="row">5</th>
@@ -82,7 +82,7 @@ export default function ListNews() {
                     <td>YES</td>
                     <td>26<sup>th</sup> May, 2022</td>
                     <td>Active</td>
-                    <td><Link to="/admin/news-detail"><i class="fa fa-eye" aria-hidden="true"></i></Link></td>
+                    <td><Link to="/admin/article-detail"><i class="fa fa-eye" aria-hidden="true"></i></Link></td>
                 </tr>
                 <tr>
                     <th scope="row">6</th>
@@ -92,7 +92,7 @@ export default function ListNews() {
                     <td>YES</td>
                     <td>26<sup>th</sup> May, 2022</td>
                     <td>Active</td>
-                    <td><Link to="/admin/news-detail"><i class="fa fa-eye" aria-hidden="true"></i></Link></td>
+                    <td><Link to="/admin/article-detail"><i class="fa fa-eye" aria-hidden="true"></i></Link></td>
                 </tr>
                 <tr>
                     <th scope="row">7</th>
@@ -102,7 +102,7 @@ export default function ListNews() {
                     <td>YES</td>
                     <td>26<sup>th</sup> May, 2022</td>
                     <td>Active</td>
-                    <td><Link to="/admin/news-detail"><i class="fa fa-eye" aria-hidden="true"></i></Link></td>
+                    <td><Link to="/admin/article-detail"><i class="fa fa-eye" aria-hidden="true"></i></Link></td>
                 </tr>
                 <tr>
                     <th scope="row">8</th>
@@ -112,7 +112,7 @@ export default function ListNews() {
                     <td>YES</td>
                     <td>26<sup>th</sup> May, 2022</td>
                     <td>Active</td>
-                    <td><Link to="/admin/news-detail"><i class="fa fa-eye" aria-hidden="true"></i></Link></td>
+                    <td><Link to="/admin/article-detail"><i class="fa fa-eye" aria-hidden="true"></i></Link></td>
                 </tr>
                 <tr>
                     <th scope="row">9</th>
@@ -122,7 +122,7 @@ export default function ListNews() {
                     <td>YES</td>
                     <td>26<sup>th</sup> May, 2022</td>
                     <td>Active</td>
-                    <td><Link to="/admin/news-detail"><i class="fa fa-eye" aria-hidden="true"></i></Link></td>
+                    <td><Link to="/admin/article-detail"><i class="fa fa-eye" aria-hidden="true"></i></Link></td>
                 </tr>
                 <tr>
                     <th scope="row">10</th>
@@ -132,7 +132,7 @@ export default function ListNews() {
                     <td>YES</td>
                     <td>26<sup>th</sup> May, 2022</td>
                     <td>Active</td>
-                    <td><Link to="/admin/news-detail"><i class="fa fa-eye" aria-hidden="true"></i></Link></td>
+                    <td><Link to="/admin/article-detail"><i class="fa fa-eye" aria-hidden="true"></i></Link></td>
                 </tr>
 
             </tbody>

@@ -66,7 +66,7 @@ export default function Sidebar() {
             <Link to="/admin/invoices">All Invoices</Link>
           </li>
           <li className='navlink'>
-            <Link to="/admin/adp-plan">Accidental Damage Protection </Link>
+            <Link to="/admin/damage-protection">Accidental Damage Protection </Link>
           </li>
 
           <h5 className='mt-4'>Services</h5>

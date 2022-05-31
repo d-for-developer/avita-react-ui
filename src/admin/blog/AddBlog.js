@@ -7,7 +7,7 @@ import MobBanner from '../../img/mob_banner_preview.jpg';
 import editIcon from '../../icons/edit.svg';
 
 
-export default function AddNews() {
+export default function AddBlog() {
 
     const editorRef = useRef(null);
     const log = () => {
@@ -26,7 +26,7 @@ export default function AddNews() {
                     <div className="col-12">
                         <div className="card card-default">
                             <div className="card-header card-header-border-bottom">
-                                <h2>Add News</h2>
+                                <h2>Add Blog</h2>
                             </div>
 
                             <div className="card-body">
@@ -91,7 +91,7 @@ export default function AddNews() {
                                                 <div className="ec-vendor-upload-detail">
                                                     <div className="row mt-2">
                                                         <div className="col-md-6">
-                                                            <label htmlFor="productName" className="form-label">News
+                                                            <label htmlFor="productName" className="form-label">Blog
                                                                 Title</label>
                                                             <input type="text" name="productName"
                                                                 className="form-control slug-title" id="productName" />
