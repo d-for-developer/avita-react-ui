@@ -62,7 +62,7 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul.components {
-    padding: 20px 0;
+    /* padding: 0; */
     border-bottom: 1px solid #fdfdfd;
 }
 
@@ -274,4 +274,30 @@ button.btn-outline-submit:hover{
     border-radius: 10px;
   }
 
-  
+
+  .sidebar-accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    /* background-color: #fafafa; */
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}
+
+.sidebar-accordion-body{
+    margin-top: 1%;
+    padding: 10px 20px;
+    color: #000;
+}
+.sidebar-accordion-item {
+    background-color: #fafafa;
+    /* border: 1px solid rgba(0,0,0,.125); */
+}  
