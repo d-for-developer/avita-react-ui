@@ -8,7 +8,7 @@ export default function AddCountry() {
                 <Sidebar />
             </div>
             <div className='card col-md-10 p-4'>
-                <h3 className='my-4'>Country Details</h3>
+                <h3 className='my-4'>Add Country</h3>
                 <small className='mb-4'>Items marked with an asterisk (*) must be filled out.</small>
                 <hr />
                 <form>
@@ -52,5 +52,6 @@ export default function AddCountry() {
 
 
             </div>
-        </div>  )
+        </div> 
+     )
 }

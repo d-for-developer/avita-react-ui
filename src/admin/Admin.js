@@ -40,8 +40,13 @@ import WarrantyRegistered from './warranty/WarrantyRegistered';
 import ExtendedWarranty from './warranty/ExtendedWarranty';
 import DamageProtection from './warranty/DamageProtection';
 import WarrantyDetails from './warranty/WarrantyDetails';
-
-
+import AddShop from './shops/AddShop';
+import ShowShop from './shops/ShowShop';
+import ListShop from './shops/ListShop';
+import AddServiceCenter from './service_center/AddServiceCenter';
+import ListServiceCenter from './service_center/ListServiceCenter';
+import ShowServiceCenter from './service_center/ShowServiceCenter';
+import AddType from './service_center/AddType';
 
 export default function Admin() {
   return (
@@ -156,17 +161,42 @@ export default function Admin() {
             <Invoice />
           </Route>
           <Route path="/admin/damage-protection">
-          <DamageProtection/>
-        </Route>
+            <DamageProtection />
+          </Route>
           <Route path="/admin/warranty-registered">
             <WarrantyRegistered />
           </Route>
-         <Route path="/admin/extended-warranty">
+          <Route path="/admin/extended-warranty">
             <ExtendedWarranty />
           </Route>
           <Route path="/admin/warranty-details">
             <WarrantyDetails />
           </Route>
+
+          <Route path="/admin/all-shops">
+            <ListShop />
+          </Route>
+          <Route path="/admin/shop-details">
+            <ShowShop />
+          </Route>
+          <Route path="/admin/add-shop">
+            <AddShop />
+          </Route>
+
+          <Route path="/admin/service-center">
+            <ListServiceCenter />
+          </Route>
+          <Route path="/admin/add-service-center">
+            <AddServiceCenter />
+          </Route>
+          <Route path="/admin/service-center-details">
+            <ShowServiceCenter />
+          </Route>
+          <Route path="/admin/add-type">
+            <AddType/>
+          </Route>
+
+
           <Route path="/admin/settings">
             <Settings />
           </Route>

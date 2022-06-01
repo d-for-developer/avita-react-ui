@@ -34,7 +34,7 @@ export default function ExtendedWarranty() {
             <td>Warranty Expires on:<br /> 31st March 2023</td>
             <td>Extended Warranty on:<br /> 01st April 2022</td>
             <td>Active</td>
-            <td><Link to='/'><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></Link></td>
+            <td><Link to="/admin/warranty-details"><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></Link></td>
           </tr>
           <tr>
             <th scope="row">2</th>
@@ -44,7 +44,7 @@ export default function ExtendedWarranty() {
             <td>Warranty Expires on:<br /> 31st March 2023</td>
             <td>Extended Warranty on:<br /> 01st April 2022</td>
             <td>Active</td>
-            <td><Link to='/'><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></Link></td>
+            <td><Link to="/admin/warranty-details"><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></Link></td>
           </tr>
           <tr>
             <th scope="row">3</th>
@@ -54,7 +54,7 @@ export default function ExtendedWarranty() {
             <td>Warranty Expires on:<br /> 31st March 2023</td>
             <td>Extended Warranty on:<br /> 01st April 2022</td>
             <td>Active</td>
-            <td><Link to='/'><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></Link></td>
+            <td><Link to="/admin/warranty-details"><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></Link></td>
           </tr>
           <tr>
             <th scope="row">4</th>
@@ -64,7 +64,7 @@ export default function ExtendedWarranty() {
             <td>Warranty Expires on:<br /> 31st March 2023</td>
             <td>Extended Warranty on:<br /> 01st April 2022</td>
             <td>Active</td>
-            <td><Link to='/'><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></Link></td>
+            <td><Link to="/admin/warranty-details"><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></Link></td>
           </tr>
           <tr>
             <th scope="row">5</th>
@@ -74,7 +74,7 @@ export default function ExtendedWarranty() {
             <td>Warranty Expires on:<br /> 31st March 2023</td>
             <td>Extended Warranty on:<br /> 01st April 2022</td>
             <td>Active</td>
-            <td><Link to='/'><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></Link></td>
+            <td><Link to="/admin/warranty-details"><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></Link></td>
           </tr>
           <tr>
             <th scope="row">6</th>
@@ -84,7 +84,7 @@ export default function ExtendedWarranty() {
             <td>Warranty Expires on:<br /> 31st March 2023</td>
             <td>Extended Warranty on:<br /> 01st April 2022</td>
             <td>Active</td>
-            <td><Link to='/'><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></Link></td>
+            <td><Link to="/admin/warranty-details"><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></Link></td>
           </tr>
           <tr>
             <th scope="row">7</th>
@@ -94,7 +94,7 @@ export default function ExtendedWarranty() {
             <td>Warranty Expires on:<br /> 31st March 2023</td>
             <td>Extended Warranty on:<br /> 01st April 2022</td>
             <td>Active</td>
-            <td><Link to='/'><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></Link></td>
+            <td><Link to="/admin/warranty-details"><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></Link></td>
           </tr>
 
           <tr>
@@ -105,7 +105,7 @@ export default function ExtendedWarranty() {
             <td>Warranty Expires on:<br /> 31st March 2023</td>
             <td>Extended Warranty on:<br /> 01st April 2022</td>
             <td>Active</td>
-            <td><Link to='/'><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></Link></td>
+            <td><Link to="/admin/warranty-details"><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></Link></td>
           </tr>
 
           <tr>
@@ -116,7 +116,7 @@ export default function ExtendedWarranty() {
             <td>Warranty Expires on:<br /> 31st March 2023</td>
             <td>Extended Warranty on:<br /> 01st April 2022</td>
             <td>Active</td>
-            <td><Link to='/'><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></Link></td>
+            <td><Link to="/admin/warranty-details"><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></Link></td>
           </tr>
 
           <tr>
@@ -127,7 +127,7 @@ export default function ExtendedWarranty() {
             <td>Warranty Expires on:<br /> 31st March 2023</td>
             <td>Extended Warranty on:<br /> 01st April 2022</td>
             <td>Active</td>
-            <td><Link to='/'><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></Link></td>
+            <td><Link to="/admin/warranty-details"><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></Link></td>
           </tr>
         </tbody>
 
