@@ -12,7 +12,7 @@ export default function ShowCustomers() {
         <Sidebar />
       </div>
       <div className='card col-md-10 p-4'>
-      <img src={User} className="mb-4" style={{ width: 250 }} />
+        <img src={User} className="mb-4" style={{ width: 250 }} />
 
         <div className='row'>
 
@@ -34,7 +34,7 @@ export default function ShowCustomers() {
             <hr />
             <h6>Mobile No. : </h6>
             <small>+91-9871254608</small>
-            <hr/>
+            <hr />
             <h6>Country : </h6>
             <small>India</small>
             <hr />

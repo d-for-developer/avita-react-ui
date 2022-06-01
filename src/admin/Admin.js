@@ -47,6 +47,11 @@ import AddServiceCenter from './service_center/AddServiceCenter';
 import ListServiceCenter from './service_center/ListServiceCenter';
 import ShowServiceCenter from './service_center/ShowServiceCenter';
 import AddType from './service_center/AddType';
+import ChangePassword from './settings/ChangePassword';
+import ShowPages from './pages/ShowPages';
+import ListPages from './pages/ListPages';
+import AddPages from './pages/AddPages';
+import PageType from './pages/PageType';
 
 export default function Admin() {
   return (
@@ -200,6 +205,26 @@ export default function Admin() {
           <Route path="/admin/settings">
             <Settings />
           </Route>
+
+          <Route path="/admin/change-password">
+          <ChangePassword/>
+          </Route>
+
+          <Route path="/admin/other-pages">
+          <ListPages />
+        </Route>
+        <Route path="/admin/page-details">
+          <ShowPages />
+        </Route>
+        <Route path="/admin/add-pages">
+          <AddPages />
+        </Route>
+
+        <Route path="/admin/page-type">
+        <PageType/>
+      </Route>
+
+
 
 
         </Switch>

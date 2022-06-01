@@ -78,13 +78,18 @@ export default function Sidebar() {
             <Link to="/admin/service-center">Service Center</Link>
           </li>
 
-
-
           <h5 className='mt-4'>Settings</h5>
           <hr />
           <li className="navlink">
-            <Link to="/admin/settings">Settings </Link>
+            <Link to="/admin/settings">Admin Settings </Link>
           </li>
+          <li className="navlink">
+            <Link to="/admin/change-password">Change Password </Link>
+          </li>
+          <li className="navlink">
+            <Link to="/admin/other-pages">Other Pages </Link>
+          </li>
+
           <li className="navlink">
             <Link to="/admin/logout">Logout </Link>
           </li>

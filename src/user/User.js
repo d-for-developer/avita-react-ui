@@ -9,7 +9,6 @@ import Dashboard from "./Dashboard";
 import Contact from "./pages/Contact";
 import Logout from "./pages/Logout";
 import FAQ from "./pages/FAQ";
-import Settings from "./pages/Settings";
 import ListProduct from "./products/ListProduct";
 import ShowProduct from "./products/ShowProduct";
 import ChangePassword from "./profile/ChangePassword";
@@ -63,10 +62,7 @@ export default function User() {
           <Route path="/user/logout">
             <Logout />
           </Route>
-          <Route path="/user/settings">
-            <Settings />
-          </Route>
-
+      
 
         </Switch>
 
