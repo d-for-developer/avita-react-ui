@@ -7,6 +7,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -349,4 +350,75 @@ button.btn-outline-submit:hover{
     opacity: 1;
     transition-duration: 1s;
     transform: scale(1.0);
+}
+
+.homeGrid{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.ImageListItem{
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px #fafafa;
+}
+
+.newsLetter{
+    margin-top: 3%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.MuiButton-outlined{
+    background-color: #662d91!important;
+    color:#eeeeee!important;
+    border-color: #eeeeee!important;
+
+}
+
+.MuiButton-outlined:hover{
+    background-color: #eeeeee!important;
+    color:#662d91!important;
+    border-color: #662d91!important;
+}
+
+
+.MuiButton-contained{
+    background-color: #662d91!important;
+    color:#eeeeee!important;
+    border-color: #eeeeee!important;
+
+}
+
+.MuiButton-contained:hover{
+    background-color: #eeeeee!important;
+    color:#662d91!important;
+    border: 1px solid #662d91!important;
+}
+
+.MuiPaper-root{
+    box-shadow: none!important;
+}
+
+.MuiGrid-root{
+    background-color: #fff!important;
+    height: 50px;
+    padding: 10px;
+}
+
+.socialicon{
+    margin-right: 5px;
+}
+
+.social-svg-mask{
+    fill: #999!important;
+    cursor: pointer;
+}
+
+.social-svg-mask:hover{
+    fill: #662d91!important;
+    cursor: pointer;
 }
