@@ -422,3 +422,34 @@ button.btn-outline-submit:hover{
     fill: #662d91!important;
     cursor: pointer;
 }
+
+.MuiGrid-container{
+    background-color: #fafafa!important;
+}
+
+.MuiGrid-grid-xs-8{
+    background-color: #fafafa!important;
+}
+
+.MuiGrid-grid-xs-4{
+    background-color: #fafafa!important;
+}
+
+h6{
+    background-color: #fafafa!important;
+}
+
+.MuiList-root{
+    background-color: #fafafa!important;
+}
+p{
+    background-color: #fafafa!important;
+}
+.css-1o7apob-MuiGrid-root{
+    background-color: #fafafa!important;
+}
+
+section.MuiGrid-root{
+    background-color: #fafafa!important;
+
+}

@@ -1,7 +1,10 @@
 import React from 'react'
-import { Grid, Box } from '@mui/material'
+import { Grid } from '@mui/material'
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
+import { SocialIcon } from 'react-social-icons';
+import Logo from '../../img/Logo.png'
+
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -15,24 +18,21 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export const Copyright = () => {
   return (
-    <>
-    <Grid container>
-        <Grid item xs={3}>
-            <Item>
-               
-            </Item>
-        </Grid>
-        <Grid item xs={6}>
-            <Item>
-                   
-            </Item>
-        </Grid>
-        <Grid item xs={3}>
-            <Item>
-           <small>© NEXSTGO COMPANY LTD. ALL RIGHTS RESERVED.</small>
-            </Item>
-        </Grid>
-    </Grid>
-</>
+    <section className='container'>
+        <Grid container sx={{marginTop:'15%'}}>
+                <Grid item xs={8}>
+                    <Item>
+                       
+                    </Item>
+                </Grid>
+                <Grid item xs={4}>
+                    <Item>
+                      <p>© NEXSTGO COMPANY LTD. ALL RIGHTS RESERVED.</p>
+                    </Item>
+                </Grid>
+                
+            </Grid>
+
+    </section>
   )
 }
