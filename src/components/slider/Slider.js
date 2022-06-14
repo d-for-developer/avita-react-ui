@@ -1,9 +1,15 @@
 import React, { useState } from 'react'
-import { SliderContent } from './SliderContent'
 import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 import ArrowCircleLeftOutlinedIcon from '@mui/icons-material/ArrowCircleLeftOutlined';
+import { DesktopBanner } from './DesktopBanner';
+import { MobileBanner } from './Mobile.Banner';
+import { useTheme, useMediaQuery } from '@mui/material';
+
 
 const Slider = ({slides}) => {
+
+  const theme = useTheme();
+  const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
 
   const [current, setCurrent] = useState(0)
   const length = slides.length
@@ -23,13 +29,13 @@ const Slider = ({slides}) => {
         return null;
     }
 
-
+   
   return (
     <section className='slider'>
         <ArrowCircleLeftOutlinedIcon className='left-arrow' onClick={prevSlide}/>
         <ArrowCircleRightOutlinedIcon className='right-arrow' onClick={nextSlide} />
 
-        {SliderContent.map((slide, index)=>{
+        {(isMatch?MobileBanner:DesktopBanner).map((slide, index)=>{
             return(
                 <div className={ index === current ? 'slide active' : 'slide' } key = {index}>
                 {index === current && (<img src={slide.image} alt='Home Slider' className='sliderImg'/>)}

@@ -313,11 +313,11 @@ button.btn-outline-submit:hover{
     padding-top: 65px;
 }
 
+
 .sliderImg{
     width: 1920px;
     height: 720px;
-    /* border-radius: 10px; */
-}
+} 
 
 .right-arrow{
     position: absolute;
