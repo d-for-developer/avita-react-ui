@@ -38,7 +38,7 @@ const Slider = ({slides}) => {
         {(isMatch?MobileBanner:DesktopBanner).map((slide, index)=>{
             return(
                 <div className={ index === current ? 'slide active' : 'slide' } key = {index}>
-                {index === current && (<img src={slide.image} alt='Home Slider' className='sliderImg'/>)}
+                {index === current && (<img src={`${slide.image}?w=1920&fit=crop&auto=format&dpr=1`} alt='Home Slider' className='sliderImg'/>)}
                 </div>
             )
         })}

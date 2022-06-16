@@ -1,16 +1,24 @@
 import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import { useTheme, useMediaQuery } from '@mui/material';
+
 
 export default function HomeGrid() {
+
+
+  const theme = useTheme();
+  const matchDownMd = useMediaQuery(theme.breakpoints.down('sm'));
+
+
   return (
     <section className='homeGrid'>
-      <ImageList sx={{ width: 1920, height: 259 }} cols={4} rowWidth={1920} rowHeight={259}>
+      <ImageList sx={{ width: `${matchDownMd ? 350 : 1920}`, height:  `${matchDownMd ? 1036 : 259}` }} cols={matchDownMd ? 1 : 4 } rowWidth={matchDownMd ? 350 : 1920 } rowHeight={259}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <img className='ImageListItem'
               src={`${item.img}?w=1920&fit=crop&auto=format`}
-              srcSet={`${item.img}?w=1920&fit=crop&auto=format&dpr=2 2x`}
+              srcSet={`${item.img}?w=1920&fit=crop&auto=format&dpr=2`}
               alt={item.title}
               loading="lazy"
             />

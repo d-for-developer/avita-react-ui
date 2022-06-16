@@ -1,13 +1,13 @@
 import React from 'react'
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
-import { Grid } from '@mui/material'
+import { Grid, useMediaQuery, useTheme } from '@mui/material'
 import ListItemText from '@mui/material/ListItemText';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import { FooterTop } from './FooterTop';
 import { Copyright } from './Copyright';
-
+import PublicIcon from '@mui/icons-material/Public';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#f8f9fa' : '#fff',
@@ -17,36 +17,26 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.primary,
 }));
 
-function generate(element) {
-  return [0, 1, 2].map((value) =>
-    React.cloneElement(element, {
-      key: value,
-    }),
-  );
-}
-
-const Demo = styled('div')(({ theme }) => ({
-  backgroundColor: theme.palette.background.paper,
-}));
-
 
 
 
 export default function Footer() {
 
-  const [dense, setDense] = React.useState(false);
-  const [secondary, setSecondary] = React.useState(false);
+
+
+  const theme = useTheme();
+  const matchDownMd = useMediaQuery(theme.breakpoints.down('md'));
 
 
   return (
-    <>
-      <FooterTop />
-
-      <section className='container'>
-        <Grid container>
-          <Grid item xs={2}>
-            <Item>
-              <List>
+    <section className='container-fluid'>
+      {
+        matchDownMd ? (
+          <>
+            <FooterTop />
+            <div className='footer mt-4'>
+              <List style={{ display: 'flex', flexDirection: 'row', padding: 2 }}>
+              <List dense>
                 <ListItem>
                   <ListItemText>Products</ListItemText>
                 </ListItem>
@@ -59,24 +49,18 @@ export default function Footer() {
                 <ListItem>
                   <ListItemText>Blogs</ListItemText>
                 </ListItem>
-              </List>
-            </Item>
-          </Grid>
-          <Grid item xs={2}>
-            <Item>
-              <List>
                 <ListItem>
                   <ListItemText>Where to Buy</ListItemText>
                 </ListItem>
                 <ListItem>
-                  <ListItemText>Contact AVITA</ListItemText>
+                  <ListItemText>Career</ListItemText>
                 </ListItem>
               </List>
-            </Item>
-          </Grid>
-          <Grid item xs={2}>
-            <Item>
-              <List>
+
+              <List dense>
+                <ListItem>
+                  <ListItemText>Contact AVITA</ListItemText>
+                </ListItem>
                 <ListItem>
                   <ListItemText>Services</ListItemText>
                 </ListItem>
@@ -89,49 +73,119 @@ export default function Footer() {
                 <ListItem>
                   <ListItemText>Privacy Policy</ListItemText>
                 </ListItem>
-                <ListItem>
-                  <ListItemText>Career</ListItemText>
-                </ListItem>
+
               </List>
-            </Item>
-          </Grid>
-          <Grid item xs={2}>
-            <Item>
-              <List>
-                <ListItem>
-                  <ListItemText>NEXSTMALL</ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemText>Flipkart</ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemText>Amazon</ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemText>Paytm Mall</ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemText>Reliance Digital</ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemText>Tata Cliq</ListItemText>
-                </ListItem>
+
               </List>
-            </Item>
-          </Grid>
-          <Grid item xs={2}>
 
-          </Grid>
 
-          <Grid item xs={2}>
-            <Item>
-              <h6>INDIA</h6>
-            </Item>
-          </Grid>
-        </Grid>
+            </div>
+            <div className='container-fluid mt-4'><h6><PublicIcon/> INDIA</h6></div>
+            
 
-      </section>
-        <Copyright />
-    </>
+            <Copyright />
+          </>
+        )
+          :
+          (
+            <>
+              <FooterTop />
+
+              <section className='container'>
+                <Grid container>
+                  <Grid item xs={2}>
+                    <Item>
+                      <List>
+                        <ListItem>
+                          <ListItemText>Products</ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>News</ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>About Us</ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>Blogs</ListItemText>
+                        </ListItem>
+                      </List>
+                    </Item>
+                  </Grid>
+                  <Grid item xs={2}>
+                    <Item>
+                      <List>
+                        <ListItem>
+                          <ListItemText>Where to Buy</ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>Contact AVITA</ListItemText>
+                        </ListItem>
+                      </List>
+                    </Item>
+                  </Grid>
+                  <Grid item xs={2}>
+                    <Item>
+                      <List>
+                        <ListItem>
+                          <ListItemText>Services</ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>Repair Terms and Condition</ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>Terms of Use Notice</ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>Privacy Policy</ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>Career</ListItemText>
+                        </ListItem>
+                      </List>
+                    </Item>
+                  </Grid>
+                  <Grid item xs={2}>
+                    <Item>
+                      <List>
+                        <ListItem>
+                          <ListItemText>NEXSTMALL</ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>Flipkart</ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>Amazon</ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>Paytm Mall</ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>Reliance Digital</ListItemText>
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText>Tata Cliq</ListItemText>
+                        </ListItem>
+                      </List>
+                    </Item>
+                  </Grid>
+                  <Grid item xs={2}>
+
+                  </Grid>
+
+                  <Grid item xs={2}>
+                    <Item>
+                      <h6><PublicIcon/> INDIA</h6>
+                    </Item>
+                  </Grid>
+                </Grid>
+
+              </section>
+              <Copyright />
+            </>
+          )
+
+      }
+    </section>
+
   )
 }
