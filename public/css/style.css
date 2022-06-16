@@ -404,7 +404,7 @@ button.btn-outline-submit:hover{
 }
 
 .MuiGrid-root{
-    background-color: #fff!important;
+    background-color: #fff;
     height: 50px;
     padding: 10px;
 }
@@ -422,10 +422,10 @@ button.btn-outline-submit:hover{
     fill: #662d91!important;
     cursor: pointer;
 }
-
+/* 
 .MuiGrid-container{
     background-color: #fafafa!important;
-}
+} */
 
 .MuiGrid-grid-xs-8{
     background-color: #fafafa!important;

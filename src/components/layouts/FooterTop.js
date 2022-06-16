@@ -25,7 +25,7 @@ export const FooterTop = () => {
     const matchDownMd = useMediaQuery(theme.breakpoints.down('sm'));
 
     return (
-        <section className='container-fluid'>
+        <section className='container-fluid' sx={{ backgroundColor:'#fff'}}>
             {
                 matchDownMd ? (
                 <> 
