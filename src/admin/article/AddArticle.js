@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import { Editor } from "react-draft-wysiwyg";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
-import Sidebar from '../layouts/Sidebar';
 import WebBanner from '../../img/web_banner_preview.jpg';
 import MobBanner from '../../img/mob_banner_preview.jpg';
 import editIcon from '../../icons/edit.svg';
+import SideDrawer from "../layouts/SideDrawer";
 
 
 export default function AddArticle() {
@@ -19,7 +19,7 @@ export default function AddArticle() {
     return (
         <div className='row'>
             <div className='col-md-2'>
-                <Sidebar />
+                <SideDrawer />
             </div>
             <div className='card col-md-10 p-4'>
                 <div className="row">

@@ -1,12 +1,12 @@
 import React from 'react';
-import Sidebar from '../layouts/Sidebar';
 import Product from '../../img/Product.png';
+import SideDrawer from '../layouts/SideDrawer';
 
 export default function WarrantyDetails() {
   return (
     <div className='row'>
     <div className='col-md-2'>
-      <Sidebar />
+      <SideDrawer />
     </div>
     <div className='card col-md-10 p-4'>
       <div className='row'>

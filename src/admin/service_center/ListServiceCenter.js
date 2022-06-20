@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Sidebar from '../layouts/Sidebar';
+import SideDrawer from '../layouts/SideDrawer';
 
 
 export default function ListServiceCenter() {
@@ -8,7 +8,7 @@ export default function ListServiceCenter() {
     <div className='row'>
 
       <div className='col-md-2'>
-        <Sidebar />
+        <SideDrawer />
       </div>
       <div className='card col-md-10 p-4'>
 

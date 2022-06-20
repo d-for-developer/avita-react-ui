@@ -1,6 +1,6 @@
 import React from 'react';
-import Sidebar from '../layouts/Sidebar';
 import { Link } from 'react-router-dom';
+import SideDrawer from '../layouts/SideDrawer';
 
 
 
@@ -9,7 +9,7 @@ export default function Categories() {
     <div className='row'>
 
       <div className='col-md-2'>
-        <Sidebar />
+        <SideDrawer />
       </div>
       <div className='card col-md-10 p-4'>
 

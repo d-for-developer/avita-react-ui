@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Sidebar from '../layouts/Sidebar';
+import SideDrawer from '../layouts/SideDrawer';
 import MobBanner from '../../img/mob_banner.jpg';
 import WebBanner from '../../img/web_banner.jpg';
 
@@ -12,7 +12,7 @@ export default function ListBanners() {
         <div className='row'>
 
             <div className='col-md-2'>
-                <Sidebar />
+                <SideDrawer/>
             </div>
             <div className='card col-md-10 p-4'>
 

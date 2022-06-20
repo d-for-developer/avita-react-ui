@@ -1,6 +1,6 @@
 import React from 'react';
-import Sidebar from '../layouts/Sidebar';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis } from 'recharts';
+import SideDrawer from '../layouts/SideDrawer';
 const data = [{ name: '01 March', uv: 400, pv: 2400, amt: 2000 },
  { name: '08 March', uv: 800, pv: 2100, amt: 3400 }, 
  { name: '15 March', uv: 3500, pv: 2700, amt: 5400 },
@@ -12,7 +12,7 @@ export default function Analytics() {
   return (
     <div className='row'>
     <div className='col-md-2'>
-      <Sidebar />
+      <SideDrawer />
     </div>
     <div className='col-md-10'>
 
