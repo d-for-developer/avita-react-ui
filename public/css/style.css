@@ -445,11 +445,16 @@ h6{
 p{
     background-color: #fafafa!important;
 }
-.css-1o7apob-MuiGrid-root{
-    background-color: #fafafa!important;
-}
+
 
 section.MuiGrid-root{
     background-color: #fafafa!important;
 
 }
+
+.heading-main{
+    border-bottom: 1px solid rgb(223, 223, 223);
+    
+}
+
+

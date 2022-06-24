@@ -3,6 +3,31 @@ import React from 'react'
 import { LineChart, Line, CartesianGrid, XAxis, YAxis } from 'recharts';
 import Sidebar from './layouts/Sidebar';
 import SideDrawer from './layouts/SideDrawer';
+import { styled } from '@mui/material/styles';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
+import Avatar from '@mui/material/Avatar';
+import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
+import HowToRegOutlinedIcon from '@mui/icons-material/HowToRegOutlined';
+import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
+import TodayOutlinedIcon from '@mui/icons-material/TodayOutlined';
+import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
+
+
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
+
+
 const data = [{ name: '01 March', uv: 400, pv: 2400, amt: 2000 },
 { name: '08 March', uv: 800, pv: 2100, amt: 3400 },
 { name: '15 March', uv: 3500, pv: 2700, amt: 5400 },
@@ -17,184 +42,385 @@ export default function Dashboard() {
 
 
   return (
-    <div className='row'>
-      <div className='col-md-2'>
+    <Grid container spacing={2} sx={{ height: '100vh', overflowY: 'hidden' }}>
+      <Grid item xs={2} md={2}>
         {
-          isMatch?<Sidebar/>:<SideDrawer/>
+          isMatch ? <Sidebar /> : <SideDrawer />
         }
-      </div>
-      <div className='col-md-10'>
 
-        <div className='row'>
-          <h3 className="text-left my-4 text-center">Admin Home Page</h3>
-          <hr />
-          <div className='col-md-3 mb-2'>
+      </Grid>
 
-            <div className='product-card'>
+      <Grid item xs={10} md={10}>
+      <Typography variant="h5" component="div" align="center">
+      Admin Home
 
-              <h5 className="text-left">Customers</h5>
+      </Typography>
 
-              <div className='row'>
-                <div className='col-md-6 mt-5 mb-5'>
+        <Grid container spacing={2} sx={{ height: '100vh', overflowY: 'hidden' }}>
+          
+          <Grid item xs={12} md={3}>
+            <Item>
+              {
+                isMatch ? (
+                  <>
+                    <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                      <ListItem>
+                        <ListItemAvatar>
+                          <Avatar>
+                            <PersonOutlinedIcon />
+                          </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText primary="Total" secondary="123 Customers" />
+                      </ListItem>
+                      <ListItem>
+                        <ListItemAvatar>
+                          <Avatar>
+                            <HowToRegOutlinedIcon />
+                          </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText primary="Registered" secondary="100 Customers" />
+                      </ListItem>
+                      <ListItem>
+                        <ListItemAvatar>
+                          <Avatar>
+                            <TodayOutlinedIcon />
+                          </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText primary="Last Week" secondary="15 Customers" />
+                      </ListItem>
+                      <ListItem>
+                        <ListItemAvatar>
+                          <Avatar>
+                            <CalendarMonthOutlinedIcon />
+                          </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText primary="Last Month" secondary="150 Customers" />
+                      </ListItem>
+                    </List>
+                    <h6 className='text-center p-3'><a href='/'>View More</a></h6>
 
-                  <h6 className="text-left">Total Count:</h6>
-                  <h6 className="text-left">Registered:</h6>
-                  <h6 className="text-left">Last Week:</h6>
-                  <h6 className="text-left">Last Month:</h6>
+                  </>
 
-                </div>
+                ) :
+                  (
+                    <>
+                      <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <Avatar>
+                              <PersonOutlinedIcon />
+                            </Avatar>
+                          </ListItemAvatar>
+                          <ListItemText primary="Total" secondary="123 Customers" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <Avatar>
+                              <HowToRegOutlinedIcon />
+                            </Avatar>
+                          </ListItemAvatar>
+                          <ListItemText primary="Registered" secondary="100 Customers" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <Avatar>
+                              <TodayOutlinedIcon />
+                            </Avatar>
+                          </ListItemAvatar>
+                          <ListItemText primary="Last Week" secondary="15 Customers" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <Avatar>
+                              <CalendarMonthOutlinedIcon />
+                            </Avatar>
+                          </ListItemAvatar>
+                          <ListItemText primary="Last Month" secondary="150 Customers" />
+                        </ListItem>
 
-
-                <div className='col-md-6 mt-5 mb-5'>
-                  <h6 className='mt-2'>123 <small>Customers</small></h6>
-                  <h6 className='mt-2'>456 <small>Customers</small></h6>
-                  <h6 className='mt-2'>789 <small>Customers</small></h6>
-                  <h6 className='mt-2'>741 <small>Customers</small></h6>
-                </div>
-                <h6 className='text-center'><a href='/'>View More</a></h6>
-
-              </div>
-            </div>
-
-
-          </div>
-
-
-          <div className='col-md-3 mb-2'>
-
-            <div className='product-card'>
-
-              <h5 className="text-left">Products</h5>
-
-              <div className='row'>
-                <div className='col-md-6 mt-5 mb-5'>
-
-                  <h6 className="text-left">Total Count:</h6>
-                  <h6 className="text-left">Registered:</h6>
-                  <h6 className="text-left">Last Week:</h6>
-                  <h6 className="text-left">Last Month:</h6>
-
-                </div>
-
-
-                <div className='col-md-6 mt-5 mb-5'>
-                  <h6 className='mt-2'>123 <small>Products</small></h6>
-                  <h6 className='mt-2'>456 <small>Products</small></h6>
-                  <h6 className='mt-2'>789 <small>Products</small></h6>
-                  <h6 className='mt-2'>741 <small>Products</small></h6>
-                </div>
-
-              </div>
-              <h6 className='text-center'><a href='/'>View More</a></h6>
-
-            </div>
-
-
-          </div>
-
-
-          <div className='col-md-3 mb-2'>
-
-            <div className='product-card'>
-
-              <h5 className="text-left">Warranty Registered</h5>
-
-              <div className='row'>
-                <div className='col-md-6 mt-5 mb-5'>
-
-                  <h6 className="text-left">Total Count:</h6>
-                  <h6 className="text-left">Expired:</h6>
-                  <h6 className="text-left">Last Week:</h6>
-                  <h6 className="text-left">Last Month:</h6>
-                </div>
-
-
-                <div className='col-md-6 mt-5 mb-5'>
-                  <h6 className='mt-2'>123 <small>Registered</small></h6>
-                  <h6 className='mt-2'>456 <small>Registered</small></h6>
-                  <h6 className='mt-2'>789 <small>Registered</small></h6>
-                  <h6 className='mt-2'>741 <small>Registered</small></h6>
-                </div>
-
-              </div>
-              <h6 className='text-center'><a href='/'>View More</a></h6>
-
-            </div>
+                      </List>
+                      <h6 className='text-center p-3'><a href='/'>View More</a></h6>
 
 
-          </div>
+                    </>
+                  )
+              }
+
+            </Item>
+          </Grid>
+          <Grid item xs={12} md={3}>
+            <Item>
+              {
+                isMatch ? (
+                  <>
+                    <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                      <ListItem>
+                        <ListItemAvatar>
+                          <Avatar>
+                            <PersonOutlinedIcon />
+                          </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText primary="Total" secondary="123 Customers" />
+                      </ListItem>
+                      <ListItem>
+                        <ListItemAvatar>
+                          <Avatar>
+                            <HowToRegOutlinedIcon />
+                          </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText primary="Registered" secondary="100 Customers" />
+                      </ListItem>
+                      <ListItem>
+                        <ListItemAvatar>
+                          <Avatar>
+                            <TodayOutlinedIcon />
+                          </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText primary="Last Week" secondary="15 Customers" />
+                      </ListItem>
+                      <ListItem>
+                        <ListItemAvatar>
+                          <Avatar>
+                            <CalendarMonthOutlinedIcon />
+                          </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText primary="Last Month" secondary="150 Customers" />
+                      </ListItem>
+                    </List>
+                    <h6 className='text-center p-3'><a href='/'>View More</a></h6>
+
+                  </>
+
+                ) :
+                  (
+                    <>
+                      <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <Avatar>
+                              <PersonOutlinedIcon />
+                            </Avatar>
+                          </ListItemAvatar>
+                          <ListItemText primary="Total" secondary="123 Customers" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <Avatar>
+                              <HowToRegOutlinedIcon />
+                            </Avatar>
+                          </ListItemAvatar>
+                          <ListItemText primary="Registered" secondary="100 Customers" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <Avatar>
+                              <TodayOutlinedIcon />
+                            </Avatar>
+                          </ListItemAvatar>
+                          <ListItemText primary="Last Week" secondary="15 Customers" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <Avatar>
+                              <CalendarMonthOutlinedIcon />
+                            </Avatar>
+                          </ListItemAvatar>
+                          <ListItemText primary="Last Month" secondary="150 Customers" />
+                        </ListItem>
+
+                      </List>
+                      <h6 className='text-center p-3'><a href='/'>View More</a></h6>
 
 
-          <div className='col-md-3 mb-2'>
+                    </>
+                  )
+              }
 
-            <div className='product-card'>
+            </Item>
+          </Grid>
+          <Grid item xs={12} md={3}>
+            <Item>
+              {
+                isMatch ? (
+                  <>
+                    <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                      <ListItem>
+                        <ListItemAvatar>
+                          <Avatar>
+                            <PersonOutlinedIcon />
+                          </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText primary="Total" secondary="123 Customers" />
+                      </ListItem>
+                      <ListItem>
+                        <ListItemAvatar>
+                          <Avatar>
+                            <HowToRegOutlinedIcon />
+                          </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText primary="Registered" secondary="100 Customers" />
+                      </ListItem>
+                      <ListItem>
+                        <ListItemAvatar>
+                          <Avatar>
+                            <TodayOutlinedIcon />
+                          </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText primary="Last Week" secondary="15 Customers" />
+                      </ListItem>
+                      <ListItem>
+                        <ListItemAvatar>
+                          <Avatar>
+                            <CalendarMonthOutlinedIcon />
+                          </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText primary="Last Month" secondary="150 Customers" />
+                      </ListItem>
+                    </List>
+                    <h6 className='text-center p-3'><a href='/'>View More</a></h6>
 
-              <h5 className="text-left">Invoices</h5>
+                  </>
 
-              <div className='row'>
-                <div className='col-md-6 mt-5 mb-5'>
+                ) :
+                  (
+                    <>
+                      <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <Avatar>
+                              <PersonOutlinedIcon />
+                            </Avatar>
+                          </ListItemAvatar>
+                          <ListItemText primary="Total" secondary="123 Customers" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <Avatar>
+                              <HowToRegOutlinedIcon />
+                            </Avatar>
+                          </ListItemAvatar>
+                          <ListItemText primary="Registered" secondary="100 Customers" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <Avatar>
+                              <TodayOutlinedIcon />
+                            </Avatar>
+                          </ListItemAvatar>
+                          <ListItemText primary="Last Week" secondary="15 Customers" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <Avatar>
+                              <CalendarMonthOutlinedIcon />
+                            </Avatar>
+                          </ListItemAvatar>
+                          <ListItemText primary="Last Month" secondary="150 Customers" />
+                        </ListItem>
 
-                  <h6 className="text-left">Total Count:</h6>
-                  <h6 className="text-left">Verified:</h6>
-                  <h6 className="text-left">Last Week:</h6>
-                  <h6 className="text-left">Last Month:</h6>
-                </div>
-
-
-                <div className='col-md-6 mt-5 mb-5'>
-                  <h6 className='mt-2'>123 <small>Invoices</small></h6>
-                  <h6 className='mt-2'>456 <small>Invoices</small></h6>
-                  <h6 className='mt-2'>789 <small>Invoices</small></h6>
-                  <h6 className='mt-2'>741 <small>Invoices</small></h6>
-                </div>
-
-              </div>
-              <h6 className='text-center'><a href='/'>View More</a></h6>
-
-            </div>
-
-
-          </div>
-        </div>
-        <div className='row'>
-          <div className='col-md-6 mb-2'>
-            <div className='product-card'>
-              <h5 className="text-center">Visitors Count</h5>
-
-              <LineChart width={720} height={400} data={data}>
-                <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-                <CartesianGrid stroke="#ccc" />
-                <XAxis dataKey="name" />
-                <YAxis />
-              </LineChart>
-              <h6 className='text-center'><a href='/'>View More</a></h6>
-
-
-            </div>
-          </div>
+                      </List>
+                      <h6 className='text-center p-3'><a href='/'>View More</a></h6>
 
 
-          <div className='col-md-6 mb-2'>
-            <div className='product-card'>
-              <h5 className="text-center">Warranty Count</h5>
+                    </>
+                  )
+              }
 
-              <LineChart width={720} height={400} data={data}>
-                <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-                <CartesianGrid stroke="#ccc" />
-                <XAxis dataKey="name" />
-                <YAxis />
-              </LineChart>
-              <h6 className='text-center'><a href='/'>View More</a></h6>
+            </Item>
+          </Grid>
+          <Grid item xs={12} md={3}>
+            <Item>
+              {
+                isMatch ? (
+                  <>
+                    <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                      <ListItem>
+                        <ListItemAvatar>
+                          <Avatar>
+                            <PersonOutlinedIcon />
+                          </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText primary="Total" secondary="123 Customers" />
+                      </ListItem>
+                      <ListItem>
+                        <ListItemAvatar>
+                          <Avatar>
+                            <HowToRegOutlinedIcon />
+                          </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText primary="Registered" secondary="100 Customers" />
+                      </ListItem>
+                      <ListItem>
+                        <ListItemAvatar>
+                          <Avatar>
+                            <TodayOutlinedIcon />
+                          </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText primary="Last Week" secondary="15 Customers" />
+                      </ListItem>
+                      <ListItem>
+                        <ListItemAvatar>
+                          <Avatar>
+                            <CalendarMonthOutlinedIcon />
+                          </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText primary="Last Month" secondary="150 Customers" />
+                      </ListItem>
+                    </List>
+                    <h6 className='text-center p-3'><a href='/'>View More</a></h6>
+
+                  </>
+
+                ) :
+                  (
+                    <>
+                      <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <Avatar>
+                              <PersonOutlinedIcon />
+                            </Avatar>
+                          </ListItemAvatar>
+                          <ListItemText primary="Total" secondary="123 Customers" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <Avatar>
+                              <HowToRegOutlinedIcon />
+                            </Avatar>
+                          </ListItemAvatar>
+                          <ListItemText primary="Registered" secondary="100 Customers" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <Avatar>
+                              <TodayOutlinedIcon />
+                            </Avatar>
+                          </ListItemAvatar>
+                          <ListItemText primary="Last Week" secondary="15 Customers" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemAvatar>
+                            <Avatar>
+                              <CalendarMonthOutlinedIcon />
+                            </Avatar>
+                          </ListItemAvatar>
+                          <ListItemText primary="Last Month" secondary="150 Customers" />
+                        </ListItem>
+
+                      </List>
+                      <h6 className='text-center p-3'><a href='/'>View More</a></h6>
 
 
+                    </>
+                  )
+              }
 
-            </div>
-          </div>
+            </Item>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Grid>
 
-        </div>
-
-
-      </div>
-    </div>
   )
 }

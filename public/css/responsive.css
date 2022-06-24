@@ -162,6 +162,12 @@
         padding-bottom: 0px;
     }
 
+    .MuiGrid-item{
+        height: 100vh;
+        overflow-y: hidden;
+    }
+
+
 
 }
 
