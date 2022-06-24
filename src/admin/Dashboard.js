@@ -51,18 +51,59 @@ export default function Dashboard() {
       </Grid>
 
       <Grid item xs={10} md={10}>
-      <Typography variant="h5" component="div" align="center">
-      Admin Home
+        <Typography variant="h5" component="div" align="center">
+          Admin Home
 
-      </Typography>
+        </Typography>
 
         <Grid container spacing={2} sx={{ height: '100vh', overflowY: 'hidden' }}>
+        
+              <Grid item xs={12} md={3}>
+                <Item>
+
+                  <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                    <ListItem>
+                      <ListItemAvatar>
+                        <Avatar>
+                          <PersonOutlinedIcon />
+                        </Avatar>
+                      </ListItemAvatar>
+                      <ListItemText primary="Total" secondary="123 Customers" />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemAvatar>
+                        <Avatar>
+                          <HowToRegOutlinedIcon />
+                        </Avatar>
+                      </ListItemAvatar>
+                      <ListItemText primary="Registered" secondary="100 Customers" />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemAvatar>
+                        <Avatar>
+                          <TodayOutlinedIcon />
+                        </Avatar>
+                      </ListItemAvatar>
+                      <ListItemText primary="Last Week" secondary="15 Customers" />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemAvatar>
+                        <Avatar>
+                          <CalendarMonthOutlinedIcon />
+                        </Avatar>
+                      </ListItemAvatar>
+                      <ListItemText primary="Last Month" secondary="150 Customers" />
+                    </ListItem>
+                  </List>
+                  <h6 className='text-center p-3'><a href='/'>View More</a></h6>
+
+
+                </Item>
+              </Grid>
           
-          <Grid item xs={12} md={3}>
-            <Item>
-              {
-                isMatch ? (
-                  <>
+                <Grid item xs={12} md={3}>
+                  <Item>
+
                     <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
                       <ListItem>
                         <ListItemAvatar>
@@ -99,325 +140,11 @@ export default function Dashboard() {
                     </List>
                     <h6 className='text-center p-3'><a href='/'>View More</a></h6>
 
-                  </>
 
-                ) :
-                  (
-                    <>
-                      <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-                        <ListItem>
-                          <ListItemAvatar>
-                            <Avatar>
-                              <PersonOutlinedIcon />
-                            </Avatar>
-                          </ListItemAvatar>
-                          <ListItemText primary="Total" secondary="123 Customers" />
-                        </ListItem>
-                        <ListItem>
-                          <ListItemAvatar>
-                            <Avatar>
-                              <HowToRegOutlinedIcon />
-                            </Avatar>
-                          </ListItemAvatar>
-                          <ListItemText primary="Registered" secondary="100 Customers" />
-                        </ListItem>
-                        <ListItem>
-                          <ListItemAvatar>
-                            <Avatar>
-                              <TodayOutlinedIcon />
-                            </Avatar>
-                          </ListItemAvatar>
-                          <ListItemText primary="Last Week" secondary="15 Customers" />
-                        </ListItem>
-                        <ListItem>
-                          <ListItemAvatar>
-                            <Avatar>
-                              <CalendarMonthOutlinedIcon />
-                            </Avatar>
-                          </ListItemAvatar>
-                          <ListItemText primary="Last Month" secondary="150 Customers" />
-                        </ListItem>
+                  </Item>
+                </Grid>
+              
 
-                      </List>
-                      <h6 className='text-center p-3'><a href='/'>View More</a></h6>
-
-
-                    </>
-                  )
-              }
-
-            </Item>
-          </Grid>
-          <Grid item xs={12} md={3}>
-            <Item>
-              {
-                isMatch ? (
-                  <>
-                    <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-                      <ListItem>
-                        <ListItemAvatar>
-                          <Avatar>
-                            <PersonOutlinedIcon />
-                          </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary="Total" secondary="123 Customers" />
-                      </ListItem>
-                      <ListItem>
-                        <ListItemAvatar>
-                          <Avatar>
-                            <HowToRegOutlinedIcon />
-                          </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary="Registered" secondary="100 Customers" />
-                      </ListItem>
-                      <ListItem>
-                        <ListItemAvatar>
-                          <Avatar>
-                            <TodayOutlinedIcon />
-                          </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary="Last Week" secondary="15 Customers" />
-                      </ListItem>
-                      <ListItem>
-                        <ListItemAvatar>
-                          <Avatar>
-                            <CalendarMonthOutlinedIcon />
-                          </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary="Last Month" secondary="150 Customers" />
-                      </ListItem>
-                    </List>
-                    <h6 className='text-center p-3'><a href='/'>View More</a></h6>
-
-                  </>
-
-                ) :
-                  (
-                    <>
-                      <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-                        <ListItem>
-                          <ListItemAvatar>
-                            <Avatar>
-                              <PersonOutlinedIcon />
-                            </Avatar>
-                          </ListItemAvatar>
-                          <ListItemText primary="Total" secondary="123 Customers" />
-                        </ListItem>
-                        <ListItem>
-                          <ListItemAvatar>
-                            <Avatar>
-                              <HowToRegOutlinedIcon />
-                            </Avatar>
-                          </ListItemAvatar>
-                          <ListItemText primary="Registered" secondary="100 Customers" />
-                        </ListItem>
-                        <ListItem>
-                          <ListItemAvatar>
-                            <Avatar>
-                              <TodayOutlinedIcon />
-                            </Avatar>
-                          </ListItemAvatar>
-                          <ListItemText primary="Last Week" secondary="15 Customers" />
-                        </ListItem>
-                        <ListItem>
-                          <ListItemAvatar>
-                            <Avatar>
-                              <CalendarMonthOutlinedIcon />
-                            </Avatar>
-                          </ListItemAvatar>
-                          <ListItemText primary="Last Month" secondary="150 Customers" />
-                        </ListItem>
-
-                      </List>
-                      <h6 className='text-center p-3'><a href='/'>View More</a></h6>
-
-
-                    </>
-                  )
-              }
-
-            </Item>
-          </Grid>
-          <Grid item xs={12} md={3}>
-            <Item>
-              {
-                isMatch ? (
-                  <>
-                    <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-                      <ListItem>
-                        <ListItemAvatar>
-                          <Avatar>
-                            <PersonOutlinedIcon />
-                          </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary="Total" secondary="123 Customers" />
-                      </ListItem>
-                      <ListItem>
-                        <ListItemAvatar>
-                          <Avatar>
-                            <HowToRegOutlinedIcon />
-                          </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary="Registered" secondary="100 Customers" />
-                      </ListItem>
-                      <ListItem>
-                        <ListItemAvatar>
-                          <Avatar>
-                            <TodayOutlinedIcon />
-                          </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary="Last Week" secondary="15 Customers" />
-                      </ListItem>
-                      <ListItem>
-                        <ListItemAvatar>
-                          <Avatar>
-                            <CalendarMonthOutlinedIcon />
-                          </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary="Last Month" secondary="150 Customers" />
-                      </ListItem>
-                    </List>
-                    <h6 className='text-center p-3'><a href='/'>View More</a></h6>
-
-                  </>
-
-                ) :
-                  (
-                    <>
-                      <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-                        <ListItem>
-                          <ListItemAvatar>
-                            <Avatar>
-                              <PersonOutlinedIcon />
-                            </Avatar>
-                          </ListItemAvatar>
-                          <ListItemText primary="Total" secondary="123 Customers" />
-                        </ListItem>
-                        <ListItem>
-                          <ListItemAvatar>
-                            <Avatar>
-                              <HowToRegOutlinedIcon />
-                            </Avatar>
-                          </ListItemAvatar>
-                          <ListItemText primary="Registered" secondary="100 Customers" />
-                        </ListItem>
-                        <ListItem>
-                          <ListItemAvatar>
-                            <Avatar>
-                              <TodayOutlinedIcon />
-                            </Avatar>
-                          </ListItemAvatar>
-                          <ListItemText primary="Last Week" secondary="15 Customers" />
-                        </ListItem>
-                        <ListItem>
-                          <ListItemAvatar>
-                            <Avatar>
-                              <CalendarMonthOutlinedIcon />
-                            </Avatar>
-                          </ListItemAvatar>
-                          <ListItemText primary="Last Month" secondary="150 Customers" />
-                        </ListItem>
-
-                      </List>
-                      <h6 className='text-center p-3'><a href='/'>View More</a></h6>
-
-
-                    </>
-                  )
-              }
-
-            </Item>
-          </Grid>
-          <Grid item xs={12} md={3}>
-            <Item>
-              {
-                isMatch ? (
-                  <>
-                    <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-                      <ListItem>
-                        <ListItemAvatar>
-                          <Avatar>
-                            <PersonOutlinedIcon />
-                          </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary="Total" secondary="123 Customers" />
-                      </ListItem>
-                      <ListItem>
-                        <ListItemAvatar>
-                          <Avatar>
-                            <HowToRegOutlinedIcon />
-                          </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary="Registered" secondary="100 Customers" />
-                      </ListItem>
-                      <ListItem>
-                        <ListItemAvatar>
-                          <Avatar>
-                            <TodayOutlinedIcon />
-                          </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary="Last Week" secondary="15 Customers" />
-                      </ListItem>
-                      <ListItem>
-                        <ListItemAvatar>
-                          <Avatar>
-                            <CalendarMonthOutlinedIcon />
-                          </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary="Last Month" secondary="150 Customers" />
-                      </ListItem>
-                    </List>
-                    <h6 className='text-center p-3'><a href='/'>View More</a></h6>
-
-                  </>
-
-                ) :
-                  (
-                    <>
-                      <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-                        <ListItem>
-                          <ListItemAvatar>
-                            <Avatar>
-                              <PersonOutlinedIcon />
-                            </Avatar>
-                          </ListItemAvatar>
-                          <ListItemText primary="Total" secondary="123 Customers" />
-                        </ListItem>
-                        <ListItem>
-                          <ListItemAvatar>
-                            <Avatar>
-                              <HowToRegOutlinedIcon />
-                            </Avatar>
-                          </ListItemAvatar>
-                          <ListItemText primary="Registered" secondary="100 Customers" />
-                        </ListItem>
-                        <ListItem>
-                          <ListItemAvatar>
-                            <Avatar>
-                              <TodayOutlinedIcon />
-                            </Avatar>
-                          </ListItemAvatar>
-                          <ListItemText primary="Last Week" secondary="15 Customers" />
-                        </ListItem>
-                        <ListItem>
-                          <ListItemAvatar>
-                            <Avatar>
-                              <CalendarMonthOutlinedIcon />
-                            </Avatar>
-                          </ListItemAvatar>
-                          <ListItemText primary="Last Month" secondary="150 Customers" />
-                        </ListItem>
-
-                      </List>
-                      <h6 className='text-center p-3'><a href='/'>View More</a></h6>
-
-
-                    </>
-                  )
-              }
-
-            </Item>
-          </Grid>
         </Grid>
       </Grid>
     </Grid>
