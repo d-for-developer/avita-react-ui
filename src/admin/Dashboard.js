@@ -17,6 +17,7 @@ import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined
 import TodayOutlinedIcon from '@mui/icons-material/TodayOutlined';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
+import Box from '@mui/material/Box';
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -38,10 +39,11 @@ const data = [{ name: '01 March', uv: 400, pv: 2400, amt: 2000 },
 export default function Dashboard() {
 
   const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
+  const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
 
 
   return (
+    <Box sx={{ flexGrow: 1 }}>
     <Grid container spacing={2} sx={{ height: '100vh', overflowY: 'hidden' }}>
       <Grid item xs={2} md={2}>
         {
@@ -53,101 +55,236 @@ export default function Dashboard() {
       <Grid item xs={10} md={10}>
         <Typography variant="h5" component="div" align="center">
           Admin Home
-
         </Typography>
 
-        <Grid container spacing={2} sx={{ height: '100vh', overflowY: 'hidden' }}>
-        
-              <Grid item xs={12} md={3}>
-                <Item>
+        <Divider/>
 
-                  <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-                    <ListItem>
-                      <ListItemAvatar>
-                        <Avatar>
-                          <PersonOutlinedIcon />
-                        </Avatar>
-                      </ListItemAvatar>
-                      <ListItemText primary="Total" secondary="123 Customers" />
-                    </ListItem>
-                    <ListItem>
-                      <ListItemAvatar>
-                        <Avatar>
-                          <HowToRegOutlinedIcon />
-                        </Avatar>
-                      </ListItemAvatar>
-                      <ListItemText primary="Registered" secondary="100 Customers" />
-                    </ListItem>
-                    <ListItem>
-                      <ListItemAvatar>
-                        <Avatar>
-                          <TodayOutlinedIcon />
-                        </Avatar>
-                      </ListItemAvatar>
-                      <ListItemText primary="Last Week" secondary="15 Customers" />
-                    </ListItem>
-                    <ListItem>
-                      <ListItemAvatar>
-                        <Avatar>
-                          <CalendarMonthOutlinedIcon />
-                        </Avatar>
-                      </ListItemAvatar>
-                      <ListItemText primary="Last Month" secondary="150 Customers" />
-                    </ListItem>
-                  </List>
-                  <h6 className='text-center p-3'><a href='/'>View More</a></h6>
+        <Grid container spacing={2} sx={{ height: '100vh' }}>
 
+          <Grid item xs={12} md={3} sx={{ marginTop: '35px' }}>
+          <h5 className="text-center">Visitors Count 1</h5>
 
-                </Item>
-              </Grid>
-          
-                <Grid item xs={12} md={3}>
-                  <Item>
+            <Item>
 
-                    <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-                      <ListItem>
-                        <ListItemAvatar>
-                          <Avatar>
-                            <PersonOutlinedIcon />
-                          </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary="Total" secondary="123 Customers" />
-                      </ListItem>
-                      <ListItem>
-                        <ListItemAvatar>
-                          <Avatar>
-                            <HowToRegOutlinedIcon />
-                          </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary="Registered" secondary="100 Customers" />
-                      </ListItem>
-                      <ListItem>
-                        <ListItemAvatar>
-                          <Avatar>
-                            <TodayOutlinedIcon />
-                          </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary="Last Week" secondary="15 Customers" />
-                      </ListItem>
-                      <ListItem>
-                        <ListItemAvatar>
-                          <Avatar>
-                            <CalendarMonthOutlinedIcon />
-                          </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary="Last Month" secondary="150 Customers" />
-                      </ListItem>
-                    </List>
-                    <h6 className='text-center p-3'><a href='/'>View More</a></h6>
+              <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <PersonOutlinedIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary="Total" secondary="123 Customers" />
+                </ListItem>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <HowToRegOutlinedIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary="Registered" secondary="100 Customers" />
+                </ListItem>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <TodayOutlinedIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary="Last Week" secondary="15 Customers" />
+                </ListItem>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <CalendarMonthOutlinedIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary="Last Month" secondary="150 Customers" />
+                </ListItem>
+              </List>
+              <h6 className='text-center p-3'><a href='/'>View More</a></h6>
 
 
-                  </Item>
-                </Grid>
-              
+            </Item>
+          </Grid>
 
+          <Grid item xs={12} md={3} sx={{ marginTop: '35px' }}>
+          <h5 className="text-center">Visitors Count 2</h5>
+
+            <Item>
+
+              <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <PersonOutlinedIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary="Total" secondary="123 Customers" />
+                </ListItem>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <HowToRegOutlinedIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary="Registered" secondary="100 Customers" />
+                </ListItem>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <TodayOutlinedIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary="Last Week" secondary="15 Customers" />
+                </ListItem>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <CalendarMonthOutlinedIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary="Last Month" secondary="150 Customers" />
+                </ListItem>
+              </List>
+              <h6 className='text-center p-3'><a href='/'>View More</a></h6>
+
+
+            </Item>
+          </Grid>
+
+          <Grid item xs={12} md={3} sx={{ marginTop: '35px' }}>
+          <h5 className="text-center">Visitors Count 3</h5>
+
+            <Item>
+
+              <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <PersonOutlinedIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary="Total" secondary="123 Customers" />
+                </ListItem>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <HowToRegOutlinedIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary="Registered" secondary="100 Customers" />
+                </ListItem>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <TodayOutlinedIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary="Last Week" secondary="15 Customers" />
+                </ListItem>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <CalendarMonthOutlinedIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary="Last Month" secondary="150 Customers" />
+                </ListItem>
+              </List>
+              <h6 className='text-center p-3'><a href='/'>View More</a></h6>
+
+
+            </Item>
+          </Grid>
+
+          <Grid item xs={12} md={3} sx={{ marginTop: '35px' }}>
+          <h5 className="text-center">Visitors Count 4</h5>
+
+            <Item>
+
+              <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <PersonOutlinedIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary="Total" secondary="123 Customers" />
+                </ListItem>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <HowToRegOutlinedIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary="Registered" secondary="100 Customers" />
+                </ListItem>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <TodayOutlinedIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary="Last Week" secondary="15 Customers" />
+                </ListItem>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <CalendarMonthOutlinedIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary="Last Month" secondary="150 Customers" />
+                </ListItem>
+              </List>
+              <h6 className='text-center p-3'><a href='/'>View More</a></h6>
+
+
+            </Item>
+          </Grid>
+
+
+
+          <Grid item xs={12} md={6}>
+            <Item>
+              <h5 className="text-center">Visitors Count</h5>
+            
+              <LineChart width={600}
+                        height={400}
+                        data={data}
+                        >
+                <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+                <CartesianGrid stroke="#ccc" />
+                <XAxis dataKey="name" />
+                <YAxis />
+              </LineChart>
+              <h6 className='text-center'><a href='/'>View More</a></h6>
+
+            </Item>
+          </Grid>
+
+          <Grid item xs={12} md={6}>
+            <Item>
+
+              <h5 className="text-center">Visitors Count</h5>
+
+              <LineChart width={720} height={400} data={data}>
+                <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+                <CartesianGrid stroke="#ccc" />
+                <XAxis dataKey="name" />
+                <YAxis />
+              </LineChart>
+              <h6 className='text-center'><a href='/'>View More</a></h6>
+
+
+
+
+            </Item>
+          </Grid>
         </Grid>
+
       </Grid>
     </Grid>
+
+</Box>
 
   )
 }
