@@ -1,58 +1,118 @@
-import React, { useState } from 'react';
-import { Drawer, List, Box, ListItemIcon, ListItemText, ListItemButton, IconButton } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
+import React from 'react';
+import { Link } from "react-router-dom";
 import Logo from '../../img/Logo.png'
 
+export default function Sidebar() {
+    return (
+        <div className="wrapper">
+            <nav id="sidebar">
+                <div className="sidebar-header">
+                    <Logo />
+                </div>
+                <div className="accordion" id="accordionExample">
+                    <div className="sidebar-accordion-item">
+                        <h2 className="accordion-header" id="headingOne">
+                            <button className="sidebar-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#dashboard" aria-expanded="true" aria-controls="dashboard">
+                                <h5 className='mt-2' id="headingOne">Dashboard</h5>
 
-const Sidebar = () => {
-  
-  const PAGES = ["Dashboard", "Banner", "News Events & Blog", "Products", "Warranty Details", "Service", "Settings"];
+                            </button>
 
-  const [openDrawer, setOpenDrawer] = useState(false);
+                        </h2>
+                        <div id="dashboard" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div className="sidebar-accordion-body">
+                                <ul className="list-unstyled components">
 
-  return (
-    <React.Fragment>
-    <Drawer anchor='top' open={openDrawer} onClose={() => setOpenDrawer(false)}>
-        <IconButton onClick={() => setOpenDrawer(!openDrawer)} sx={{ color: "#692c90", right: '40%', top: '15px' }} >
-            <CloseOutlinedIcon />
-        </IconButton>
-        <Box
-            component="img"
-            sx={{
-                height: 21,
-                position: 'absolute',
-                left: '50%',
-                top: '5%',
-                transform: 'translate(-50%, -50%)',
-                zIndex: '1'
-            }}
-            alt="Your logo."
-            src={Logo}
-        />
-        <List sx={{ marginLeft: '2%', marginTop: '15%', height: '100vh' }} >
+                                    <li className="active navlink">
+                                        <Link exact to="/user/dashboard">Home </Link>
 
-            {
-                PAGES.map((pages, index) => (
-                    <ListItemButton key={index}>
-                        <ListItemIcon>
-                            <ListItemText>{pages}<hr /></ListItemText>
-                        </ListItemIcon>
+                                    </li>
+                                </ul>
 
-                    </ListItemButton>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="sidebar-accordion-item">
+                        <h2 className="accordion-header" id="headingOne">
+                            <button className="sidebar-accordion-button" type="button" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#banner" aria-controls="banner">
+                                <h5 className='mt-2' id="headingOne">My Account</h5>
+                            </button>
+
+                        </h2>
+                        <div id="banner" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div className="sidebar-accordion-body">
+                                <ul className="list-unstyled components">
+
+                                    <li className="navlink">
+                                        <Link to="/user/profile">Profile</Link>
+                                    </li>
+                                    <li className="navlink">
+                                        <Link to="/user/change-password">Change Password</Link>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="sidebar-accordion-item">
+                        <h2 className="accordion-header" id="headingOne">
+                            <button className="sidebar-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#news_events_blogs" aria-expanded="false" aria-controls="news_events_blogs">
+                                <h5 className='mt-2' id="headingOne">Support</h5>
+
+                            </button>
+
+                        </h2>
+                        <div id="news_events_blogs" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div className="sidebar-accordion-body">
+                                <ul className="list-unstyled components">
+
+                                    <li className="navlink">
+                                        <Link to="/user/products">My Product</Link>
+                                    </li>
+                                    <li className="navlink">
+                                        <Link to="/user/warranty-registration">Warranty Registration</Link>
+                                    </li>
+                                    <li className="navlink">
+                                        <Link to="/user/contact-us">Contact Us</Link>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="sidebar-accordion-item">
+                        <h2 className="accordion-header" id="headingOne">
+                            <button className="sidebar-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#products" aria-expanded="false" aria-controls="products">
+                                <h5 className='mt-2' id="headingOne">About</h5>
+
+                            </button>
+
+                        </h2>
+                        <div id="products" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div className="sidebar-accordion-body">
+                                <ul className="list-unstyled components">
+
+                                    <li className="navlink">
+                                        <Link to="/user/about">AVITA</Link>
+                                    </li>
+                                    <li className="navlink">
+                                        <Link to="/user/faq">FAQ's</Link>
+                                    </li>
+                                    <li className="navlink">
+                                        <Link to="/user/logout">Logout</Link>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    
+                </div>
+            </nav>
+
+        </div>
 
 
-                ))
-            }
-
-        </List>
-    </Drawer>
-    <IconButton onClick={() => setOpenDrawer(!openDrawer)} sx={{ color: "#692c90", marginRight: 'auto' }} >
-        <MenuIcon />
-    </IconButton>
-
-</React.Fragment>
-  )
+    )
 }
-
-export default Sidebar
