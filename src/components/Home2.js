@@ -1,6 +1,6 @@
 import React from 'react'
 import HomeGrid from './grid/HomeGrid'
-import Footer from './layouts/Footer'
+import Footer from './layouts/Footer-old'
 import Header from './layouts/Header-old'
 import Subscribe from './newsletter/Subscribe'
 import Slider from './banner/Slider'

@@ -6,6 +6,7 @@ import FeatureGrid from './grid/FeatureGrid'
 import ProductGrid from './grid/ProductGrid'
 import BlogGrid from './grid/BlogGrid'
 import BannerImg from './grid/BannerImg'
+import Footer from './layouts/Footer'
 
 
 
@@ -21,7 +22,7 @@ export default function Home() {
     <ProductGrid/>
     <BannerImg/>
     <BlogGrid/>
-
+    <Footer/>
     </>
   )
 }
