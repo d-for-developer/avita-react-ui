@@ -340,7 +340,7 @@ button.btn-outline-submit:hover{
     cursor: pointer;
     user-select: none;
 }
-
+/* 
 .slide{
     opacity: 0;
     transition-duration: 1s ease;
@@ -350,7 +350,7 @@ button.btn-outline-submit:hover{
     opacity: 1;
     transition-duration: 1s;
     transform: scale(1.0);
-}
+} */
 
 .homeGrid{
     position: relative;
@@ -422,10 +422,10 @@ button.btn-outline-submit:hover{
     fill: #662d91!important;
     cursor: pointer;
 }
-/* 
+
 .MuiGrid-container{
     background-color: #fafafa!important;
-} */
+}
 
 .MuiGrid-grid-xs-8{
     background-color: #fafafa!important;
@@ -442,9 +442,9 @@ h6{
 .MuiList-root{
     background-color: #fafafa!important;
 }
-p{
+/* p{
     background-color: #fafafa!important;
-}
+} */
 
 
 
@@ -453,9 +453,9 @@ section.MuiGrid-root{
 
 }
 
-.css-9mgopn-MuiDivider-root{
+/* .css-9mgopn-MuiDivider-root{
     margin: 1% 35%!important;
-}
+} */
 
 
 header{
@@ -474,3 +474,21 @@ nav {
 .react-icons {
     vertical-align: middle;
   }
+
+ input[type=search]{
+    outline-offset: none!important;
+ }
+
+ .carousel{
+    margin-top: -59px;
+    z-index: -1;
+ }
+
+ .navbar-light .navbar-nav .nav-link{
+    color:#fff;
+ }
+
+ 
+ .navbar-light .navbar-nav .nav-link:hover{
+    color:#fff;
+ }

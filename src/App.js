@@ -17,7 +17,7 @@ import Service from './components/service/Service';
 
 function App() {
   return (
-    <div className='container-fluid'>
+    <>
 
     <Router>
         <Switch>
@@ -39,7 +39,7 @@ function App() {
          
         </Switch>
     </Router>
-    </div>
+    </>
 
   );
 }

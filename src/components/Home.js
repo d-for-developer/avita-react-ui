@@ -1,6 +1,14 @@
 import React from 'react'
-import Header from './layouts/Header'
+import HomeBanner from './banner/HomeBanner'
 import TopBar from './layouts/TopBar'
+import Header from './layouts/Header'
+import FeatureGrid from './grid/FeatureGrid'
+import ProductGrid from './grid/ProductGrid'
+import BlogGrid from './grid/BlogGrid'
+import BannerImg from './grid/BannerImg'
+
+
+
 
 export default function Home() {
 
@@ -8,6 +16,12 @@ export default function Home() {
     <>
     <TopBar/>
     <Header/>
+    <HomeBanner/>
+    <FeatureGrid/>
+    <ProductGrid/>
+    <BannerImg/>
+    <BlogGrid/>
+
     </>
   )
 }
