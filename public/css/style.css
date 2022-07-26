@@ -492,3 +492,8 @@ nav {
  .navbar-light .navbar-nav .nav-link:hover{
     color:#fff;
  }
+
+span.homeBadge{
+    text-align: center;
+    font-size: 50px;
+}
