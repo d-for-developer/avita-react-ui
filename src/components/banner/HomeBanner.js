@@ -2,6 +2,7 @@ import { Carousel } from 'react-bootstrap';
 import image1 from '../assets/banner/1.jpg';
 import image2 from '../assets/banner/2.jpg';
 import image3 from '../assets/banner/3.jpg';
+import image4 from '../assets/banner/4.jpg';
 import Row from 'react-bootstrap/Row';
 
 
@@ -33,6 +34,14 @@ function HomeBanner() {
       <img
         className="d-block w-100"
         src={image3}
+        alt="Third slide"
+      />
+
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        className="d-block w-100"
+        src={image4}
         alt="Third slide"
       />
 

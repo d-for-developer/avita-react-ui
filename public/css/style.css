@@ -493,7 +493,31 @@ nav {
     color:#fff;
  }
 
-span.homeBadge{
+.homeBadge{
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
+    margin-left: 40%;
+    font-family: "Plus Jakarta Sans";
+}
+
+.badgeText{
+    font-family: "Plus Jakarta Sans";
+    text-align: center;
+
+}
+
+.badgeHeading{
+    font-family: "Plus Jakarta Sans";
+    text-align: center;
+
+}
+.badgeColumn{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
 }

@@ -4,33 +4,39 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import CountUp from 'react-countup';
 import Typography from '@mui/material/Typography';
-
+import Divider from '@mui/material/Divider';
 
 
 const BadgeHome = () => {
+
   return (
-    <Container>
+
+    <Container className='mt-4 mb-4'>
+            <Divider sx={{ fontSize: '26px', marginBottom: '35px' }}>NOVITA | EMBRACE INNOVATION</Divider>
 
       <Row>
-        <Col>
-        <Typography variant="h4" component="div" gutterBottom>
+        <Col className='badgeColumn'>
+        <Typography className='badgeHeading' variant="h5" component="div" gutterBottom>
         INDIA'S NO.
       </Typography>
+
+
           <CountUp
             start={100}
             end={1}
             duration={2.75}
             separator=" "
-            className='homeBadge'            
+            className='homeBadge' 
+                       
           >
            
           </CountUp>
-          <Typography variant="p" component="div" gutterBottom>
+          <Typography className='badgeText'  variant="p" component="div" gutterBottom>
         WEARABLE WATCH BRAND
       </Typography>
          </Col>
          <Col>
-         <Typography variant="h4" component="div" gutterBottom>
+         <Typography  className='badgeHeading' variant="h5" component="div" gutterBottom>
         APAC NO.
       </Typography>
           <CountUp
@@ -43,12 +49,12 @@ const BadgeHome = () => {
           >
            
           </CountUp>
-          <Typography variant="p" component="div" gutterBottom>
+          <Typography  className='badgeText' variant="p" component="div" gutterBottom>
         WEARABLE WATCH BRAND
       </Typography>
          </Col>
          <Col>
-         <Typography variant="h4" component="div" gutterBottom>
+         <Typography  className='badgeHeading' variant="h5" component="div" gutterBottom>
         GLOBALLY NO.
       </Typography>
           <CountUp
@@ -61,12 +67,12 @@ const BadgeHome = () => {
           >
            
           </CountUp>
-          <Typography variant="p" component="div" gutterBottom>
+          <Typography  className='badgeText' variant="p" component="div" gutterBottom>
         WEARABLE WATCH BRAND
       </Typography>
          </Col>
          <Col>
-         <Typography variant="h4" component="div" gutterBottom>
+         <Typography  className='badgeHeading' variant="h5" component="div" gutterBottom>
         AVAILABLE INTO
       </Typography>
           <CountUp
@@ -79,7 +85,7 @@ const BadgeHome = () => {
           >
            
           </CountUp>
-          <Typography variant="p" component="div" gutterBottom>
+          <Typography  className='badgeText' variant="p" component="div" gutterBottom>
         WEARABLE WATCH BRAND
       </Typography>
          </Col>
