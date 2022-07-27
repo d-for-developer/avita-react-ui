@@ -521,3 +521,23 @@ nav {
     border-radius: 50%;
     z-index: -1;
 }
+
+
+.footerHeading{
+    font-family: "Plus Jakarta Sans";
+    text-align: center;
+
+}
+
+
+.footerText{
+    font-family: "Plus Jakarta Sans";
+    text-align: center;
+
+}
+
+.footerTop{
+    margin: 30px 0;
+    background-color: #fff;
+    padding: 10px 0;
+}

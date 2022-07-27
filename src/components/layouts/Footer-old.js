@@ -5,7 +5,7 @@ import { Grid, useMediaQuery, useTheme } from '@mui/material'
 import ListItemText from '@mui/material/ListItemText';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import { FooterTop } from './FooterTop';
+import { FooterTop } from './FooterTop-1';
 import { Copyright } from './Copyright';
 import PublicIcon from '@mui/icons-material/Public';
 
@@ -20,7 +20,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 
 
-export default function Footer-old() {
+export default function FooterOld() {
 
 
 

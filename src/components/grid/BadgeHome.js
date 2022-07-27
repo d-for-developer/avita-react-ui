@@ -35,7 +35,7 @@ const BadgeHome = () => {
         WEARABLE WATCH BRAND
       </Typography>
          </Col>
-         <Col>
+         <Col className='badgeColumn'>
          <Typography  className='badgeHeading' variant="h5" component="div" gutterBottom>
         APAC NO.
       </Typography>
@@ -53,7 +53,7 @@ const BadgeHome = () => {
         WEARABLE WATCH BRAND
       </Typography>
          </Col>
-         <Col>
+         <Col className='badgeColumn'>
          <Typography  className='badgeHeading' variant="h5" component="div" gutterBottom>
         GLOBALLY NO.
       </Typography>
@@ -71,7 +71,7 @@ const BadgeHome = () => {
         WEARABLE WATCH BRAND
       </Typography>
          </Col>
-         <Col>
+         <Col className='badgeColumn'>
          <Typography  className='badgeHeading' variant="h5" component="div" gutterBottom>
         AVAILABLE INTO
       </Typography>

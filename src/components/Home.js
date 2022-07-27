@@ -6,8 +6,8 @@ import FeatureGrid from './grid/FeatureGrid'
 import ProductGrid from './grid/ProductGrid'
 import BlogGrid from './grid/BlogGrid'
 import BannerImg from './grid/BannerImg'
-import Footer from './layouts/Footer'
 import BadgeHome from './grid/BadgeHome'
+import FooterTop from './layouts/FooterTop'
 
 
 
@@ -24,7 +24,7 @@ export default function Home() {
     <BadgeHome/>
     <BannerImg/>
     <BlogGrid/>
-    <Footer/>
+    <FooterTop/>
     </>
   )
 }
