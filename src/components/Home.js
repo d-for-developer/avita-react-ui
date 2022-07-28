@@ -8,6 +8,9 @@ import BlogGrid from './grid/BlogGrid'
 import BannerImg from './grid/BannerImg'
 import BadgeHome from './grid/BadgeHome'
 import FooterTop from './layouts/FooterTop'
+import Footer from './layouts/Footer'
+import FooterMiddle from './layouts/FooterMiddle'
+
 
 
 
@@ -16,15 +19,17 @@ export default function Home() {
 
   return (
     <>
-    <TopBar/>
-    <Header/>
-    <HomeBanner/>
-    <FeatureGrid/>
-    <ProductGrid/>
-    <BadgeHome/>
-    <BannerImg/>
-    <BlogGrid/>
-    <FooterTop/>
+      <TopBar />
+      <Header />
+      <HomeBanner />
+      <FeatureGrid />
+      <ProductGrid />
+      <BadgeHome />
+      <BannerImg />
+      <BlogGrid />
+      <FooterTop />
+      <FooterMiddle />
+      <Footer/>
     </>
   )
 }

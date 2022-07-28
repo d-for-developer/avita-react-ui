@@ -136,7 +136,7 @@ ul ul a {
     color:#fff;
 
 }
-
+/* 
 .btn-register{
     background-color: #fff;
     color:#662d91;
@@ -174,7 +174,7 @@ button.btn-outline-submit:hover{
     width: 150px;
     color:#fff;
 }
-
+ */
 
 .home-text{
     font-size: 1.5em !important;
@@ -371,7 +371,7 @@ button.btn-outline-submit:hover{
     align-items: center;
     text-align: center;
 }
-
+/* 
 .MuiButton-outlined{
     background-color: #662d91!important;
     color:#eeeeee!important;
@@ -397,14 +397,14 @@ button.btn-outline-submit:hover{
     background-color: #eeeeee!important;
     color:#662d91!important;
     border: 1px solid #662d91!important;
-}
+} */
 
 .MuiPaper-root{
     box-shadow: none!important;
 }
 
 .MuiGrid-root{
-    background-color: #fff;
+    /* background-color: #fff; */
     height: 50px;
     padding: 10px;
 }
@@ -541,3 +541,8 @@ nav {
     background-color: #fff;
     padding: 10px 0;
 }
+
+.footerMain{
+    margin-top: 8%;
+}
+

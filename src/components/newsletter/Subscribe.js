@@ -1,46 +1,45 @@
 import React from 'react'
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
-import Brochure from '../brochure/Brochure';
-import { useMediaQuery, useTheme } from '@mui/material';
+import { Grid } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import FormControl from '@mui/material/FormControl';
+import InputLabel from '@mui/material/InputLabel';
+import Input from '@mui/material/Input';
+import FormHelperText from '@mui/material/FormHelperText';
+import IconButton from '@mui/material/IconButton';
+import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 
 
-export default function Subscribe() {
+export const Subscribe = () => {
 
-    const theme = useTheme();
-    const matchDownMd = useMediaQuery(theme.breakpoints.down('sm'));
-    
     return (
-        <section className='newsLetter'>
-            <h3>Join the AVITA Community</h3>
-            <p>Receiving AVITA's latest news, promotions and offer</p>
+        <>
+            <Grid container spacing={2} direction="row" justifyContent="left" alignItems="left">
+                <Grid item>
+                    <Typography variant="h6" component="div" gutterBottom fontSize={18}>
+                        LET'S STAY IN TOUCH
+                    </Typography>
+                    <Typography variant="p" component="div" gutterBottom fontSize={12}>
+                        Get updates on sales specials and more
+                    </Typography>
+                </Grid>
+                <Grid item>
+                    <FormControl>
+                        <InputLabel htmlFor="my-input">Email address</InputLabel>
+                        <Input id="my-input" aria-describedby="my-helper-text" />
+                        <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
+                    </FormControl>
+                </Grid>
+                <Grid item>
+                    <IconButton variant="outlined">
+                        <SendOutlinedIcon style={{fontSize:'30px'}} />
 
-            <Box
-                component="form"
-                sx={{
-                    '& .MuiTextField-root': { m: 1, width: `${matchDownMd ? '35ch' : '50ch'}`},
-                }}
-                noValidate
-                autoComplete="off"
-                 >
-                <div className='subscribe'>
-                    <TextField
-                        id="subscribe"
-                        email
-                        label="Enter Your Email"
-                        helperText="Subscribe to our newsletter"
-                    >
-                      
-                    </TextField>
-                    <Button  variant="outlined" size="large" sx={{ top:`${matchDownMd ? '10px' : '15px'}`}}>
-                        Subscribe
-                    </Button>
-                </div>
-            </Box>
-            <Brochure/>
+                    </IconButton>
 
-        </section>
+                </Grid>
+            </Grid>
 
+
+
+        </>
     )
 }
