@@ -422,7 +422,7 @@ button.btn-outline-submit:hover{
     fill: #662d91!important;
     cursor: pointer;
 }
-
+/* 
 .MuiGrid-container{
     background-color: #fafafa!important;
 }
@@ -433,7 +433,7 @@ button.btn-outline-submit:hover{
 
 .MuiGrid-grid-xs-4{
     background-color: #fafafa!important;
-}
+} */
 
 h6{
     background-color: #fafafa!important;
