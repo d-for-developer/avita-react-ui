@@ -10,15 +10,13 @@ import BadgeHome from './grid/BadgeHome'
 import FooterTop from './layouts/FooterTop'
 import Footer from './layouts/Footer'
 import FooterMiddle from './layouts/FooterMiddle'
-
-
+import Copyright from './layouts/Copyright'
 
 
 
 export default function Home() {
-
   return (
-    <>
+     <>
       <TopBar />
       <Header />
       <HomeBanner />
@@ -30,6 +28,7 @@ export default function Home() {
       <FooterTop />
       <FooterMiddle />
       <Footer/>
+      <Copyright/>
     </>
   )
 }

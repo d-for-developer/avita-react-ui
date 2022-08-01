@@ -12,13 +12,13 @@ const Footer = () => {
     
   return (
     <Container className='footerMain'>
-      <Grid container spacing={12} direction="row">
+      <Grid container spacing={0} direction="row">
         <Grid item xs={2}>
-
-          <List>
-            <Typography sx={{ mb:4 }} variant="p" component="span">
+           <Typography sx={{ mb:2, fontWeight: '700' }} variant="p" >
               SUPPORT
             </Typography>
+          <List>
+           
             <ListItem>
               <ListItemText>Customer Service</ListItemText>
             </ListItem>
@@ -43,11 +43,11 @@ const Footer = () => {
           </List>
         </Grid>
         <Grid item xs={2}>
-
-          <List>
-            <Typography sx={{ mb:4 }} variant="p" component="span">
+        <Typography sx={{ mb:2, fontWeight: '700'  }} variant="p">
               SHOP
             </Typography>
+          <List>
+        
             <ListItem>
               <ListItemText>Laptops</ListItemText>
             </ListItem>
@@ -63,11 +63,11 @@ const Footer = () => {
           </List>
         </Grid>
         <Grid item xs={2}>
-
-          <List>
-            <Typography sx={{ mb:4 }} variant="p" component="span">
+        <Typography sx={{ mb:2, fontWeight: '700'  }} variant="p">
               RETAIL STORE
             </Typography>
+          <List>
+            
             <ListItem>
               <ListItemText>NOVITA Home</ListItemText>
             </ListItem>
@@ -78,11 +78,11 @@ const Footer = () => {
           </List>
         </Grid>
         <Grid item xs={2}>
-
-          <List>
-            <Typography sx={{ mb:4 }} variant="p" component="span">
+        <Typography sx={{ mb:2, fontWeight: '700'  }} variant="p">
               ABOUT US
             </Typography>
+          <List>
+           
             <ListItem>
               <ListItemText>NOVITA</ListItemText>
             </ListItem>
@@ -108,11 +108,11 @@ const Footer = () => {
         </Grid>
 
         <Grid item xs={2}>
-
-          <List>
-            <Typography sx={{ mb:4 }} variant="p" component="span">
+        <Typography sx={{ mb:2, fontWeight: '700'  }} variant="p">
               CONTACT US
             </Typography>
+          <List>
+            
             <ListItem>
               <ListItemText>Email</ListItemText>
             </ListItem>
@@ -123,11 +123,11 @@ const Footer = () => {
         </Grid>
 
         <Grid item xs={2}>
-
-          <List>
-            <Typography sx={{ mb:4 }} variant="p" component="span">
+        <Typography sx={{ mb:2, fontWeight: '700'  }} variant="p">
               CHAT
             </Typography>
+          <List>
+      
             <ListItem>
               <ListItemText>Chat Bot</ListItemText>
             </ListItem>

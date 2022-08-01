@@ -546,3 +546,7 @@ nav {
     margin-top: 8%;
 }
 
+.MuiListItem-root{
+    display: inline!important;
+}
+
