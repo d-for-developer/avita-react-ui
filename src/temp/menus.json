@@ -1,0 +1,119 @@
+{
+  "menus": [
+    {
+      "id": 1,
+      "text": "Home",
+      "link": "/",
+      "dropdown": []
+    },
+    {
+      "id": 2,
+      "text": "Laptops & Tabs",
+      "link": "/laptops-tabs",
+      "dropdown": [],
+      "megaMenus": [
+        {
+          "id": 2.1,
+          "megaMenuTitle": "Laptops",
+          "link": "/laptops",
+          "megamenuItems": [
+            {
+              "id": 2.21,
+              "text": "Ultimus",
+              "link": "/ultimus"
+            }        
+          ]
+        },
+        {
+          "id": 2.2,
+          "megaMenuTitle": "Laptops",
+          "link": "/laptops",
+          "megamenuItems": [
+            {
+              "id": 2.232,
+              "text": "Ultimus",
+              "link": "/ultimus"
+            }
+          ]
+        }
+      ]
+    },
+    
+    {
+      "id": 3,
+      "text": "Smart Lighting",
+      "link": "/smart-lighting",
+      "dropdown": [],
+      "megaMenus": [
+        {
+          "id": 3.1,
+          "megaMenuTitle": "Smart LED Bulb",
+          "link": "/smart-led-bulb",
+          "megamenuItems": [
+            {
+              "id": 3.21,
+              "text": "Coming Soon",
+              "link": "/coming-soon"
+            }
+          ]
+        },
+        {
+          "id": 3.2,
+          "megaMenuTitle": "Invertor LED Bulb",
+          "link": "/invertor-led-bulb",
+          "megamenuItems": [
+            {
+              "id": 3.232,
+              "text": "Coming Soon",
+              "link": "/coming-soon"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Fitness",
+      "link": "/fitness",
+      "dropdown": [],
+      "megaMenus": [
+        {
+          "id": 4.1,
+          "megaMenuTitle": "Smart Watch",
+          "link": "/smart-watch",
+          "megamenuItems": [
+            {
+              "id": 4.21,
+              "text": "Coming Soon",
+              "link": "/coming-soon"
+            }
+          ]
+        },
+        {
+          "id": 4.2,
+          "megaMenuTitle": "Product Details Layout",
+          "link": "/product-layout",
+          "megamenuItems": [
+            {
+              "id": 4.232,
+              "text": "Product Layout 1",
+              "link": "/shop"
+            }
+          ]
+        }
+      ]
+    },
+        {
+      "id": 5,
+      "text": "TV",
+      "link": "/television",
+      "dropdown": []
+    },
+    {
+      "id": 6,
+      "text": "Contact",
+      "link": "/contact",
+      "dropdown": []
+    }
+  ]
+}

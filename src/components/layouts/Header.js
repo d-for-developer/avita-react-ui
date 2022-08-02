@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
-import Logo from './Logo';
+import Logo from "../../Logo";
 
 
 
@@ -22,11 +22,11 @@ export default function Header() {
           style={{ maxHeight: '100px' }}
           navbarScroll
         >
-          <Nav.Link className='px-5' href="#">Laptops & Tables</Nav.Link>
-          <Nav.Link className='px-5' href="#">Smart Lighting</Nav.Link>
-          <Nav.Link className='px-5' href="#">TV</Nav.Link>
-          <Nav.Link className='px-5' href="#">Fitness</Nav.Link>
-          <Nav.Link className='px-5' href="#">Home</Nav.Link>
+          <Nav.Link className='px-5' href="/">Home</Nav.Link>
+          <Nav.Link className='px-5' href="/laptops">Laptops & Tables</Nav.Link>
+          <Nav.Link className='px-5' href="/smart-lighting">Smart Lighting</Nav.Link>
+          <Nav.Link className='px-5' href="/">TV</Nav.Link>
+          <Nav.Link className='px-5' href="/smart-watch">Fitness</Nav.Link>
         </Nav>
         <Form className="d-flex searchBox border-bottom" >
           <Form.Control

@@ -5,8 +5,8 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
-import Logo from '../../Logo';
 import { Link } from "react-router-dom";
+import Logo from '../../Logo';
 
 
 
@@ -58,7 +58,9 @@ export default function SideDrawer() {
       <nav id="sidebar">
 
         <div className="sidebar-header mt-2">
-          <Logo />
+                  <Link to="/">
+                    <Logo/>
+                   </Link>
         </div>
 
         <div className='sidebar mt-2'>

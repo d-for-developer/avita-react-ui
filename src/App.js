@@ -9,9 +9,9 @@ import {
 } from "react-router-dom";
 import Home from './components/Home';
 import Products from './components/products/Products';
-import News from './components/news/News';
-import Shop from './components/shop/Shop';
-import Service from './components/service/Service';
+import Satus from './components/products/Laptops/Satus';
+import Domus from './components/products/Lighting/Domus';
+import Wristo from './components/products/Watch/Wristo';
 
 
 
@@ -27,14 +27,14 @@ function App() {
           <Route path="/products">
            <Products/>
           </Route>
-          <Route path="/news">
-            <News/>
+          <Route path="/laptops">
+            <Satus/>
           </Route>
-          <Route path="/where-to-buy">
-            <Shop />
+          <Route path="/smart-lighting">
+            <Domus/>
           </Route>
-          <Route path="/service">
-            <Service />
+          <Route path="/smart-watch">
+            <Wristo/>
           </Route>
          
         </Switch>

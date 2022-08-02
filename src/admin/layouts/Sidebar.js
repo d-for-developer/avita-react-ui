@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import Logo from '../../img/Logo.png'
+import Logo from '../../Logo';
 
 export default function Sidebar() {
     return (
         <div className="wrapper">
             <nav id="sidebar">
                 <div className="sidebar-header">
-                    <Logo />
+                    <Link to="/">
+                        <Logo />
+                    </Link>
                 </div>
                 <div className="accordion" id="accordionExample">
                     <div className="sidebar-accordion-item">
@@ -104,10 +106,10 @@ export default function Sidebar() {
 
                             </div>
                         </div>
-                        
+
                     </div>
 
-                    
+
                 </div>
             </nav>
 
