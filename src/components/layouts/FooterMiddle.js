@@ -14,6 +14,8 @@ import Input from '@mui/material/Input';
 import FormHelperText from '@mui/material/FormHelperText';
 import IconButton from '@mui/material/IconButton';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
+
 
 export default function FooterMiddle() {
 
@@ -39,15 +41,40 @@ export default function FooterMiddle() {
                         </Row>
                         <Row>
                             <Col className='mt-2'>
-                                <FormControl style={{marginLeft:'20%'}}>
-                                    <InputLabel  style={{marginTop:'1%'}} htmlFor="my-input">Email address</InputLabel>
+                                <FormControl style={{ marginLeft: '20%' }}>
+                                    <InputLabel style={{ marginTop: '1%' }} htmlFor="my-input">Email address</InputLabel>
                                     <Input id="my-input" aria-describedby="my-helper-text" />
                                     <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
                                 </FormControl>
                                 <IconButton variant="outlined">
-                               <SendOutlinedIcon style={{fontSize:'30px', marginTop:'20px'}} />
+                                    <SendOutlinedIcon style={{ fontSize: '30px', marginTop: '20px' }} />
 
-                    </IconButton>
+                                </IconButton>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <Typography variant="h6" component="div" gutterBottom fontSize={18} style={{ marginLeft: '35%', marginTop: '45px' }}>
+                                    Follow Us
+                                </Typography>
+                                <Typography variant="p" component="div" gutterBottom fontSize={12} style={{ marginLeft: '20%' }}>
+                                    <IconButton aria-label="facebook">
+                                        <FaFacebook />
+                                    </IconButton>
+                                    <IconButton aria-label="instagram">
+                                        <FaInstagram />
+                                    </IconButton>
+                                    <IconButton aria-label="twitter">
+                                        <FaTwitter />
+                                    </IconButton>
+                                    <IconButton aria-label="youtube">
+                                        <FaYoutube />
+                                    </IconButton>
+                                    <IconButton aria-label="linkedIn">
+                                        <FaLinkedin />
+                                    </IconButton>
+                                    
+                                </Typography>
                             </Col>
                         </Row>
                     </Container>

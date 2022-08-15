@@ -35,7 +35,7 @@ export default function Home() {
       <BlogGrid />
       <FooterTop />
       <FooterMiddle />
-      <Footer/>
+      { matches?<></>:<Footer/>} 
       <Copyright/>
     </>
   )

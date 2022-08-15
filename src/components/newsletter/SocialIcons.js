@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
 
 export const SocialIcons = () => {
     return (
@@ -25,6 +25,11 @@ export const SocialIcons = () => {
                 <Grid item>
                     <IconButton aria-label="delete">
                         <FaYoutube />
+                    </IconButton>
+                </Grid>
+                <Grid item>
+                    <IconButton aria-label="delete">
+                        <FaLinkedin />
                     </IconButton>
                 </Grid>
             </Grid>
