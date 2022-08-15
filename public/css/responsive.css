@@ -5,8 +5,13 @@
 
     * {
         font-family: 'Poppins', sans-serif;
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
     }
+
+    .carousel{
+        margin-top: -15%!important;
+    }
+    
 
     .right-arrow {
         position: absolute;
@@ -85,8 +90,13 @@
 
     * {
         font-family: 'Poppins', sans-serif;
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
     }
+
+    .carousel{
+        margin-top: -15%!important;
+    }
+    
 
     .right-arrow {
         position: absolute;
