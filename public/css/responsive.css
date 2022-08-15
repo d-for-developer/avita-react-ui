@@ -30,7 +30,7 @@
         user-select: none;
     }
 
-    .slide {
+    /* .slide {
         opacity: 0;
         transition-duration: 1s ease;
     }
@@ -53,7 +53,7 @@
         border-radius: 25px;
         width: 375px;
         height: 600px;
-    }
+    } */
 
     .newsLetter {
         margin-top: 3%;
@@ -110,7 +110,7 @@
         user-select: none;
     }
 
-    .slide {
+    /* .slide {
         opacity: 0;
         transition-duration: 1s ease;
     }
@@ -133,7 +133,7 @@
         border-radius: 25px;
         width: 375px;
         height: 600px;
-    }
+    } */
 
     .newsLetter {
         margin-top: 3%;

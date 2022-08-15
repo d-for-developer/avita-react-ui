@@ -11,7 +11,7 @@ const Footer = () => {
 
     
   return (
-    <Container className='footerMain'>
+    <Container className='footerMain' sx={{marginTop:'12%'}}>
       <Grid container spacing={0} direction="row">
         <Grid item xs={2}>
            <Typography sx={{ mb:2, fontWeight: '700' }} variant="p" >
