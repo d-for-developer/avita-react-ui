@@ -9,12 +9,24 @@ import FooterTop from './layouts/FooterTop'
 import Footer from './layouts/Footer'
 import FooterMiddle from './layouts/FooterMiddle'
 import Copyright from './layouts/Copyright'
+import TopBar from './layouts/TopBar'
+import Header from './layouts/Header'
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import SideDrawer from './layouts/SideDrawer'
 
 
 
 export default function Home() {
+
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down('md'));
+
+
   return (
      <>
+    { matches?<></>:<TopBar/> } 
+    { matches?<SideDrawer/>:<Header/> } 
       <HomeBanner />
       <FeatureGrid />
       <ProductGrid />

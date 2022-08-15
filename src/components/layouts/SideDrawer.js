@@ -1,35 +1,26 @@
 import React, { useState } from 'react';
-import { Drawer, List, Box, ListItemIcon, ListItemText, ListItemButton, IconButton } from '@mui/material';
+import { Drawer, List, ListItemIcon, ListItemText, ListItemButton, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
-import Logo from '../../img/Logo.png'
+import Logo from '../../Logo';
 
 
 const SideDrawer = () => {
 
-    const PAGES = ["Products", "News", "Where to Buy", "Service", "Sales Enquiry", "Contact"];
+    const PAGES = ["Home", "Laptops & Tablets", "Smart Lighting", "TV", "Fitness"];
 
     const [openDrawer, setOpenDrawer] = useState(false);
 
     return (
         <React.Fragment>
-            <Drawer anchor='top' open={openDrawer} onClose={() => setOpenDrawer(false)}>
-                <IconButton onClick={() => setOpenDrawer(!openDrawer)} sx={{ color: "#692c90", right: '40%', top: '15px' }} >
+            <Drawer anchor='top' open={openDrawer} onClose={() => setOpenDrawer(false)} >
+
+                
+                <IconButton onClick={() => setOpenDrawer(!openDrawer)} sx={{ color: "#692c90", right: '40%', top: '15px'}} >
                     <CloseOutlinedIcon />
                 </IconButton>
-                <Box
-                    component="img"
-                    sx={{
-                        height: 21,
-                        position: 'absolute',
-                        left: '50%',
-                        top: '5%',
-                        transform: 'translate(-50%, -50%)',
-                        zIndex: '1'
-                    }}
-                    alt="Your logo."
-                    src={Logo}
-                />
+                <Logo />
+
                 <List sx={{ marginLeft: '2%', marginTop: '15%', height: '100vh' }} >
 
                     {
@@ -47,7 +38,7 @@ const SideDrawer = () => {
 
                 </List>
             </Drawer>
-            <IconButton onClick={() => setOpenDrawer(!openDrawer)} sx={{ color: "#692c90", marginRight: 'auto' }} >
+            <IconButton onClick={() => setOpenDrawer(!openDrawer)} sx={{ color: "#fff", marginRight: 'auto' }} >
                 <MenuIcon />
             </IconButton>
 
