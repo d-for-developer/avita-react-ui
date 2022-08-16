@@ -11,7 +11,7 @@ import TopBar from '../../layouts/TopBar'
 const Wristo = () => {
   return (
     <div>
-                <TopBar/>
+  <TopBar/>
     <Header />
     <HomeBanner />
     <FooterTop />

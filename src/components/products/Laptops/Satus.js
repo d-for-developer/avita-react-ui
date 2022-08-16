@@ -1,11 +1,11 @@
 import React from 'react'
-import HomeBanner from '../../banner/HomeBanner'
 import Header from '../../layouts/Header'
 import FooterTop from '../../layouts/FooterTop'
 import Footer from '../../layouts/Footer'
 import FooterMiddle from '../../layouts/FooterMiddle'
 import Copyright from '../../layouts/Copyright'
 import TopBar from '../../layouts/TopBar'
+import ProductBanner from '../../banner/ProductBanner'
 
 
 const Satus = () => {
@@ -13,7 +13,7 @@ const Satus = () => {
     <div>    
         <TopBar/>
     <Header />
-    <HomeBanner />
+    <ProductBanner />
     <FooterTop />
       <FooterMiddle />
       <Footer/>
