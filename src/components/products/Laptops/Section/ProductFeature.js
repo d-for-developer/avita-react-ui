@@ -1,5 +1,5 @@
 import React from 'react'
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
+import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, Move, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
 import image1 from '../../../assets/product/UI/1.png';
 import image2 from '../../../assets/product/UI/2.PNG';
 
@@ -38,25 +38,11 @@ function ProductFeature() {
                 </Animator>
             </ScrollPage>
             <ScrollPage>
-                <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }} >
-                    <span style={{ fontSize: "40px" }}>
-                        <Animator animation={MoveIn(-1000, 0)}>Hello Guys 👋🏻</Animator>
-                        <Animator animation={MoveIn(1000, 0)}>Nice to meet you 🙋🏻‍♀️</Animator>
-                        - I'm Dante Chun -
-                        <Animator animation={MoveOut(1000, 0)}>Good bye ✋🏻</Animator>
-                        <Animator animation={MoveOut(-1000, 0)}>See you 💛</Animator>
-                    </span>
-                </div>
-            </ScrollPage>
-            <ScrollPage>
-                <Animator animation={batch(Fade(), Sticky())}>
-                    <span style={{ fontSize: "40px" }}>Done</span>
-                    <br />
-                    <span style={{ fontSize: "30px" }}>
-                        There's FadeAnimation, MoveAnimation, StickyAnimation, ZoomAnimation
-                    </span>
+            <Animator animation={ZoomInScrollOut}>
+                    <span style={{ fontSize: "40px" }}>Captivating multimedia experience </span>
                 </Animator>
             </ScrollPage>
+            
 
         </ScrollContainer>
     )
