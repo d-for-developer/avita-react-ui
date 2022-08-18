@@ -1,8 +1,8 @@
 import { Carousel } from 'react-bootstrap';
-import mobBanner1 from '../assets/product/mobBanner/1.jpeg';
-import mobBanner2 from '../assets/product/mobBanner/2.jpeg';
-import mobBanner3 from '../assets/product/mobBanner/3.jpeg';
-import mobBanner4 from '../assets/product/mobBanner/4.jpeg';
+import mobBanner1 from '../assets/product/mobBanner/1.jpg';
+import mobBanner2 from '../assets/product/mobBanner/2.jpg';
+import mobBanner3 from '../assets/product/mobBanner/3.jpg';
+import mobBanner4 from '../assets/product/mobBanner/4.jpg';
 import webBanner1 from '../assets/product/webBanner/1.jpg';
 import webBanner2 from '../assets/product/webBanner/2.jpg';
 import webBanner3 from '../assets/product/webBanner/3.jpg';
