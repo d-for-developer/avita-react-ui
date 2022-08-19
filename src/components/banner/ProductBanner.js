@@ -1,12 +1,9 @@
 import { Carousel } from 'react-bootstrap';
-import mobBanner1 from '../assets/product/mobBanner/1.jpg';
-import mobBanner2 from '../assets/product/mobBanner/2.jpg';
-import mobBanner3 from '../assets/product/mobBanner/3.jpg';
-import mobBanner4 from '../assets/product/mobBanner/4.jpg';
-import webBanner1 from '../assets/product/webBanner/1.jpg';
-import webBanner2 from '../assets/product/webBanner/2.jpg';
-import webBanner3 from '../assets/product/webBanner/3.jpg';
-import webBanner4 from '../assets/product/webBanner/4.jpg';
+import mobBanner1 from '../assets/product/Wristo/1.png';
+import mobBanner2 from '../assets/product/Wristo/2.png';
+import webBanner1 from '../assets/product/Wristo/1.jpg';
+import webBanner2 from '../assets/product/Wristo/2.jpg';
+
 import Row from 'react-bootstrap/Row';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -47,15 +44,16 @@ function ProductBanner() {
 
 
         </Carousel.Item>
+       
         <Carousel.Item>
-        <img
+          <img
             className="d-block w-100"
             src={matches ? (
-              mobBanner3
+              mobBanner1
             ) : (
-              webBanner3
+              webBanner1
             )}
-            alt="Third slide"
+            alt="First slide"
           />
 
         </Carousel.Item>
@@ -63,14 +61,16 @@ function ProductBanner() {
         <img
             className="d-block w-100"
             src={matches ? (
-              mobBanner4
+              mobBanner2
             ) : (
-              webBanner4
+              webBanner2
             )}
-            alt="Fourth slide"
+            alt="Second slide"
           />
 
+
         </Carousel.Item>
+       
       </Carousel>
     </Row>
   );

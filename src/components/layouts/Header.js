@@ -25,8 +25,8 @@ export default function Header() {
           <Nav.Link className='px-5' href="/">Home</Nav.Link>
           <Nav.Link className='px-5' href="/laptops">Laptops & Tables</Nav.Link>
           <Nav.Link className='px-5' href="/smart-lighting">Smart Lighting</Nav.Link>
-          <Nav.Link className='px-5' href="/">TV</Nav.Link>
-          <Nav.Link className='px-5' href="/smart-watch">Fitness</Nav.Link>
+          <Nav.Link className='px-5' href="/smart-watch">Smart Watch</Nav.Link>
+          <Nav.Link className='px-5' href="/contact">Contact Us</Nav.Link>
         </Nav>
         <Form className="d-flex searchBox border-bottom" >
           <Form.Control
