@@ -572,3 +572,13 @@ input[type=search] {
     display: inline !important;
 }
 
+.specImg{
+    align-content: center;
+    margin-left: 40%;
+    margin-right: auto;
+}
+
+.specHeading{
+    align-content: center;
+  
+}

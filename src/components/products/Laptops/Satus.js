@@ -11,23 +11,25 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import SideDrawer from '../../layouts/SideDrawer'
 import ProductFeature from './Section/ProductFeature'
 import ProductBannerSection from './Section/ProductBannerSection'
+import ProductSpecs from './Section/ProductSpecs'
 
 const Satus = () => {
-  
+
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
-    <div>    
-  { matches?<></>:<TopBar/> } 
-    { matches?<SideDrawer/>:<Header/> } 
-    <ProductBanner />
-    <ProductFeature/>
-    <ProductBannerSection/>
-    <FooterTop />
+    <div>
+      {matches ? <></> : <TopBar />}
+      {matches ? <SideDrawer /> : <Header />}
+      <ProductBanner />
+      <ProductSpecs/>
+      {/* <ProductFeature /> */}
+      <ProductBannerSection />
+      <FooterTop />
       <FooterMiddle />
-      { matches?<></>:<Footer/>} 
-      <Copyright/>
+      {matches ? <></> : <Footer />}
+      <Copyright />
     </div>
   )
 }

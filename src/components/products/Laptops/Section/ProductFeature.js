@@ -15,9 +15,9 @@ function ProductFeature() {
 
         <ScrollContainer>
             <ScrollPage>
-                <Animator animation={batch(Fade(), Sticky(50, 105), MoveOut(0, -200))}>
+                <Animator animation={batch(Fade(), Sticky(50, 130), MoveOut(0, -300))}>
                     <img
-                        className="d-block w-100 mt-4"
+                        className="d-block w-100 mt-4 p-4"
                         src={image1}
                         alt="First slide"
                     />
@@ -37,13 +37,7 @@ function ProductFeature() {
                     />
                 </Animator>
             </ScrollPage>
-            <ScrollPage>
-            <Animator animation={ZoomInScrollOut}>
-                    <span style={{ fontSize: "40px" }}>Captivating multimedia experience </span>
-                </Animator>
-            </ScrollPage>
-            
-
+          
         </ScrollContainer>
     )
 }
