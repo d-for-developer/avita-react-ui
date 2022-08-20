@@ -24,7 +24,6 @@ const Wristo = () => {
       {matches ? <SideDrawer /> : <Header />}
       <ProductBanner />
       <ProductFeature />
-      {/* <ProductBannerSection /> */}
       <FooterTop />
       <FooterMiddle />
       {matches ? <></> : <Footer />}
