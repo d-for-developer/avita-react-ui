@@ -1,8 +1,8 @@
 import { Carousel } from 'react-bootstrap';
-import mobBanner1 from '../assets/product/Wristo/1.png';
-import mobBanner2 from '../assets/product/Wristo/2.png';
-import webBanner1 from '../assets/product/Wristo/1.jpg';
-import webBanner2 from '../assets/product/Wristo/2.jpg';
+import mobBanner1 from '../../../assets/product/Wristo/1.png';
+import mobBanner2 from '../../../assets/product/Wristo/2.png';
+import webBanner1 from '../../../assets/product/Wristo/1.jpg';
+import webBanner2 from '../../../assets/product/Wristo/2.jpg';
 
 import Row from 'react-bootstrap/Row';
 import { useTheme } from '@mui/material/styles';

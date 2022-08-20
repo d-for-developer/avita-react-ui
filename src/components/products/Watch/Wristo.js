@@ -5,7 +5,7 @@ import Footer from '../../layouts/Footer'
 import FooterMiddle from '../../layouts/FooterMiddle'
 import Copyright from '../../layouts/Copyright'
 import TopBar from '../../layouts/TopBar'
-import ProductBanner from '../../banner/ProductBanner'
+import ProductBanner from './Section/ProductBanner'
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import SideDrawer from '../../layouts/SideDrawer'
