@@ -12,8 +12,18 @@ import {
   StickyIn,
   ZoomIn
 } from "react-scroll-motion";
-import { FaNodeJs, FaReact } from "react-icons/fa";
-import { DiMongodb } from "react-icons/di";
+import image11 from '../../../assets/product/Wristo/UI/11.png'
+import image12 from '../../../assets/product/Wristo/UI/12.png'
+import image13 from '../../../assets/product/Wristo/UI/13.png'
+import image14 from '../../../assets/product/Wristo/UI/14.png'
+import image15 from '../../../assets/product/Wristo/UI/15.png'
+import image16 from '../../../assets/product/Wristo/UI/16.png'
+import image17 from '../../../assets/product/Wristo/UI/17.png'
+import image18 from '../../../assets/product/Wristo/UI/18.png'
+import image19 from '../../../assets/product/Wristo/UI/19.png'
+import image20 from '../../../assets/product/Wristo/UI/20.png'
+
+
 
 
 function ProductFeature() {
@@ -26,9 +36,9 @@ function ProductFeature() {
 <div className='p-3 mb-2 bg-dark text-white'>
     <ScrollContainer>
       <ScrollPage page={0}>
-        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -400))}>
+        <Animator animation={batch(Fade(), Sticky(50, 90), MoveOut(0, -300))}>
           <span style={{ fontSize: "3em", color: "white" }}>
-            {`var Hey, There! 🖐️ `}
+            {`NOVITA Present`}
           </span>
         </Animator>
       </ScrollPage>
@@ -40,7 +50,7 @@ function ProductFeature() {
               color: "white"
             }}
           >
-            {`I'm Ayush Aryal 😀 ;`}
+            {`WRISTO SMART WATCH SERIES`}
           </span>
         </Animator>
       </ScrollPage>
@@ -53,132 +63,204 @@ function ProductFeature() {
               textShadow: "2px 2px #33ff33"
             }}
           >
-            {`=> a web developer ⛅️`}
+            {`Unbeatable Performance`}
           </span>
         </Animator>
       </ScrollPage>
       <ScrollPage page={3}>
         <Animator animation={FadeUp}>
-          <span style={{ fontSize: "3.5em", color: "#ffff99" }}>Skills ?</span>
+          <span style={{ fontSize: "3.5em", color: "#ffff99" }}>Stays On for You</span>
         </Animator>
       </ScrollPage>
       <ScrollPage page={4}>
-        <Animator animation={FadeIn}>
-          <span style={{ fontSize: "2em", color: "white" }}>
-            Node Js <FaNodeJs />
-          </span>
+      <Animator animation={FadeUp}>
+          <img
+        className="d-block w-100"
+        src={image11}
+        alt="1.9” Edge-to-Edge" />
+
         </Animator>
       </ScrollPage>
       <ScrollPage page={5}>
         <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -50))}>
-          <span style={{ fontSize: "1.5em", color: "#db4dff" }}>Express</span>
+          <span style={{ fontSize: "1.5em", color: "#db4dff" }}>1.9” Edge-to-Edge </span>
         </Animator>
       </ScrollPage>
       <ScrollPage page={6}>
-        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -50))}>
-          <span style={{ fontSize: "1.5em", color: "#db4dff" }}>API</span>
+        <Animator animation={FadeIn}>
+          <img
+        className="d-block w-100"
+        src={image12}
+        alt="UHD TrueHue™ display" />
+
         </Animator>
       </ScrollPage>
       <ScrollPage page={7}>
         <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -50))}>
-          <span style={{ fontSize: "1.5em", color: "#db4dff" }}>
-            Microservices
-          </span>
+          <span style={{ fontSize: "1.5em", color: "#db4dff" }}>UHD TrueHue™ display</span>
         </Animator>
       </ScrollPage>
       <ScrollPage page={8}>
-        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -10))}>
-          <span style={{ fontSize: "1.5em", color: "#db4dff" }}>npm</span>
+        <Animator animation={FadeIn}>
+          <img
+        className="d-block w-100"
+        src={image13}
+        alt="Always-On Enabled" />
+
         </Animator>
       </ScrollPage>
       <ScrollPage page={9}>
+        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -50))}>
+          <span style={{ fontSize: "1.5em", color: "#db4dff" }}>
+          Always-On Enabled
+          </span>
+        </Animator>
+      </ScrollPage>
+      <ScrollPage page={10}>
+        <Animator animation={FadeIn}>
+          <img
+        className="d-block w-100"
+        src={image14}
+        alt="Wireless Charging with SnapCharge™" />
+
+        </Animator>
+      </ScrollPage>
+      <ScrollPage page={11}>
+        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -10))}>
+          <span style={{ fontSize: "1.5em", color: "#db4dff" }}>Wireless Charging with SnapCharge™</span>
+        </Animator>
+      </ScrollPage>
+      <ScrollPage page={12}>
         <Animator
           animation={batch(Fade(), Sticky(), MoveOut(0, -10))}
         ></Animator>
       </ScrollPage>
-      <ScrollPage page={10}>
-        <Animator animation={FadeIn}>
-          <span style={{ fontSize: "2em", color: "white" }}>
-            Reactjs <FaReact />
-          </span>
-        </Animator>
-      </ScrollPage>
-      <ScrollPage page={11}>
-        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -50))}>
-          <span style={{ fontSize: "1.5em", color: "#61DBFB" }}>
-            HTML + CSS
-          </span>
-        </Animator>
-      </ScrollPage>
-      <ScrollPage page={12}>
-        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -50))}>
-          <span style={{ fontSize: "1.5em", color: "#61DBFB" }}>hooks</span>
-        </Animator>
-      </ScrollPage>
+  
       <ScrollPage page={13}>
-        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -50))}>
-          <span style={{ fontSize: "1.5em", color: "#61DBFB" }}>jsx</span>
+        <Animator animation={FadeIn}>
+          <img
+        className="d-block w-100"
+        src={image15}
+        alt="Bluetooth voice calling" />
+
         </Animator>
       </ScrollPage>
       <ScrollPage page={14}>
         <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -50))}>
-          <span style={{ fontSize: "1.5em", color: "#61DBFB" }}>js + ES6</span>
+          <span style={{ fontSize: "1.5em", color: "#61DBFB" }}>
+          Bluetooth voice calling
+          </span>
         </Animator>
       </ScrollPage>
       <ScrollPage page={15}>
-        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -50))}>
-          <span style={{ fontSize: "1.5em", color: "#61DBFB" }}>Redux</span>
+        <Animator animation={FadeIn}>
+          <img
+        className="d-block w-100"
+        src={image16}
+        alt="AI-powered health tracking" />
+
         </Animator>
       </ScrollPage>
       <ScrollPage page={16}>
-        <Animator
-          animation={batch(Fade(), Sticky(), MoveOut(0, -10))}
-        ></Animator>
+        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -50))}>
+          <span style={{ fontSize: "1.5em", color: "#61DBFB" }}>AI-powered health tracking</span>
+        </Animator>
       </ScrollPage>
       <ScrollPage page={17}>
         <Animator animation={FadeIn}>
-          <span style={{ fontSize: "2em", color: "white" }}>
-            MongoDB <DiMongodb />
-          </span>
+          <img
+        className="d-block w-100"
+        src={image17}
+        alt="Voice Assistants" />
+
         </Animator>
       </ScrollPage>
       <ScrollPage page={18}>
         <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -50))}>
-          <span style={{ fontSize: "1.5em", color: "#00ff00" }}>Queries</span>
+          <span style={{ fontSize: "1.5em", color: "#61DBFB" }}>Voice Assistants</span>
         </Animator>
       </ScrollPage>
       <ScrollPage page={19}>
-        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -10))}>
-          <span style={{ fontSize: "1.5em", color: "#00ff00" }}>
-            Aggregation and Pipelines
-          </span>
+        <Animator animation={FadeIn}>
+          <img
+        className="d-block w-100"
+        src={image18}
+        alt="500+ watch faces" />
+
         </Animator>
       </ScrollPage>
       <ScrollPage page={20}>
+        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -50))}>
+          <span style={{ fontSize: "1.5em", color: "#61DBFB" }}>500+ watch faces</span>
+        </Animator>
+      </ScrollPage>
+      <ScrollPage page={21}>
+        <Animator animation={FadeIn}>
+          <img
+        className="d-block w-100"
+        src={image19}
+        alt="Up to 15 Days Battery" />
+
+        </Animator>
+      </ScrollPage>
+      <ScrollPage page={22}>
+        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -50))}>
+          <span style={{ fontSize: "1.5em", color: "#61DBFB" }}>Up to 15 Days Battery</span>
+        </Animator>
+      </ScrollPage>
+      <ScrollPage page={23}>
         <Animator
           animation={batch(Fade(), Sticky(), MoveOut(0, -10))}
         ></Animator>
       </ScrollPage>
-      <ScrollPage page={21}>
-        <Animator animation={FadeUp}>
-          <span style={{ fontSize: "1em", color: "white" }}>known as</span>
+   
+   
+      <ScrollPage page={24}>
+        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -50))}>
+          <span style={{ fontSize: "1.5em", color: "#00ff00" }}>Segment’s Largest</span>
         </Animator>
       </ScrollPage>
-      <ScrollPage page={22}>
-        <Animator animation={ZoomInScrollOut}>
-          <span style={{ fontSize: "2em", color: "white" }}>MERN Stack</span>
+      <ScrollPage page={25}>
+        <Animator animation={FadeIn}>
+          <img
+        className="d-block w-100"
+        src={image20}
+        alt="No-Bezel Display" />
+
         </Animator>
       </ScrollPage>
-      <ScrollPage page={23}>
-        <Animator animation={FadeUp}>
-          <span style={{ fontSize: "2em", color: "white" }}>
-            Lookout for a ...
+      <ScrollPage page={26}>
+        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -10))}>
+          <span style={{ fontSize: "1.5em", color: "#00ff00" }}>
+          No-Bezel Display
           </span>
         </Animator>
       </ScrollPage>
-      <ScrollPage page={24}>
+      <ScrollPage page={27}>
+        <Animator
+          animation={batch(Fade(), Sticky(), MoveOut(0, -10))}
+        ></Animator>
+      </ScrollPage>
+      <ScrollPage page={28}>
+        <Animator animation={FadeUp}>
+          <span style={{ fontSize: "1em", color: "white" }}>We are at your Command!</span>
+        </Animator>
+      </ScrollPage>
+      <ScrollPage page={29}>
         <Animator animation={ZoomInScrollOut}>
-          <span style={{ fontSize: "5em", color: "white" }}>Job</span>
+          <span style={{ fontSize: "2em", color: "white" }}>NOVITA WRISTO</span>
+        </Animator>
+      </ScrollPage>
+      <ScrollPage page={30}>
+        <Animator animation={FadeUp}>
+          <span style={{ fontSize: "2em", color: "white" }}>
+            SMART WATCH SERIES
+          </span>
+        </Animator>
+      </ScrollPage>
+      <ScrollPage page={31}>
+        <Animator animation={ZoomInScrollOut}>
+          <span style={{ fontSize: "5em", color: "white" }}>WRISTO</span>
         </Animator>
       </ScrollPage>
      
