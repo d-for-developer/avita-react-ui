@@ -12,7 +12,7 @@ export default function Header() {
     <Row className='mt-4'>
       <Navbar bg="none" expand="lg" >
       <Container>
-      <Navbar.Brand href="#">
+      <Navbar.Brand>
         <Logo />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />

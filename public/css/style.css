@@ -456,10 +456,10 @@ button.btn-outline-submit:hover{
 h6 {
     background-color: #fafafa !important;
 }
-
+/* 
 .MuiList-root {
     background-color: #fafafa !important;
-}
+} */
 
 /* p{
     background-color: #fafafa!important;
@@ -581,4 +581,9 @@ input[type=search] {
 .specHeading{
     align-content: center;
   
+}
+
+.nav-link{
+    color:#000;
+    font-weight: 600;
 }

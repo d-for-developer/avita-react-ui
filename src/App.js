@@ -8,12 +8,10 @@ import {
   Route,
 } from "react-router-dom";
 import Home from './components/Home';
-import Products from './components/products/Products';
 import Satus from './components/products/Laptops/Satus';
 import Domus from './components/products/Lighting/Domus';
 import Wristo from './components/products/Watch/Wristo';
-
-
+import Contact from './components/pages/Contact';
 
 function App() {
   return (
@@ -24,8 +22,8 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/products">
-           <Products/>
+          <Route path="/contact">
+           <Contact/>
           </Route>
           <Route path="/laptops">
             <Satus/>
