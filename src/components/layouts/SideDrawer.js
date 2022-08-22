@@ -44,11 +44,11 @@ const SideDrawer = () => {
                             <ListItemText> <Nav.Link href="/smart-watch">Smart Watch</Nav.Link></ListItemText>
                         </ListItemIcon>
                     </ListItemButton>
-                    <ListItemButton>
+                    {/* <ListItemButton>
                         <ListItemIcon>
                             <ListItemText> <Nav.Link href="/contact">Contact</Nav.Link></ListItemText>
                         </ListItemIcon>
-                    </ListItemButton>
+                    </ListItemButton> */}
                 </List>
                 
             </Drawer>
