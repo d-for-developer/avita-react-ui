@@ -3,11 +3,13 @@ import { Drawer, List, ListItemIcon, ListItemText, ListItemButton, IconButton } 
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import Logo from '../../Logo';
+import { Link } from "react-router-dom";
 
 
 const SideDrawer = () => {
 
-    const PAGES = ["Home", "Laptops & Tablets", "Smart Lighting", "TV", "Fitness"];
+    const PAGES = ["Home", "Laptops & Tablets", "Smart Lighting", "Smart Watch", "Contact"];
+
 
     const [openDrawer, setOpenDrawer] = useState(false);
 
@@ -24,10 +26,10 @@ const SideDrawer = () => {
                 <List sx={{ marginLeft: '2%', marginTop: '15%', height: '100vh' }} >
 
                     {
-                        PAGES.map((pages, index) => (
+                        PAGES.map((pages, index, link) => (
                             <ListItemButton key={index}>
                                 <ListItemIcon>
-                                    <ListItemText>{pages}<hr /></ListItemText>
+                                    <ListItemText component={Link} to={link}>{pages}<hr /></ListItemText>
                                 </ListItemIcon>
 
                             </ListItemButton>
