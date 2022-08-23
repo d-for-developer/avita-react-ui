@@ -8,14 +8,16 @@ import CardMedia from '@mui/material/CardMedia';
 
 function VideoSection() {
     return (
-        <Container className='mt-4'>
+        <Container className='mt-4 mb-4'>
             <Row>
                 <Col>
                     <CardMedia
                         component="video"
                         image={Video}
                         title='Smart Watch Teaser'
+                        type="video/mp4"
                         autoPlay
+                        loop
                     />
                 </Col>
             </Row>
