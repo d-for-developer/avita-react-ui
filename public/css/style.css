@@ -517,7 +517,7 @@ input[type=search] {
 .homeBadge {
     text-align: center;
     font-size: 40px;
-    margin-left: 40%;
+    margin-left: 43%;
     font-family: "Plus Jakarta Sans";
 }
 
@@ -586,4 +586,8 @@ input[type=search] {
 .nav-link{
     color:#000;
     font-weight: 600;
+}
+
+.carousel-control-next, .carousel-control-prev, .carousel-indicators{
+    display: none!important;
 }

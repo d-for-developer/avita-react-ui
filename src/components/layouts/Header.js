@@ -33,12 +33,13 @@ export default function Header() {
               navbarScroll
             >
               <Nav.Link className='px-5' href="/">Home</Nav.Link>
-              <Nav.Link className='px-5' href="/laptops">Laptops & Tabs</Nav.Link>
-              <Nav.Link className='px-5' href="/smart-lighting">Smart Lighting</Nav.Link>
+              <Nav.Link className='px-5' href="/">Laptops</Nav.Link>
+              <Nav.Link className='px-5' href="/">Tablets</Nav.Link>
+              <Nav.Link className='px-5' href="/">Smart Lighting</Nav.Link>
               {/* <Nav.Link className='px-5' href="/smart-watch">Smart Watch</Nav.Link> */}
-              <NavDropdown className='px-4' title="SMART WATCHES" id="basic-nav-dropdown" show={show} onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
-                <NavDropdown.Item className='nav-dropdown px-4' href="/smart-watchs/wristo-1">WRISTO 1 [Launching Soon]</NavDropdown.Item>
-                <NavDropdown.Item className='nav-dropdown px-4' href="/smart-watchs/wristo-2">WRISTO 2 [Launching Soon]</NavDropdown.Item>
+              <NavDropdown className='px-4' title="Smartwatches" id="basic-nav-dropdown" show={show} onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
+                <NavDropdown.Item className='nav-dropdown px-4' href="/">WRISTIO 1 [Launching Soon]</NavDropdown.Item>
+                <NavDropdown.Item className='nav-dropdown px-4' href="/">WRISTIO 2 [Launching Soon]</NavDropdown.Item>
               </NavDropdown>
               {/* <Nav.Link className='px-5' href="/contact">Contact</Nav.Link> */}
             </Nav>

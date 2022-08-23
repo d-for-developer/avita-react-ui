@@ -14,7 +14,7 @@ import Input from '@mui/material/Input';
 import FormHelperText from '@mui/material/FormHelperText';
 import IconButton from '@mui/material/IconButton';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 
 export default function FooterMiddle() {
@@ -58,19 +58,20 @@ export default function FooterMiddle() {
                                     Follow Us
                                 </Typography>
                                 <Typography variant="p" component="div" gutterBottom fontSize={12} style={{ marginLeft: '20%' }}>
-                                    <IconButton aria-label="facebook">
+                                    <IconButton aria-label="facebook" href="https://www.facebook.com/NOVITA.India.official">
                                         <FaFacebook />
                                     </IconButton>
-                                    <IconButton aria-label="instagram">
+                                    <IconButton aria-label="instagram" href="https://www.instagram.com/novita.india/">
                                         <FaInstagram />
                                     </IconButton>
-                                    <IconButton aria-label="twitter">
+                                    <IconButton aria-label="twitter" href="https://twitter.com/novitaindia">
                                         <FaTwitter />
                                     </IconButton>
-                                    <IconButton aria-label="youtube">
+                                    {/* <IconButton aria-label="youtube">
                                         <FaYoutube />
                                     </IconButton>
-                                    <IconButton aria-label="linkedIn">
+                                     */}
+                                    <IconButton aria-label="linkedIn" href="https://www.linkedin.com/company/novita-india/">
                                         <FaLinkedin />
                                     </IconButton>
                                     

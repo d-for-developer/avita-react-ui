@@ -1,5 +1,5 @@
 import { Carousel } from 'react-bootstrap';
-import mobBanner1 from '../assets/mobBanner/1.jpeg';
+import mobBanner1 from '../assets/mobBanner/1.jpg';
 import webBanner1 from '../assets/webBanner/1.jpg';
 import Row from 'react-bootstrap/Row';
 import { useTheme } from '@mui/material/styles';
@@ -29,6 +29,8 @@ function HomeBanner() {
 
         </Carousel.Item>
        
+     
+
       </Carousel>
     </Row>
   );
