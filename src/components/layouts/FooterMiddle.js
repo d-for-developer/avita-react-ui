@@ -57,7 +57,7 @@ export default function FooterMiddle() {
                                 <Typography variant="h6" component="div" gutterBottom fontSize={18} style={{ marginLeft: '35%', marginTop: '45px' }}>
                                     Follow Us
                                 </Typography>
-                                <Typography variant="p" component="div" gutterBottom fontSize={12} style={{ marginLeft: '20%' }}>
+                                <Typography variant="p" component="div" gutterBottom fontSize={12} style={{ marginLeft: '24%' }}>
                                     <IconButton aria-label="facebook" href="https://www.facebook.com/NOVITA.India.official">
                                         <FaFacebook />
                                     </IconButton>

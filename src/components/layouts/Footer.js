@@ -20,7 +20,9 @@ const Footer = () => {
           <List>
            
             <ListItem>
-              <ListItemText>Customer Service</ListItemText>
+              <ListItemText>
+                <a href='/support'>Customer Support</a>
+                </ListItemText>
             </ListItem>
             <ListItem>
               <ListItemText>Shipping FAQ</ListItemText>

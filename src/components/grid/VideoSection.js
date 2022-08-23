@@ -13,11 +13,12 @@ function VideoSection() {
                 <Col>
                     <CardMedia
                         component="video"
-                        image={Video}
+                        src={Video}
                         title='Smart Watch Teaser'
                         type="video/mp4"
                         autoPlay
                         loop
+                        controls
                     />
                 </Col>
             </Row>

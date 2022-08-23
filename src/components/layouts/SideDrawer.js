@@ -61,11 +61,11 @@ const SideDrawer = () => {
                             </ListItemText>
                         </ListItemIcon>
                     </ListItemButton>
-                    {/* <ListItemButton>
+                    <ListItemButton>
                         <ListItemIcon>
-                            <ListItemText> <Nav.Link href="/contact">Contact</Nav.Link></ListItemText>
+                            <ListItemText> <Nav.Link href="/support">Support</Nav.Link></ListItemText>
                         </ListItemIcon>
-                    </ListItemButton> */}
+                    </ListItemButton>
                 </List>
 
             </Drawer>

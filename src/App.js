@@ -12,6 +12,7 @@ import Satus from './components/products/Laptops/Satus';
 import Domus from './components/products/Lighting/Domus';
 import Wristo from './components/products/Watch/Wristo';
 import Contact from './components/pages/Contact';
+import Support from './components/pages/Support';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
           </Route>
           <Route path="/smart-watch">
             <Wristo/>
+          </Route>
+          <Route path="/support">
+            <Support/>
           </Route>
          
         </Switch>
