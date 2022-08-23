@@ -41,7 +41,7 @@ const SideDrawer = () => {
                     </ListItemButton>
                     <ListItemButton>
                         <ListItemIcon>
-                            <ListItemText> <Nav.Link href="/smart-watch">Smart Watch</Nav.Link></ListItemText>
+                            <ListItemText> <Nav.Link href="/smart-watch">Smart Watchs</Nav.Link></ListItemText>
                         </ListItemIcon>
                     </ListItemButton>
                     {/* <ListItemButton>

@@ -3,7 +3,7 @@ import HomeBanner from './banner/HomeBanner'
 import FeatureGrid from './grid/FeatureGrid'
 import ProductGrid from './grid/ProductGrid'
 import BlogGrid from './grid/BlogGrid'
-import BannerImg from './grid/BannerImg'
+// import BannerImg from './grid/BannerImg'
 import BadgeHome from './grid/BadgeHome'
 import FooterTop from './layouts/FooterTop'
 import Footer from './layouts/Footer'
@@ -14,6 +14,7 @@ import Header from './layouts/Header'
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import SideDrawer from './layouts/SideDrawer'
+import VideoSection from './grid/VideoSection'
 
 
 
@@ -28,10 +29,13 @@ export default function Home() {
     { matches?<></>:<TopBar/> } 
     { matches?<SideDrawer/>:<Header/> } 
       <HomeBanner />
-      <FeatureGrid />
-      <ProductGrid />
       <BadgeHome />
-      <BannerImg />
+
+      <ProductGrid />
+      <FeatureGrid />
+
+      <VideoSection/>
+      {/* <BannerImg /> */}
       <BlogGrid />
       <FooterTop />
       <FooterMiddle />

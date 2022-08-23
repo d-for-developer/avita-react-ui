@@ -15,12 +15,12 @@ export default function TopBar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" >
             <Nav className="me-auto" >
-              <Nav.Link className='px-3' href="#home">AVITA INDIA</Nav.Link>
-              <Nav.Link className='px-3' href="#store">GET AVITA STORE APP</Nav.Link>
+              <Nav.Link className='px-3' href="#home">NOVITA INDIA</Nav.Link>
+              <Nav.Link className='px-3' href="#store">GET NOVITA STORE APP</Nav.Link>
               <Nav.Link className='px-3' href="#help">ONLINE HELP</Nav.Link>
               <NavDropdown className='px-3' title="RETAIL STORE" id="basic-nav-dropdown">
-                <NavDropdown.Item className='nav-dropdown' href="#action/3.1">AVITA HOME</NavDropdown.Item>
-                <NavDropdown.Item className='nav-dropdown' href="#action/3.2">AVITA STORE</NavDropdown.Item>
+                <NavDropdown.Item className='nav-dropdown' href="#action/3.1">NOVITA HOME</NavDropdown.Item>
+                <NavDropdown.Item className='nav-dropdown' href="#action/3.2">NOVITA STORE</NavDropdown.Item>
                 <NavDropdown.Item className='nav-dropdown' href="#action/3.3">AUTHORIZED PARTNER</NavDropdown.Item>
               </NavDropdown>
             </Nav>
