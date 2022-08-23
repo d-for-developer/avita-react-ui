@@ -9,7 +9,7 @@ import FeatureGrid from './grid/FeatureGrid'
 import Footer from './layouts/Footer'
 import FooterMiddle from './layouts/FooterMiddle'
 import Copyright from './layouts/Copyright'
-import TopBar from './layouts/TopBar'
+// import TopBar from './layouts/TopBar'
 import Header from './layouts/Header'
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
      <>
-    { matches?<></>:<TopBar/> } 
+    {/* { matches?<></>:<TopBar/> }  */}
     { matches?<SideDrawer/>:<Header/> } 
       <HomeBanner />
       <CountDownTimer/>
