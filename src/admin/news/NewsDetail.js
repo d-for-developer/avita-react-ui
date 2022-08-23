@@ -10,11 +10,11 @@ import SideDrawer from "../layouts/SideDrawer";
 export default function NewsDetail() {
 
   const editorRef = useRef(null);
-  const log = () => {
-      if (editorRef.current) {
-          console.log(editorRef.current.getContent());
-      }
-  };
+//   const log = () => {
+//       if (editorRef.current) {
+//           console.log(editorRef.current.getContent());
+//       }
+//   };
 
 
   return (

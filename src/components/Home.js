@@ -13,9 +13,8 @@ import TopBar from './layouts/TopBar'
 import Header from './layouts/Header'
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import SideDrawer from './layouts/SideDrawer'
-import VideoSection from './grid/VideoSection'
-
+import SideDrawer from './layouts/SideDrawer';
+import VideoSection from './grid/VideoSection';
 
 
 export default function Home() {
@@ -30,7 +29,6 @@ export default function Home() {
     { matches?<SideDrawer/>:<Header/> } 
       <HomeBanner />
       <BadgeHome />
-
       <ProductGrid />
       <FeatureGrid />
 
