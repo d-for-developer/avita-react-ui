@@ -93,7 +93,7 @@ function CountDownTimer() {
                        
                             <Col className='badgeColumn'>
 
-                                 <span className="homeBadge" >
+                                 <span className="homeBadge"  style={{ marginLeft:'30%' }} >
                                     {diff.second}
                                 </span>
                                 <Typography className='badgeHeading' variant="h5" component="div" gutterBottom sx={{ fontFamily:'Orbitron' }}>
