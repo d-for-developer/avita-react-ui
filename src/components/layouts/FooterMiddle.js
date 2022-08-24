@@ -27,7 +27,7 @@ export default function FooterMiddle() {
             {
                 matches ? (<>
 
-                    <Container className='mt-4 mb-4 pb-4'>
+                    <Container className='mt-4 mb-4 pb-4 '>
 
                         <Row>
                             <Col>

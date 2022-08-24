@@ -51,7 +51,7 @@ function CountDownTimer() {
     const matches = useMediaQuery(theme.breakpoints.down('md'));
 
     return (
-        <Container className='countDown mt-4 mb-4'>
+        <Container className='countDown mt-4 mb-4 p-4' style={{height:'30vh'}}>
             {matches ? (<h4 style={{ textAlign: 'center', marginBottom: '25px' }}> <br /> EMBRACE INNOVATION</h4>) : (<Divider sx={{ fontSize: '26px', overflowY: 'hidden', marginBottom: '35px', fontFamily:'Orbitron' }}>  EMBRACE INNOVATION</Divider>)}
 
             {
