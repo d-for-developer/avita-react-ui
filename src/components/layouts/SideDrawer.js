@@ -46,15 +46,15 @@ const SideDrawer = () => {
                             <ListItemText> <Nav.Link title="Tablets" id="basic-nav-dropdown" href="/">Tablets</Nav.Link></ListItemText>
                         </ListItemIcon>
                     </ListItemButton>
-                    <ListItemButton>
+                    {/* <ListItemButton>
                         <ListItemIcon>
                             <ListItemText> <Nav.Link title="Smart Lighting" id="basic-nav-dropdown" href="/">Smart Lighting</Nav.Link></ListItemText>
                         </ListItemIcon>
-                    </ListItemButton>
+                    </ListItemButton> */}
                     <ListItemButton>
                         <ListItemIcon>
                             <ListItemText>
-                                <NavDropdown title="Smartwatches" id="basic-nav-dropdown" show={show} onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
+                                <NavDropdown title="Smart Wearables" id="basic-nav-dropdown" show={show} onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
                                     <NavDropdown.Item className='nav-dropdown' href="/">WRISTIO 1 [Launching Soon]</NavDropdown.Item>
                                     <NavDropdown.Item className='nav-dropdown' href="/">WRISTIO 2 [Launching Soon]</NavDropdown.Item>
                                 </NavDropdown>

@@ -523,6 +523,8 @@ input[type=search] {
     font-size: 40px;
     margin-left: 43%;
     font-family: "Orbitron";
+    border-bottom: 1px solid #471577;
+
 }
 
 .badgeText {
