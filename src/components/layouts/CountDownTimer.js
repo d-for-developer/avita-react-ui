@@ -64,7 +64,7 @@ function CountDownTimer() {
                                     {diff.day}
                                 </span>
 
-                                <Typography className='badgeHeading' variant="h5" component="div" gutterBottom sx={{ fontFamily:'Orbitron' }}>
+                                <Typography className='badgeHeading' variant="h5" component="div" gutterBottom sx={{ fontFamily:'Orbitron', textAlign:'center' }}>
                                     DAYS
                                 </Typography>
                             </Col>
@@ -82,7 +82,7 @@ function CountDownTimer() {
                         <Row>
                             <Col className='badgeColumn'>
 
-                            <span className="homeBadge" >
+                            <span className="homeBadge" style={{ marginLeft:'35%' }} >
                                     {diff.minute}
                                 </span>
 
@@ -106,7 +106,7 @@ function CountDownTimer() {
                     <Row>
                         <Col className='badgeColumn'>
 
-                        <span className="homeBadge" >
+                        <span className="homeBadge" style={{ marginLeft:'45%' }} >
                                     {diff.day}
                                 </span>
                             <Typography className='badgeHeading' variant="h5" component="div" gutterBottom sx={{ fontFamily:'Orbitron' }}>
