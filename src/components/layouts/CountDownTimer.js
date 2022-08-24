@@ -52,7 +52,7 @@ function CountDownTimer() {
 
     return (
         <Container className='mt-4 mb-4'>
-            {matches ? (<h4 style={{ textAlign: 'center', marginBottom: '25px' }}> <br /> EMBRACE INNOVATION</h4>) : (<Divider sx={{ fontSize: '26px', overflowY: 'hidden', marginBottom: '35px' }}>  EMBRACE INNOVATION</Divider>)}
+            {matches ? (<h4 style={{ textAlign: 'center', marginBottom: '25px' }}> <br /> EMBRACE INNOVATION</h4>) : (<Divider sx={{ fontSize: '26px', overflowY: 'hidden', marginBottom: '35px', fontFamily:'Orbitron' }}>  EMBRACE INNOVATION</Divider>)}
 
             {
                 matches ? (
@@ -60,21 +60,21 @@ function CountDownTimer() {
                         <Row>
                             <Col className='badgeColumn'>
 
-                                <span className="homeBadge">
+                                <span className="homeBadge" sx={{ fontFamily:'Orbitron' }}>
                                     {diff.day}
                                 </span>
 
-                                <Typography className='badgeHeading' variant="h5" component="div" gutterBottom>
+                                <Typography className='badgeHeading' variant="h5" component="div" gutterBottom sx={{ fontFamily:'Orbitron' }}>
                                     DAYS
                                 </Typography>
                             </Col>
                      
                             <Col className='badgeColumn'>
 
-                                 <span className="homeBadge">
+                                 <span className="homeBadge" sx={{ fontFamily:'Orbitron' }}>
                                     {diff.hour}
                                 </span>
-                                <Typography className='badgeHeading' variant="h5" component="div" gutterBottom>
+                                <Typography className='badgeHeading' variant="h5" component="div" gutterBottom sx={{ fontFamily:'Orbitron' }}>
                                     HOURS
                                 </Typography>
                             </Col>
@@ -82,21 +82,21 @@ function CountDownTimer() {
                         <Row>
                             <Col className='badgeColumn'>
 
-                            <span className="homeBadge">
+                            <span className="homeBadge" sx={{ fontFamily:'Orbitron' }}>
                                     {diff.minute}
                                 </span>
 
-                                <Typography className='badgeHeading' variant="h5" component="div" gutterBottom>
+                                <Typography className='badgeHeading' variant="h5" component="div" gutterBottom sx={{ fontFamily:'Orbitron' }}>
                                     MINUTES
                                 </Typography>
                             </Col>
                        
                             <Col className='badgeColumn'>
 
-                                 <span className="homeBadge">
+                                 <span className="homeBadge" sx={{ fontFamily:'Orbitron' }}>
                                     {diff.second}
                                 </span>
-                                <Typography className='badgeHeading' variant="h5" component="div" gutterBottom>
+                                <Typography className='badgeHeading' variant="h5" component="div" gutterBottom sx={{ fontFamily:'Orbitron' }}>
                                     SECONDS
                                 </Typography>
                             </Col>
@@ -106,38 +106,38 @@ function CountDownTimer() {
                     <Row>
                         <Col className='badgeColumn'>
 
-                        <span className="homeBadge">
+                        <span className="homeBadge" sx={{ fontFamily:'Orbitron' }}>
                                     {diff.day}
                                 </span>
-                            <Typography className='badgeHeading' variant="h5" component="div" gutterBottom>
+                            <Typography className='badgeHeading' variant="h5" component="div" gutterBottom sx={{ fontFamily:'Orbitron' }}>
                                 DAYS
                             </Typography>
                         </Col>
                         <Col className='badgeColumn'>
 
 
-                        <span className="homeBadge">
+                        <span className="homeBadge" sx={{ fontFamily:'Orbitron' }}>
                                     {diff.hour}
                                 </span>
-                            <Typography className='badgeHeading' variant="h5" component="div" gutterBottom>
+                            <Typography className='badgeHeading' variant="h5" component="div" gutterBottom sx={{ fontFamily:'Orbitron' }}>
                                 HOURS
                             </Typography>
                         </Col>
                         <Col className='badgeColumn'>
 
-                        <span className="homeBadge">
+                        <span className="homeBadge" sx={{ fontFamily:'Orbitron' }}>
                                     {diff.minute}
                                 </span>
-                            <Typography className='badgeHeading' variant="h5" component="div" gutterBottom>
+                            <Typography className='badgeHeading' variant="h5" component="div" gutterBottom sx={{ fontFamily:'Orbitron' }}>
                                 MINUTES
                             </Typography>
                         </Col>
                         <Col className='badgeColumn'>
 
-                        <span className="homeBadge">
+                        <span className="homeBadge" sx={{ fontFamily:'Orbitron' }}>
                                     {diff.second}
                                 </span>
-                            <Typography className='badgeHeading' variant="h5" component="div" gutterBottom>
+                            <Typography className='badgeHeading' variant="h5" component="div" gutterBottom sx={{ fontFamily:'Orbitron' }}>
                                 SECONDS
                             </Typography>
                         </Col>
