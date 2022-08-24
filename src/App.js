@@ -1,6 +1,6 @@
 import './App.css';
-import "@fontsource/plus-jakarta-sans";
-
+// import "@fontsource/plus-jakarta-sans";
+import "@fontsource/orbitron";
 
 import {
   BrowserRouter as Router,

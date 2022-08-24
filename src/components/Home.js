@@ -1,6 +1,6 @@
 import React from 'react'
 import HomeBanner from './banner/HomeBanner'
-import FeatureGrid from './grid/FeatureGrid'
+// import FeatureGrid from './grid/FeatureGrid'
 // import ProductGrid from './grid/ProductGrid'
 // import BlogGrid from './grid/BlogGrid'
 // import BannerImg from './grid/BannerImg'
@@ -14,7 +14,7 @@ import Header from './layouts/Header'
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import SideDrawer from './layouts/SideDrawer';
-import VideoSection from './grid/VideoSection';
+// import VideoSection from './grid/VideoSection';
 import CountDownTimer from './layouts/CountDownTimer'
 
 
