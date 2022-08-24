@@ -32,8 +32,8 @@ export default function Home() {
       <CountDownTimer/>
       {/* <BadgeHome /> */}
       {/* <ProductGrid /> */}
-      <VideoSection/>
-      <FeatureGrid />
+      {/* <VideoSection/> */}
+      {/* <FeatureGrid /> */}
       {/* <BannerImg /> */}
       {/* <BlogGrid /> */}
       {/* <FooterTop /> */}
