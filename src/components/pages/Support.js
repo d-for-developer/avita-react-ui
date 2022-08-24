@@ -23,7 +23,7 @@ function Support() {
   return (
     <>
 
-      {matches ? <SideDrawer style={{}} /> : <Header />}
+      {matches ? <SideDrawer/> : <Header />}
       <MenuBg/>
       <div className='container mt-4'>
                 <Breadcrumbs aria-label="breadcrumb">
