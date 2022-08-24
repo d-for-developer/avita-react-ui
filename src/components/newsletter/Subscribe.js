@@ -15,10 +15,10 @@ export const Subscribe = () => {
         <>
             <Grid container spacing={2} direction="row" justifyContent="left" alignItems="left">
                 <Grid item>
-                    <Typography variant="h6" component="div" gutterBottom fontSize={17}>
+                    <Typography variant="h6" component="div" gutterBottom fontSize={19}>
                         LET'S STAY IN TOUCH
                     </Typography>
-                    <Typography variant="p" component="div" gutterBottom fontSize={12}>
+                    <Typography variant="p" component="div" gutterBottom fontSize={11}>
                         Get updates on sales specials and more
                     </Typography>
                 </Grid>
@@ -28,14 +28,12 @@ export const Subscribe = () => {
                         <Input id="my-input" aria-describedby="my-helper-text" />
                         <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
                     </FormControl>
-                </Grid>
-                <Grid item>
                     <IconButton variant="outlined">
                         <SendOutlinedIcon style={{fontSize:'30px'}} />
 
                     </IconButton>
-
                 </Grid>
+               
             </Grid>
 
 
