@@ -51,7 +51,7 @@ function CountDownTimer() {
     const matches = useMediaQuery(theme.breakpoints.down('md'));
 
     return (
-        <Container className='mt-4 mb-4'>
+        <Container className='countDown mt-4 mb-4'>
             {matches ? (<h4 style={{ textAlign: 'center', marginBottom: '25px' }}> <br /> EMBRACE INNOVATION</h4>) : (<Divider sx={{ fontSize: '26px', overflowY: 'hidden', marginBottom: '35px', fontFamily:'Orbitron' }}>  EMBRACE INNOVATION</Divider>)}
 
             {
@@ -60,7 +60,7 @@ function CountDownTimer() {
                         <Row>
                             <Col className='badgeColumn'>
 
-                                <span className="homeBadge" sx={{ fontFamily:'Orbitron' }}>
+                                <span className="homeBadge" >
                                     {diff.day}
                                 </span>
 
@@ -71,7 +71,7 @@ function CountDownTimer() {
                      
                             <Col className='badgeColumn'>
 
-                                 <span className="homeBadge" sx={{ fontFamily:'Orbitron' }}>
+                                 <span className="homeBadge" >
                                     {diff.hour}
                                 </span>
                                 <Typography className='badgeHeading' variant="h5" component="div" gutterBottom sx={{ fontFamily:'Orbitron' }}>
@@ -82,7 +82,7 @@ function CountDownTimer() {
                         <Row>
                             <Col className='badgeColumn'>
 
-                            <span className="homeBadge" sx={{ fontFamily:'Orbitron' }}>
+                            <span className="homeBadge" >
                                     {diff.minute}
                                 </span>
 
@@ -93,7 +93,7 @@ function CountDownTimer() {
                        
                             <Col className='badgeColumn'>
 
-                                 <span className="homeBadge" sx={{ fontFamily:'Orbitron' }}>
+                                 <span className="homeBadge" >
                                     {diff.second}
                                 </span>
                                 <Typography className='badgeHeading' variant="h5" component="div" gutterBottom sx={{ fontFamily:'Orbitron' }}>
@@ -106,7 +106,7 @@ function CountDownTimer() {
                     <Row>
                         <Col className='badgeColumn'>
 
-                        <span className="homeBadge" sx={{ fontFamily:'Orbitron' }}>
+                        <span className="homeBadge" >
                                     {diff.day}
                                 </span>
                             <Typography className='badgeHeading' variant="h5" component="div" gutterBottom sx={{ fontFamily:'Orbitron' }}>
@@ -116,7 +116,7 @@ function CountDownTimer() {
                         <Col className='badgeColumn'>
 
 
-                        <span className="homeBadge" sx={{ fontFamily:'Orbitron' }}>
+                        <span className="homeBadge" >
                                     {diff.hour}
                                 </span>
                             <Typography className='badgeHeading' variant="h5" component="div" gutterBottom sx={{ fontFamily:'Orbitron' }}>
@@ -125,7 +125,7 @@ function CountDownTimer() {
                         </Col>
                         <Col className='badgeColumn'>
 
-                        <span className="homeBadge" sx={{ fontFamily:'Orbitron' }}>
+                        <span className="homeBadge" >
                                     {diff.minute}
                                 </span>
                             <Typography className='badgeHeading' variant="h5" component="div" gutterBottom sx={{ fontFamily:'Orbitron' }}>
@@ -134,7 +134,7 @@ function CountDownTimer() {
                         </Col>
                         <Col className='badgeColumn'>
 
-                        <span className="homeBadge" sx={{ fontFamily:'Orbitron' }}>
+                        <span className="homeBadge" >
                                     {diff.second}
                                 </span>
                             <Typography className='badgeHeading' variant="h5" component="div" gutterBottom sx={{ fontFamily:'Orbitron' }}>

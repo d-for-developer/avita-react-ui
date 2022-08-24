@@ -16,8 +16,8 @@ export default function Copyright() {
     <>
       {
         matches ? (
-          <div className='container m-2'>
-              <Typography style={{ fontWeight: '300', fontSize: '9px'}} variant="span" >
+          <div className='container m-2 text-center'>
+              <Typography style={{ fontWeight: '300', fontSize: '10px'}} variant="p" >
 
                 @2022 | NEXSTGO TECHNOLOGIES INDIA PRIVATE LIMITED | ALL RIGHTS RESERVED
               </Typography>

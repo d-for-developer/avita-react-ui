@@ -3,9 +3,13 @@
 */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
+*{
+    font-family: 'Orbitron', sans-serif!important;
+    font-weight: 400;
+}
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     background: #fafafa;
     overflow-x: hidden;
 }
@@ -27,7 +31,7 @@ body {
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
@@ -36,7 +40,7 @@ p {
 
 
 .about p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1em;
     font-weight: 400;
     line-height: 1.2em;
@@ -518,17 +522,17 @@ input[type=search] {
     text-align: center;
     font-size: 40px;
     margin-left: 43%;
-    font-family: "Plus Jakarta Sans";
+    font-family: "Orbitron";
 }
 
 .badgeText {
-    font-family: "Plus Jakarta Sans";
+    font-family: "Orbitron";
     text-align: center;
 
 }
 
 .badgeHeading {
-    font-family: "Plus Jakarta Sans";
+    font-family: "Orbitron";
     text-align: center;
 
 }
@@ -546,14 +550,14 @@ input[type=search] {
 
 
 .footerHeading {
-    font-family: "Plus Jakarta Sans";
+    font-family: "Orbitron";
     text-align: center;
 
 }
 
 
 .footerText {
-    font-family: "Plus Jakarta Sans";
+    font-family: "Orbitron";
     text-align: center;
 
 }
@@ -590,4 +594,8 @@ input[type=search] {
 
 .carousel-control-next, .carousel-control-prev, .carousel-indicators{
     display: none!important;
+}
+
+.countDown{
+    color:#471577!important;
 }

@@ -14,7 +14,7 @@ const Footer = () => {
     <Container className='footerMain' sx={{marginTop:'12%'}}>
       <Grid container spacing={0} direction="row">
         <Grid item xs={2}>
-           <Typography sx={{ mb:2, fontWeight: '700' }} variant="p" >
+           <Typography sx={{ mb:2, fontWeight: '800' }} variant="p" >
               SUPPORT
             </Typography>
           <List>
@@ -45,7 +45,7 @@ const Footer = () => {
           </List>
         </Grid>
         <Grid item xs={2}>
-        <Typography sx={{ mb:2, fontWeight: '700'  }} variant="p">
+        <Typography sx={{ mb:2, fontWeight: '800'  }} variant="p">
               SHOP
             </Typography>
           <List>
@@ -65,7 +65,7 @@ const Footer = () => {
           </List>
         </Grid>
         <Grid item xs={2}>
-        <Typography sx={{ mb:2, fontWeight: '700'  }} variant="p">
+        <Typography sx={{ mb:2, fontWeight: '800'  }} variant="p">
               RETAIL STORE
             </Typography>
           <List>
@@ -80,7 +80,7 @@ const Footer = () => {
           </List>
         </Grid>
         <Grid item xs={2}>
-        <Typography sx={{ mb:2, fontWeight: '700'  }} variant="p">
+        <Typography sx={{ mb:2, fontWeight: '800'  }} variant="p">
               ABOUT US
             </Typography>
           <List>
@@ -110,7 +110,7 @@ const Footer = () => {
         </Grid>
 
         <Grid item xs={2}>
-        <Typography sx={{ mb:2, fontWeight: '700'  }} variant="p">
+        <Typography sx={{ mb:2, fontWeight: '800'  }} variant="p">
               CONTACT US
             </Typography>
           <List>
@@ -125,7 +125,7 @@ const Footer = () => {
         </Grid>
 
         <Grid item xs={2}>
-        <Typography sx={{ mb:2, fontWeight: '700'  }} variant="p">
+        <Typography sx={{ mb:2, fontWeight: '800'  }} variant="p">
               CHAT
             </Typography>
           <List>

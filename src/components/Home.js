@@ -26,8 +26,8 @@ export default function Home() {
 
   return (
      <>
-    {/* { matches?<></>:<TopBar/> }  */}
-    { matches?<SideDrawer/>:<Header/> } 
+      {/* { matches?<></>:<TopBar/> }  */}
+      {matches?<SideDrawer/>:<Header/> } 
       <HomeBanner />
       <CountDownTimer/>
       {/* <BadgeHome /> */}
@@ -38,7 +38,7 @@ export default function Home() {
       {/* <BlogGrid /> */}
       {/* <FooterTop /> */}
       <FooterMiddle />
-      { matches?<></>:<Footer/>} 
+      {matches?<></>:<Footer/>} 
       <Copyright/>
     </>
   )

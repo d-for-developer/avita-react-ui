@@ -31,7 +31,7 @@ export default function FooterMiddle() {
 
                         <Row>
                             <Col>
-                                <Typography variant="h6" component="div" gutterBottom fontSize={18} style={{ marginLeft: '25%' }}>
+                                <Typography variant="h6" component="div" gutterBottom fontSize={18} style={{ marginLeft: '20%' }}>
                                     LET'S STAY IN TOUCH
                                 </Typography>
                                 <Typography variant="p" component="div" gutterBottom fontSize={12} style={{ marginLeft: '15%' }}>
@@ -41,7 +41,7 @@ export default function FooterMiddle() {
                         </Row>
                         <Row>
                             <Col className='mt-2'>
-                                <FormControl style={{ marginLeft: '20%' }}>
+                                <FormControl style={{ marginLeft: '15%' }}>
                                     <InputLabel style={{ marginTop: '1%' }} htmlFor="my-input">Email address</InputLabel>
                                     <Input id="my-input" aria-describedby="my-helper-text" />
                                     <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
@@ -54,10 +54,10 @@ export default function FooterMiddle() {
                         </Row>
                         <Row>
                             <Col>
-                                <Typography variant="h6" component="div" gutterBottom fontSize={18} style={{ marginLeft: '35%', marginTop: '45px' }}>
+                                <Typography variant="h6" component="div" gutterBottom fontSize={18} style={{ marginLeft: '37%', marginTop: '45px' }}>
                                     Follow Us
                                 </Typography>
-                                <Typography variant="p" component="div" gutterBottom fontSize={12} style={{ marginLeft: '24%' }}>
+                                <Typography variant="p" component="div" gutterBottom fontSize={12} style={{ marginLeft: '30%' }}>
                                     <IconButton aria-label="facebook" href="https://www.facebook.com/NOVITA.India.official">
                                         <FaFacebook />
                                     </IconButton>
@@ -83,7 +83,7 @@ export default function FooterMiddle() {
                 </>) : (
 
                     <Container className='mt-4 mb-4 pb-4'>
-                        <Grid container spacing={12} direction="row" justifyContent="center" alignItems="center">
+                        <Grid container spacing={12} direction="row" justifyContent="left" alignItems="left">
 
                             <Grid item xs={6}>
                                 <Subscribe />

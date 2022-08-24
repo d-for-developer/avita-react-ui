@@ -10,8 +10,6 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 
 
-
-
 export default function FeatureGrid () {
 
   const theme = useTheme();
@@ -65,7 +63,7 @@ export default function FeatureGrid () {
   <Container className='mt-4'>
       <Row>
         <Col>
-          <Figure>
+          <Figure style={{marginLeft:'2%'}}>
             <Figure.Image
               width={398}
               height={230}
@@ -76,7 +74,7 @@ export default function FeatureGrid () {
           </Figure>
         </Col>
         <Col>
-          <Figure>
+          <Figure style={{marginLeft:'2%'}}>
             <Figure.Image
               width={398}
               height={230}
@@ -87,7 +85,7 @@ export default function FeatureGrid () {
           </Figure>
         </Col>
         <Col>
-          <Figure>
+          <Figure style={{marginLeft:'2%'}}>
             <Figure.Image
               width={398}
               height={230}

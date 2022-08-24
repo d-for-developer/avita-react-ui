@@ -15,7 +15,7 @@ export const Subscribe = () => {
         <>
             <Grid container spacing={2} direction="row" justifyContent="left" alignItems="left">
                 <Grid item>
-                    <Typography variant="h6" component="div" gutterBottom fontSize={18}>
+                    <Typography variant="h6" component="div" gutterBottom fontSize={17}>
                         LET'S STAY IN TOUCH
                     </Typography>
                     <Typography variant="p" component="div" gutterBottom fontSize={12}>
