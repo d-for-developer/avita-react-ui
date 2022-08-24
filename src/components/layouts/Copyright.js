@@ -26,7 +26,7 @@ export default function Copyright() {
         </div>
         ) : (
           <>
-        <Container className='copyright' sx={{ marginTop: '32%', textAlign: 'center' }}>
+        <Container className='copyright' sx={{ marginTop: '10%', textAlign: 'center' }}>
           <Grid container>
             <Grid item xs={12}>
               <Typography sx={{ mb: 2, fontWeight: '300', fontSize: '12px' }} variant="p" >

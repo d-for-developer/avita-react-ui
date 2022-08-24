@@ -15,7 +15,9 @@ import FormHelperText from '@mui/material/FormHelperText';
 import IconButton from '@mui/material/IconButton';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
-
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
 
 export default function FooterMiddle() {
 
@@ -74,7 +76,7 @@ export default function FooterMiddle() {
                                     <IconButton aria-label="linkedIn" href="https://www.linkedin.com/company/novita-india/">
                                         <FaLinkedin />
                                     </IconButton>
-                                    
+
                                 </Typography>
                             </Col>
                         </Row>
@@ -92,6 +94,28 @@ export default function FooterMiddle() {
 
                             <Grid item xs={6}>
                                 <SocialIcons />
+                                <Grid container spacing={12} direction="row" justifyContent="left" alignItems="left">
+                                <Grid item xs={6}>
+                                </Grid>
+                                    <Grid item xs={2}>
+                                        <List>
+                                            <ListItem>
+                                                <ListItemText>
+                                                    <a href='/support'>Support</a>
+                                                </ListItemText>
+                                            </ListItem>
+                                        </List>
+                                    </Grid>
+                                    <Grid item xs={4}>
+                                        <List>
+                                            <ListItem>
+                                                <ListItemText>
+                                                    <a href='/'>About Us</a>
+                                                </ListItemText>
+                                            </ListItem>
+                                        </List>
+                                    </Grid>
+                                </Grid>
                             </Grid>
                         </Grid>
                     </Container>)

@@ -1,5 +1,5 @@
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
+// import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
@@ -43,7 +43,7 @@ export default function Header() {
               </NavDropdown>
               {/* <Nav.Link className='px-5' href="/contact">Contact</Nav.Link> */}
             </Nav>
-            <Form className="d-flex searchBox border-bottom" >
+            {/* <Form className="d-flex searchBox border-bottom" >
               <Form.Control
                 type="search"
                 placeholder="Search"
@@ -51,7 +51,7 @@ export default function Header() {
                 aria-label="Search"
                 style={{ border: 'none', backgroundColor: 'transparent' }}
               />
-            </Form>
+            </Form> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>

@@ -6,7 +6,7 @@ import HomeBanner from './banner/HomeBanner'
 // import BannerImg from './grid/BannerImg'
 // import BadgeHome from './grid/BadgeHome'
 // import FooterTop from './layouts/FooterTop'
-import Footer from './layouts/Footer'
+// import Footer from './layouts/Footer'
 import FooterMiddle from './layouts/FooterMiddle'
 import Copyright from './layouts/Copyright'
 // import TopBar from './layouts/TopBar'
@@ -38,7 +38,7 @@ export default function Home() {
       {/* <BlogGrid /> */}
       {/* <FooterTop /> */}
       <FooterMiddle />
-      {matches?<></>:<Footer/>} 
+      {/* {matches?<></>:<Footer/>}  */}
       <Copyright/>
     </>
   )

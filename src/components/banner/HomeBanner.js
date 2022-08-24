@@ -24,7 +24,7 @@ function HomeBanner() {
             ) : (
               webBanner1
             )}
-            alt="First slide"
+            alt="NOVITA "
           />
 
         </Carousel.Item>

@@ -3,12 +3,12 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Typography from '@mui/material/Typography';
-import Divider from '@mui/material/Divider';
+// import Divider from '@mui/material/Divider';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 
-const futureDate = new Date(2022, 8, 30);
+const futureDate = new Date(2022, 8, 31);
 const getDateDiff = (date1, date2) => {
     const diff = new Date(date2.getTime() - date1.getTime());
     return {
@@ -52,7 +52,7 @@ function CountDownTimer() {
 
     return (
         <Container className='countDown mt-4 mb-4 p-4' style={{height:'30vh'}}>
-            {matches ? (<h4 style={{ textAlign: 'center', marginBottom: '25px' }}> <br /> EMBRACE INNOVATION</h4>) : (<Divider sx={{ fontSize: '26px', overflowY: 'hidden', marginBottom: '35px', fontFamily:'Orbitron' }}>  EMBRACE INNOVATION</Divider>)}
+            {/* {matches ? (<h4 style={{ textAlign: 'center', marginBottom: '25px' }}> <br /> EMBRACE INNOVATION</h4>) : (<Divider sx={{ fontSize: '26px', overflowY: 'hidden', marginBottom: '35px', fontFamily:'Orbitron' }}>  EMBRACE INNOVATION</Divider>)} */}
 
             {
                 matches ? (
