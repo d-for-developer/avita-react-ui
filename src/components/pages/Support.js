@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../layouts/Header'
-import Footer from '../layouts/Footer'
+// import Footer from '../layouts/Footer'
 import Copyright from '../layouts/Copyright'
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -12,6 +12,7 @@ import Link from "@material-ui/core/Link";
 import Typography from "@material-ui/core/Typography";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import SupportForm from './SupportForm';
+// import FooterMiddle from '../layouts/FooterMiddle';
 
 function Support() {
 
@@ -46,7 +47,8 @@ function Support() {
         <SupportForm/>
         </Container>
       </>
-      {matches ? <></> : <Footer />}
+      {/* {matches ? <></> : <Footer />} */}
+      {/* <FooterMiddle/> */}
       <Copyright />
     </>
   )
