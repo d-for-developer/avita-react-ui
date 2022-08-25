@@ -14,6 +14,7 @@ import Wristo from './components/products/Watch/Wristo';
 import Contact from './components/pages/Contact';
 import Support from './components/pages/Support';
 import Wristio1 from './components/products/Wristio1/Wristio1';
+import Wristio2 from './components/products/Wristio2/Wristio2';
 
 
 function App() {
@@ -39,6 +40,9 @@ function App() {
           </Route>
          <Route path="/products/wristio1">
             <Wristio1/>
+          </Route>
+          <Route path="/products/wristio2">
+            <Wristio2/>
           </Route>
          <Route path="/support">
             <Support/>
