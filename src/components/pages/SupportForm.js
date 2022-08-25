@@ -48,7 +48,7 @@ export default function SupportForm() {
           <Row className='mt-4'>
             <Col>
               <FormControl>
-                <InputLabel style={{ marginTop: '1%' }} htmlFor="email">Email address</InputLabel>
+                <InputLabel style={{ marginTop: '1%' }} htmlFor="email">Email Address</InputLabel>
                 <Input id="email" aria-describedby="my-helper-email" />
                 <FormHelperText id="my-helper-email">We'll never share your email.</FormHelperText>
               </FormControl>
