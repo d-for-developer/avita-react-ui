@@ -600,3 +600,21 @@ input[type=search] {
 .countDown{
     color:#471577!important;
 }
+
+.bg-dark{
+    background-color: #000!important;
+}
+
+.bg-gray{
+    background-color: #a9a9a9!important;
+}
+
+
+.text-white{
+    color: #fff!important;
+
+}
+
+.MuiSvgIcon-root .MuiSvgIcon-fontSizeMedium{
+    width: 4rem!important;
+}
