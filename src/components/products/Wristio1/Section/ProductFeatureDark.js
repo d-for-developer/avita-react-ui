@@ -1,15 +1,17 @@
 import React from 'react'
 import Row from 'react-bootstrap/Row';
-import mob1 from '../../../../components/assets/product/Wristio1/mob1.jpg';
-import web1 from '../../../../components/assets/product/Wristio1/web1.jpg';
-import mob2 from '../../../../components/assets/product/Wristio1/mob2.jpg';
-import web2 from '../../../../components/assets/product/Wristio1/web2.jpg';
-import mob3 from '../../../../components/assets/product/Wristio1/mob3.jpg';
-import web3 from '../../../../components/assets/product/Wristio1/web3.jpg';
-import mob4 from '../../../../components/assets/product/Wristio1/mob4.jpg';
-import web4 from '../../../../components/assets/product/Wristio1/web4.jpg';
-import mob5 from '../../../../components/assets/product/Wristio1/mob5.jpg';
-import web5 from '../../../../components/assets/product/Wristio1/web5.jpg';
+import mob1 from '../../../assets/product/Wristio1/Web/Display.jpg';
+import web1 from '../../../assets/product/Wristio1/Mob/Display.jpg';
+import web2 from '../../../assets/product/Wristio1/Web/Display.jpg'
+import mob2 from '../../../assets/product/Wristio1/Mob/Display.jpg'
+import web3 from '../../../assets/product/Wristio1/Web/Health.jpg'
+import mob3 from '../../../assets/product/Wristio1/Mob/Health.jpg'
+import web4 from '../../../assets/product/Wristio1/Web/Display.jpg'
+import mob4 from '../../../assets/product/Wristio1/Mob/Display.jpg'
+import web5 from '../../../assets/product/Wristio1/Web/WaterProof.jpg'
+import mob5 from '../../../assets/product/Wristio1/Mob/WaterProof.jpg'
+
+
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Typography from '@mui/material/Typography';
@@ -28,11 +30,11 @@ function ProductFeatureDark() {
           <Row className='text-center'>
 
             <Typography variant='h3' component='h3' mt={4} mb={4} pt={4} >
-            The Ultimate Smartwatch 
+                 Intro
 
             </Typography>
             <Typography variant='p' component='p' mt={4} mb={4} pt={4}>
-              <span className='text-white'>The Spectra series are made to profess our love for fashion, technology, and art. These charmers possess benchmark Display, Music Storage* and Bluetooth calling setup to ensure you have the best on your wrist.</span>
+              <span className='text-white'>Classy, prudent, and personal, all the things a watch should be. A perfect companion for all the good and lukewarm moments in your life. Be it working or working out, sleeping or going out, Wristio 1 stays with you like an organ.</span>
 
             </Typography>
           </Row>
@@ -49,11 +51,10 @@ function ProductFeatureDark() {
           <Row className='text-center'>
 
             <Typography variant='h3' component='h3' mt={4} mb={4} pt={4} >
-              Immersive Superior Displays
+              Immersive Superlative Display
             </Typography>
             <Typography variant='p' component='p' mt={4} mb={4} pt={4}>
-              <span className='text-white'>The Spectra series are made to profess our love for fashion, technology, and art. These charmers possess benchmark Display, Music Storage* and Bluetooth calling setup to ensure you have the best on your wrist. </span>
-
+              <span className='text-white'>Impress your everyday hustles with the best of a kind. A whopping 1.69' TFT HD display to have a crystal-clear focus on primary and essential things. Treat your eyes with the comfort they deserve. </span>
             </Typography>
           </Row>
           <Row>
@@ -69,11 +70,11 @@ function ProductFeatureDark() {
           <Row className='text-center'>
 
             <Typography variant='h3' component='h3' mt={4} mb={4} pt={4} >
-                Retina AMOLED
+                AI Monitored Health Metrics
 
             </Typography>
             <Typography variant='p' component='p' mt={4} mb={4} pt={4}>
-              <span className='text-white'>As real as it can be, the supreme class of displays is chosen…just for you! The Retina AMOLED screen delivers absolutely life-like visual clarity backed by 368x448 pixels making everything impressive and immersive. Additionally, a 60Hz refresh rate backed by a HyperSenseTM technology guarantees the watch's smoothest traverse through your favorite functions.</span>
+              <span className='text-white'>Need a go-to companion to keep your well-being on track? Wristio 1 got you all. Equipped with advanced AI health sensors, it helps you to maintain your vitals and triggers the alarm when needed. </span>
 
             </Typography>
           </Row>
@@ -90,10 +91,10 @@ function ProductFeatureDark() {
           <Row className='text-center'>
 
             <Typography variant='h3' component='h3' mt={4} mb={4} pt={4} >
-              3D Curvature Bezel
+            Phone-like Calling
             </Typography>
             <Typography variant='p' component='p' mt={4} mb={4} pt={4}>
-              <span className='text-white'>The Spectra series come with a premium 3D curved sapphire glass; this is the top most preferred combination by many high-profile watchmakers as well. We also ensured you get the best.  </span>
+              <span className='text-white'>It's an era of smartwatches!<br/>Ditch your phone for every time calling. Pick your calls in a flash and experience muffle-free and hassle-free calling through the embedded speaker and microphone. </span>
 
             </Typography>
           </Row>
@@ -110,11 +111,10 @@ function ProductFeatureDark() {
           <Row className='text-center'>
 
             <Typography variant='h3' component='h3' mt={4} mb={4} pt={4} >
-                Buds to your watch
+                Splatter Ready
             </Typography>
             <Typography variant='p' component='p' mt={4} mb={4} pt={4}>
-              <span className='text-white'>Up for a run? You can leave your phone behind this time! Connect your TWS or Neckband earphones to the Spectra Plus and enjoy music on the go with built-in music storage.</span>
-
+              <span className='text-white'>Worried about wearing your watch out in your favorite monsoon weather? Or stressed about any accidental splashes on your precious watch. Worry not. Wristio 1 can bear it all with its IP67 water resistance display. </span>
             </Typography>
           </Row>
           <Row>

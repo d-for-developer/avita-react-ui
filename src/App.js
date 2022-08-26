@@ -15,6 +15,8 @@ import Contact from './components/pages/Contact';
 import Support from './components/pages/Support';
 import Wristio1 from './components/products/Wristio1/Wristio1';
 import Wristio2 from './components/products/Wristio2/Wristio2';
+import Wristio1Spec from './components/products/Wristio1/Wristio1Spec';
+import Wristio2Spec from './components/products/Wristio2/Wristio2Spec';
 
 
 function App() {
@@ -41,8 +43,14 @@ function App() {
          <Route path="/products/wristio1">
             <Wristio1/>
           </Route>
+          <Route path="/products/wristio1/spec">
+            <Wristio1Spec/>
+          </Route>
           <Route path="/products/wristio2">
             <Wristio2/>
+          </Route>
+          <Route path="/products/wristio2/spec">
+            <Wristio2Spec/>
           </Route>
          <Route path="/support">
             <Support/>

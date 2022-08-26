@@ -1,15 +1,15 @@
 import React from 'react'
 import Row from 'react-bootstrap/Row';
-import mob1 from '../../../../components/assets/product/Wristio1/mob1.jpg';
-import web1 from '../../../../components/assets/product/Wristio1/web1.jpg';
-import mob2 from '../../../../components/assets/product/Wristio1/mob2.jpg';
-import web2 from '../../../../components/assets/product/Wristio1/web2.jpg';
-import mob3 from '../../../../components/assets/product/Wristio1/mob3.jpg';
-import web3 from '../../../../components/assets/product/Wristio1/web3.jpg';
-import mob4 from '../../../../components/assets/product/Wristio1/mob4.jpg';
-import web4 from '../../../../components/assets/product/Wristio1/web4.jpg';
-import mob5 from '../../../../components/assets/product/Wristio1/mob5.jpg';
-import web5 from '../../../../components/assets/product/Wristio1/web5.jpg';
+import mob6 from '../../../assets/product/Wristio1/Web/Music.jpg';
+import web6 from '../../../assets/product/Wristio1/Mob/Music.jpg';
+import web7 from '../../../assets/product/Wristio1/Web/Sports.jpg'
+import mob7 from '../../../assets/product/Wristio1/Mob/Sports.jpg'
+import web8 from '../../../assets/product/Wristio1/Web/Battery.jpg'
+import mob8 from '../../../assets/product/Wristio1/Mob/Battery.jpg'
+import web9 from '../../../assets/product/Wristio1/Web/WatchFace.jpg'
+import mob9 from '../../../assets/product/Wristio1/Mob/WatchFace.jpg'
+import web10 from '../../../assets/product/Wristio1/Web/Weather.jpg'
+import mob10 from '../../../assets/product/Wristio1/Mob/Weather.jpg'
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Typography from '@mui/material/Typography';
@@ -28,11 +28,11 @@ function ProductFeatureLight() {
           <Row className='text-center'>
 
             <Typography variant='h3' component='h3' mt={4} mb={4} pt={4} >
-            The Ultimate Smartwatch 
+                Your Mood. Your Music
 
             </Typography>
             <Typography variant='p' component='p' mt={4} mb={4} pt={4}>
-              <span className='text-dark'>The Spectra series are made to profess our love for fashion, technology, and art. These charmers possess benchmark Display, Music Storage* and Bluetooth calling setup to ensure you have the best on your wrist.</span>
+              <span className='text-dark'>Don't settle! Explore music for every mood. Pause, play, or skip all the banger tunes just on your wrist. </span>
 
             </Typography>
           </Row>
@@ -40,19 +40,19 @@ function ProductFeatureLight() {
             <img
               className="d-block w-100"
               src={matches ? (
-                mob1
+                mob6
               ) : (
-                web1
+                web6
               )}
               alt="First slide" />
           </Row>
           <Row className='text-center'>
 
             <Typography variant='h3' component='h3' mt={4} mb={4} pt={4} >
-              Immersive Superior Displays
+                Train with Convenience/ Be your own health guard
             </Typography>
             <Typography variant='p' component='p' mt={4} mb={4} pt={4}>
-              <span className='text-dark'>The Spectra series are made to profess our love for fashion, technology, and art. These charmers possess benchmark Display, Music Storage* and Bluetooth calling setup to ensure you have the best on your wrist. </span>
+              <span className='text-dark'>Guard your health in a chic way.  Running, cycling, walking, swimming, or playing multiple sports, do whatever your body demands to stay fit. Carry your gym wherever you go.</span>
 
             </Typography>
           </Row>
@@ -60,20 +60,19 @@ function ProductFeatureLight() {
             <img
               className="d-block w-100"
               src={matches ? (
-                mob2
+                mob7
               ) : (
-                web2
+                web7
               )}
               alt="Second slide" />
           </Row>
           <Row className='text-center'>
 
             <Typography variant='h3' component='h3' mt={4} mb={4} pt={4} >
-                Retina AMOLED
-
+                Up To 22 Days Battery Life (typical use, with BT calling, charging time and standby time)
             </Typography>
             <Typography variant='p' component='p' mt={4} mb={4} pt={4}>
-              <span className='text-dark'>As real as it can be, the supreme class of displays is chosen…just for you! The Retina AMOLED screen delivers absolutely life-like visual clarity backed by 368x448 pixels making everything impressive and immersive. Additionally, a 60Hz refresh rate backed by a HyperSenseTM technology guarantees the watch's smoothest traverse through your favorite functions.</span>
+              <span className='text-dark'>Never out of charge. Wristio 1 stays with you anytime, anywhere. Charged within minutes and goes on for days. </span>
 
             </Typography>
           </Row>
@@ -81,19 +80,19 @@ function ProductFeatureLight() {
             <img
               className="d-block w-100"
               src={matches ? (
-                mob3
+                mob8
               ) : (
-                web3
+                web8
               )}
               alt="Third slide" />
           </Row>
           <Row className='text-center'>
 
             <Typography variant='h3' component='h3' mt={4} mb={4} pt={4} >
-              3D Curvature Bezel
+                Explore Multi UIs
             </Typography>
             <Typography variant='p' component='p' mt={4} mb={4} pt={4}>
-              <span className='text-dark'>The Spectra series come with a premium 3D curved sapphire glass; this is the top most preferred combination by many high-profile watchmakers as well. We also ensured you get the best.  </span>
+              <span className='text-dark'>Never go out of style. 250+ watch face for all your occasions to complement the look in a perfect way. </span>
 
             </Typography>
           </Row>
@@ -101,19 +100,19 @@ function ProductFeatureLight() {
             <img
               className="d-block w-100"
               src={matches ? (
-                mob4
+                mob9
               ) : (
-                web4
+                web9
               )}
               alt="Fourth slide" />
           </Row>
           <Row className='text-center'>
 
             <Typography variant='h3' component='h3' mt={4} mb={4} pt={4} >
-                Buds to your watch
+                  Keep a weather check
             </Typography>
             <Typography variant='p' component='p' mt={4} mb={4} pt={4}>
-              <span className='text-dark'>Up for a run? You can leave your phone behind this time! Connect your TWS or Neckband earphones to the Spectra Plus and enjoy music on the go with built-in music storage.</span>
+              <span className='text-dark'>Be every weather ready. Bad weather will no longer be a hindrance; stay updated with Wristio 1 live weather check and plan accordingly. </span>
 
             </Typography>
           </Row>
@@ -121,9 +120,9 @@ function ProductFeatureLight() {
             <img
               className="d-block w-100"
               src={matches ? (
-                mob5
+                mob10
               ) : (
-                web5
+                web10
               )}
               alt="Fifth slide" />
           </Row>

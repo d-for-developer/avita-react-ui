@@ -1,6 +1,6 @@
 import React from 'react'
 
-function TechSpec() {
+function Wristio1Spec() {
     
 
   return (
@@ -8,4 +8,4 @@ function TechSpec() {
   )
 }
 
-export default TechSpec
+export default Wristio1Spec

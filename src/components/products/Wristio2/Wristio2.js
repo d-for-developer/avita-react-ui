@@ -14,7 +14,7 @@ import ProductFeatureLight from './Section/ProductFeatureLight'
 import ProductSpecCard from './Section/ProductSpecCard'
 
 
-function Wristio1() {
+function Wristio2() {
 
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.down('md'));
@@ -35,4 +35,4 @@ function Wristio1() {
   )
 }
 
-export default Wristio1
+export default Wristio2
