@@ -40,13 +40,13 @@ function App() {
           <Route path="/smart-watch">
             <Wristo/>
           </Route>
-         <Route path="/products/wristio1">
+         <Route exact path="/products/wristio1">
             <Wristio1/>
           </Route>
           <Route path="/products/wristio1/spec">
             <Wristio1Spec/>
           </Route>
-          <Route path="/products/wristio2">
+          <Route exact path="/products/wristio2">
             <Wristio2/>
           </Route>
           <Route path="/products/wristio2/spec">
