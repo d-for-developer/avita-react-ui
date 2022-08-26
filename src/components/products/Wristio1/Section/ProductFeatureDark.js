@@ -6,8 +6,8 @@ import web2 from '../../../assets/product/Wristio1/Web/Display.jpg'
 import mob2 from '../../../assets/product/Wristio1/Mob/Display.jpg'
 import web3 from '../../../assets/product/Wristio1/Web/Health.jpg'
 import mob3 from '../../../assets/product/Wristio1/Mob/Health.jpg'
-import web4 from '../../../assets/product/Wristio1/Web/Display.jpg'
-import mob4 from '../../../assets/product/Wristio1/Mob/Display.jpg'
+import web4 from '../../../assets/product/Wristio1/Web/Calling.png'
+import mob4 from '../../../assets/product/Wristio1/Mob/Calling.png'
 import web5 from '../../../assets/product/Wristio1/Web/WaterProof.jpg'
 import mob5 from '../../../assets/product/Wristio1/Mob/WaterProof.jpg'
 
@@ -37,6 +37,8 @@ function ProductFeatureDark() {
           <Row>
             <img
               className="d-block w-100"
+              width='100%'
+              height='100%'
               src={matches ? (
                 mob1
               ) : (
@@ -60,6 +62,8 @@ function ProductFeatureDark() {
           <Row>
             <img
               className="d-block w-100"
+              width='100%'
+              height='100%'
               src={matches ? (
                 mob2
               ) : (
@@ -85,6 +89,8 @@ function ProductFeatureDark() {
           <Row>
             <img
               className="d-block w-100"
+              width='100%'
+              height='100%'
               src={matches ? (
                 mob3
               ) : (
@@ -109,6 +115,8 @@ function ProductFeatureDark() {
           <Row>
             <img
               className="d-block w-100"
+              width='100%'
+              height='100%'
               src={matches ? (
                 mob4
               ) : (

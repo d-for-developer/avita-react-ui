@@ -43,6 +43,8 @@ function ProductFeatureLight() {
           <Row>
             <img
               className="d-block w-100"
+              width='100%'
+              height='100%'
               src={matches ? (
                 mob6
               ) : (
@@ -67,6 +69,8 @@ function ProductFeatureLight() {
           <Row>
             <img
               className="d-block w-100"
+              width='100%'
+              height='100%'
               src={matches ? (
                 mob7
               ) : (
@@ -91,6 +95,8 @@ function ProductFeatureLight() {
           <Row>
             <img
               className="d-block w-100"
+              width='100%'
+              height='100%'
               src={matches ? (
                 mob8
               ) : (
@@ -115,6 +121,8 @@ function ProductFeatureLight() {
           <Row>
             <img
               className="d-block w-100"
+              width='100%'
+              height='100%'
               src={matches ? (
                 mob9
               ) : (
@@ -139,6 +147,8 @@ function ProductFeatureLight() {
           <Row>
             <img
               className="d-block w-100"
+              width='100%'
+              height='100%'
               src={matches ? (
                 mob10
               ) : (
