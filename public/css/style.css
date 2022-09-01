@@ -618,3 +618,16 @@ input[type=search] {
 .MuiSvgIcon-root .MuiSvgIcon-fontSizeMedium{
     width: 4rem!important;
 }
+
+.dropdown-menu[data-bs-popper] {
+    top: 100%!important;
+    left: 50%!important;
+    margin-top: 0.125rem!important;
+}
+
+
+.dropdown-menu{
+    color: #fff;
+    background-color:#212529;
+}
+
